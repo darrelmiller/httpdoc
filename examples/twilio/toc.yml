@@ -1,0 +1,776 @@
+- name: 2010-04-01
+  items:
+  - name: Accounts.json
+    items:
+    - name: "GET"
+      href: ListAccount.md
+    - name: "POST"
+      href: CreateAccount.md
+  - name: Accounts
+    items:
+    - name: AccountSid
+      items:
+      - name: Addresses.json
+        items:
+        - name: "GET"
+          href: ListAddress.md
+        - name: "POST"
+          href: CreateAddress.md
+      - name: Addresses
+        items:
+        - name: AddressSid
+          items:
+          - name: DependentPhoneNumbers.json
+            items:
+            - name: "GET"
+              href: ListDependentPhoneNumber.md
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteAddress.md
+          - name: "GET"
+            href: FetchAddress.md
+          - name: "POST"
+            href: UpdateAddress.md
+      - name: Applications.json
+        items:
+        - name: "GET"
+          href: ListApplication.md
+        - name: "POST"
+          href: CreateApplication.md
+      - name: Applications
+        items:
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteApplication.md
+          - name: "GET"
+            href: FetchApplication.md
+          - name: "POST"
+            href: UpdateApplication.md
+      - name: AuthorizedConnectApps.json
+        items:
+        - name: "GET"
+          href: ListAuthorizedConnectApp.md
+      - name: AuthorizedConnectApps
+        items:
+        - name: ConnectAppSid.json
+          items:
+          - name: "GET"
+            href: FetchAuthorizedConnectApp.md
+      - name: AvailablePhoneNumbers.json
+        items:
+        - name: "GET"
+          href: ListAvailablePhoneNumberCountry.md
+      - name: AvailablePhoneNumbers
+        items:
+        - name: CountryCode.json
+          items:
+          - name: "GET"
+            href: FetchAvailablePhoneNumberCountry.md
+        - name: CountryCode
+          items:
+          - name: Local.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberLocal.md
+          - name: MachineToMachine.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberMachineToMachine.md
+          - name: Mobile.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberMobile.md
+          - name: National.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberNational.md
+          - name: SharedCost.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberSharedCost.md
+          - name: TollFree.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberTollFree.md
+          - name: Voip.json
+            items:
+            - name: "GET"
+              href: ListAvailablePhoneNumberVoip.md
+      - name: Balance.json
+        items:
+        - name: "GET"
+          href: FetchBalance.md
+      - name: Calls.json
+        items:
+        - name: "GET"
+          href: ListCall.md
+        - name: "POST"
+          href: CreateCall.md
+      - name: Calls
+        items:
+        - name: FeedbackSummary.json
+          items:
+          - name: "POST"
+            href: CreateCallFeedbackSummary.md
+        - name: FeedbackSummary
+          items:
+          - name: Sid.json
+            items:
+            - name: "DELETE"
+              href: DeleteCallFeedbackSummary.md
+            - name: "GET"
+              href: FetchCallFeedbackSummary.md
+        - name: CallSid
+          items:
+          - name: Events.json
+            items:
+            - name: "GET"
+              href: ListCallEvent.md
+          - name: Feedback.json
+            items:
+            - name: "GET"
+              href: FetchCallFeedback.md
+            - name: "POST"
+              href: UpdateCallFeedback.md
+          - name: Notifications.json
+            items:
+            - name: "GET"
+              href: ListCallNotification.md
+          - name: Notifications
+            items:
+            - name: Sid.json
+              items:
+              - name: "GET"
+                href: FetchCallNotification.md
+          - name: Payments.json
+            items:
+            - name: "POST"
+              href: CreatePayments.md
+          - name: Payments
+            items:
+            - name: Sid.json
+              items:
+              - name: "POST"
+                href: UpdatePayments.md
+          - name: Recordings.json
+            items:
+            - name: "GET"
+              href: ListCallRecording.md
+            - name: "POST"
+              href: CreateCallRecording.md
+          - name: Recordings
+            items:
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteCallRecording.md
+              - name: "GET"
+                href: FetchCallRecording.md
+              - name: "POST"
+                href: UpdateCallRecording.md
+          - name: Siprec.json
+            items:
+            - name: "POST"
+              href: CreateSiprec.md
+          - name: Siprec
+            items:
+            - name: Sid.json
+              items:
+              - name: "POST"
+                href: UpdateSiprec.md
+          - name: Streams.json
+            items:
+            - name: "POST"
+              href: CreateStream.md
+          - name: Streams
+            items:
+            - name: Sid.json
+              items:
+              - name: "POST"
+                href: UpdateStream.md
+          - name: UserDefinedMessageSubscriptions.json
+            items:
+            - name: "POST"
+              href: CreateUserDefinedMessageSubscription.md
+          - name: UserDefinedMessageSubscriptions
+            items:
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteUserDefinedMessageSubscription.md
+          - name: UserDefinedMessages.json
+            items:
+            - name: "POST"
+              href: CreateUserDefinedMessage.md
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteCall.md
+          - name: "GET"
+            href: FetchCall.md
+          - name: "POST"
+            href: UpdateCall.md
+      - name: Conferences.json
+        items:
+        - name: "GET"
+          href: ListConference.md
+      - name: Conferences
+        items:
+        - name: ConferenceSid
+          items:
+          - name: Participants.json
+            items:
+            - name: "GET"
+              href: ListParticipant.md
+            - name: "POST"
+              href: CreateParticipant.md
+          - name: Participants
+            items:
+            - name: CallSid.json
+              items:
+              - name: "DELETE"
+                href: DeleteParticipant.md
+              - name: "GET"
+                href: FetchParticipant.md
+              - name: "POST"
+                href: UpdateParticipant.md
+          - name: Recordings.json
+            items:
+            - name: "GET"
+              href: ListConferenceRecording.md
+          - name: Recordings
+            items:
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteConferenceRecording.md
+              - name: "GET"
+                href: FetchConferenceRecording.md
+              - name: "POST"
+                href: UpdateConferenceRecording.md
+        - name: Sid.json
+          items:
+          - name: "GET"
+            href: FetchConference.md
+          - name: "POST"
+            href: UpdateConference.md
+      - name: ConnectApps.json
+        items:
+        - name: "GET"
+          href: ListConnectApp.md
+      - name: ConnectApps
+        items:
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteConnectApp.md
+          - name: "GET"
+            href: FetchConnectApp.md
+          - name: "POST"
+            href: UpdateConnectApp.md
+      - name: IncomingPhoneNumbers.json
+        items:
+        - name: "GET"
+          href: ListIncomingPhoneNumber.md
+        - name: "POST"
+          href: CreateIncomingPhoneNumber.md
+      - name: IncomingPhoneNumbers
+        items:
+        - name: Local.json
+          items:
+          - name: "GET"
+            href: ListIncomingPhoneNumberLocal.md
+          - name: "POST"
+            href: CreateIncomingPhoneNumberLocal.md
+        - name: Mobile.json
+          items:
+          - name: "GET"
+            href: ListIncomingPhoneNumberMobile.md
+          - name: "POST"
+            href: CreateIncomingPhoneNumberMobile.md
+        - name: TollFree.json
+          items:
+          - name: "GET"
+            href: ListIncomingPhoneNumberTollFree.md
+          - name: "POST"
+            href: CreateIncomingPhoneNumberTollFree.md
+        - name: ResourceSid
+          items:
+          - name: AssignedAddOns.json
+            items:
+            - name: "GET"
+              href: ListIncomingPhoneNumberAssignedAddOn.md
+            - name: "POST"
+              href: CreateIncomingPhoneNumberAssignedAddOn.md
+          - name: AssignedAddOns
+            items:
+            - name: AssignedAddOnSid
+              items:
+              - name: Extensions.json
+                items:
+                - name: "GET"
+                  href: ListIncomingPhoneNumberAssignedAddOnExtension.md
+              - name: Extensions
+                items:
+                - name: Sid.json
+                  items:
+                  - name: "GET"
+                    href: FetchIncomingPhoneNumberAssignedAddOnExtension.md
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteIncomingPhoneNumberAssignedAddOn.md
+              - name: "GET"
+                href: FetchIncomingPhoneNumberAssignedAddOn.md
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteIncomingPhoneNumber.md
+          - name: "GET"
+            href: FetchIncomingPhoneNumber.md
+          - name: "POST"
+            href: UpdateIncomingPhoneNumber.md
+      - name: Keys.json
+        items:
+        - name: "GET"
+          href: ListKey.md
+        - name: "POST"
+          href: CreateNewKey.md
+      - name: Keys
+        items:
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteKey.md
+          - name: "GET"
+            href: FetchKey.md
+          - name: "POST"
+            href: UpdateKey.md
+      - name: Messages.json
+        items:
+        - name: "GET"
+          href: ListMessage.md
+        - name: "POST"
+          href: CreateMessage.md
+      - name: Messages
+        items:
+        - name: MessageSid
+          items:
+          - name: Feedback.json
+            items:
+            - name: "POST"
+              href: CreateMessageFeedback.md
+          - name: Media.json
+            items:
+            - name: "GET"
+              href: ListMedia.md
+          - name: Media
+            items:
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteMedia.md
+              - name: "GET"
+                href: FetchMedia.md
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteMessage.md
+          - name: "GET"
+            href: FetchMessage.md
+          - name: "POST"
+            href: UpdateMessage.md
+      - name: Notifications.json
+        items:
+        - name: "GET"
+          href: ListNotification.md
+      - name: Notifications
+        items:
+        - name: Sid.json
+          items:
+          - name: "GET"
+            href: FetchNotification.md
+      - name: OutgoingCallerIds.json
+        items:
+        - name: "GET"
+          href: ListOutgoingCallerId.md
+        - name: "POST"
+          href: CreateValidationRequest.md
+      - name: OutgoingCallerIds
+        items:
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteOutgoingCallerId.md
+          - name: "GET"
+            href: FetchOutgoingCallerId.md
+          - name: "POST"
+            href: UpdateOutgoingCallerId.md
+      - name: Queues.json
+        items:
+        - name: "GET"
+          href: ListQueue.md
+        - name: "POST"
+          href: CreateQueue.md
+      - name: Queues
+        items:
+        - name: QueueSid
+          items:
+          - name: Members.json
+            items:
+            - name: "GET"
+              href: ListMember.md
+          - name: Members
+            items:
+            - name: CallSid.json
+              items:
+              - name: "GET"
+                href: FetchMember.md
+              - name: "POST"
+                href: UpdateMember.md
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteQueue.md
+          - name: "GET"
+            href: FetchQueue.md
+          - name: "POST"
+            href: UpdateQueue.md
+      - name: Recordings.json
+        items:
+        - name: "GET"
+          href: ListRecording.md
+      - name: Recordings
+        items:
+        - name: RecordingSid
+          items:
+          - name: Transcriptions.json
+            items:
+            - name: "GET"
+              href: ListRecordingTranscription.md
+          - name: Transcriptions
+            items:
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteRecordingTranscription.md
+              - name: "GET"
+                href: FetchRecordingTranscription.md
+        - name: ReferenceSid
+          items:
+          - name: AddOnResults.json
+            items:
+            - name: "GET"
+              href: ListRecordingAddOnResult.md
+          - name: AddOnResults
+            items:
+            - name: AddOnResultSid
+              items:
+              - name: Payloads.json
+                items:
+                - name: "GET"
+                  href: ListRecordingAddOnResultPayload.md
+              - name: Payloads
+                items:
+                - name: Sid.json
+                  items:
+                  - name: "DELETE"
+                    href: DeleteRecordingAddOnResultPayload.md
+                  - name: "GET"
+                    href: FetchRecordingAddOnResultPayload.md
+            - name: Sid.json
+              items:
+              - name: "DELETE"
+                href: DeleteRecordingAddOnResult.md
+              - name: "GET"
+                href: FetchRecordingAddOnResult.md
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteRecording.md
+          - name: "GET"
+            href: FetchRecording.md
+      - name: SIP.json
+        items:
+      - name: SIP
+        items:
+        - name: CredentialLists.json
+          items:
+          - name: "GET"
+            href: ListSipCredentialList.md
+          - name: "POST"
+            href: CreateSipCredentialList.md
+        - name: CredentialLists
+          items:
+          - name: CredentialListSid
+            items:
+            - name: Credentials.json
+              items:
+              - name: "GET"
+                href: ListSipCredential.md
+              - name: "POST"
+                href: CreateSipCredential.md
+            - name: Credentials
+              items:
+              - name: Sid.json
+                items:
+                - name: "DELETE"
+                  href: DeleteSipCredential.md
+                - name: "GET"
+                  href: FetchSipCredential.md
+                - name: "POST"
+                  href: UpdateSipCredential.md
+          - name: Sid.json
+            items:
+            - name: "DELETE"
+              href: DeleteSipCredentialList.md
+            - name: "GET"
+              href: FetchSipCredentialList.md
+            - name: "POST"
+              href: UpdateSipCredentialList.md
+        - name: Domains.json
+          items:
+          - name: "GET"
+            href: ListSipDomain.md
+          - name: "POST"
+            href: CreateSipDomain.md
+        - name: Domains
+          items:
+          - name: DomainSid
+            items:
+            - name: Auth.json
+              items:
+            - name: Auth
+              items:
+              - name: Calls.json
+                items:
+              - name: Calls
+                items:
+                - name: CredentialListMappings.json
+                  items:
+                  - name: "GET"
+                    href: ListSipAuthCallsCredentialListMapping.md
+                  - name: "POST"
+                    href: CreateSipAuthCallsCredentialListMapping.md
+                - name: CredentialListMappings
+                  items:
+                  - name: Sid.json
+                    items:
+                    - name: "DELETE"
+                      href: DeleteSipAuthCallsCredentialListMapping.md
+                    - name: "GET"
+                      href: FetchSipAuthCallsCredentialListMapping.md
+                - name: IpAccessControlListMappings.json
+                  items:
+                  - name: "GET"
+                    href: ListSipAuthCallsIpAccessControlListMapping.md
+                  - name: "POST"
+                    href: CreateSipAuthCallsIpAccessControlListMapping.md
+                - name: IpAccessControlListMappings
+                  items:
+                  - name: Sid.json
+                    items:
+                    - name: "DELETE"
+                      href: DeleteSipAuthCallsIpAccessControlListMapping.md
+                    - name: "GET"
+                      href: FetchSipAuthCallsIpAccessControlListMapping.md
+              - name: Registrations.json
+                items:
+              - name: Registrations
+                items:
+                - name: CredentialListMappings.json
+                  items:
+                  - name: "GET"
+                    href: ListSipAuthRegistrationsCredentialListMapping.md
+                  - name: "POST"
+                    href: CreateSipAuthRegistrationsCredentialListMapping.md
+                - name: CredentialListMappings
+                  items:
+                  - name: Sid.json
+                    items:
+                    - name: "DELETE"
+                      href: DeleteSipAuthRegistrationsCredentialListMapping.md
+                    - name: "GET"
+                      href: FetchSipAuthRegistrationsCredentialListMapping.md
+            - name: CredentialListMappings.json
+              items:
+              - name: "GET"
+                href: ListSipCredentialListMapping.md
+              - name: "POST"
+                href: CreateSipCredentialListMapping.md
+            - name: CredentialListMappings
+              items:
+              - name: Sid.json
+                items:
+                - name: "DELETE"
+                  href: DeleteSipCredentialListMapping.md
+                - name: "GET"
+                  href: FetchSipCredentialListMapping.md
+            - name: IpAccessControlListMappings.json
+              items:
+              - name: "GET"
+                href: ListSipIpAccessControlListMapping.md
+              - name: "POST"
+                href: CreateSipIpAccessControlListMapping.md
+            - name: IpAccessControlListMappings
+              items:
+              - name: Sid.json
+                items:
+                - name: "DELETE"
+                  href: DeleteSipIpAccessControlListMapping.md
+                - name: "GET"
+                  href: FetchSipIpAccessControlListMapping.md
+          - name: Sid.json
+            items:
+            - name: "DELETE"
+              href: DeleteSipDomain.md
+            - name: "GET"
+              href: FetchSipDomain.md
+            - name: "POST"
+              href: UpdateSipDomain.md
+        - name: IpAccessControlLists.json
+          items:
+          - name: "GET"
+            href: ListSipIpAccessControlList.md
+          - name: "POST"
+            href: CreateSipIpAccessControlList.md
+        - name: IpAccessControlLists
+          items:
+          - name: IpAccessControlListSid
+            items:
+            - name: IpAddresses.json
+              items:
+              - name: "GET"
+                href: ListSipIpAddress.md
+              - name: "POST"
+                href: CreateSipIpAddress.md
+            - name: IpAddresses
+              items:
+              - name: Sid.json
+                items:
+                - name: "DELETE"
+                  href: DeleteSipIpAddress.md
+                - name: "GET"
+                  href: FetchSipIpAddress.md
+                - name: "POST"
+                  href: UpdateSipIpAddress.md
+          - name: Sid.json
+            items:
+            - name: "DELETE"
+              href: DeleteSipIpAccessControlList.md
+            - name: "GET"
+              href: FetchSipIpAccessControlList.md
+            - name: "POST"
+              href: UpdateSipIpAccessControlList.md
+      - name: SMS
+        items:
+        - name: ShortCodes.json
+          items:
+          - name: "GET"
+            href: ListShortCode.md
+        - name: ShortCodes
+          items:
+          - name: Sid.json
+            items:
+            - name: "GET"
+              href: FetchShortCode.md
+            - name: "POST"
+              href: UpdateShortCode.md
+      - name: SigningKeys.json
+        items:
+        - name: "GET"
+          href: ListSigningKey.md
+        - name: "POST"
+          href: CreateNewSigningKey.md
+      - name: SigningKeys
+        items:
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteSigningKey.md
+          - name: "GET"
+            href: FetchSigningKey.md
+          - name: "POST"
+            href: UpdateSigningKey.md
+      - name: Tokens.json
+        items:
+        - name: "POST"
+          href: CreateToken.md
+      - name: Transcriptions.json
+        items:
+        - name: "GET"
+          href: ListTranscription.md
+      - name: Transcriptions
+        items:
+        - name: Sid.json
+          items:
+          - name: "DELETE"
+            href: DeleteTranscription.md
+          - name: "GET"
+            href: FetchTranscription.md
+      - name: Usage.json
+        items:
+      - name: Usage
+        items:
+        - name: Records.json
+          items:
+          - name: "GET"
+            href: ListUsageRecord.md
+        - name: Records
+          items:
+          - name: AllTime.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordAllTime.md
+          - name: Daily.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordDaily.md
+          - name: LastMonth.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordLastMonth.md
+          - name: Monthly.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordMonthly.md
+          - name: ThisMonth.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordThisMonth.md
+          - name: Today.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordToday.md
+          - name: Yearly.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordYearly.md
+          - name: Yesterday.json
+            items:
+            - name: "GET"
+              href: ListUsageRecordYesterday.md
+        - name: Triggers.json
+          items:
+          - name: "GET"
+            href: ListUsageTrigger.md
+          - name: "POST"
+            href: CreateUsageTrigger.md
+        - name: Triggers
+          items:
+          - name: Sid.json
+            items:
+            - name: "DELETE"
+              href: DeleteUsageTrigger.md
+            - name: "GET"
+              href: FetchUsageTrigger.md
+            - name: "POST"
+              href: UpdateUsageTrigger.md
+    - name: Sid.json
+      items:
+      - name: "GET"
+        href: FetchAccount.md
+      - name: "POST"
+        href: UpdateAccount.md

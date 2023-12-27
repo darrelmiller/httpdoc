@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+article {
+    margin: 20px;
+    max-width: 800px;
+}
+
+.requestOverview {
+    background-color: #e6f7ff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.requestSummary {
+    color: #0050b3;
+    font-size: 24px;
+}
+
+.requestDescription {
+    color: #666;
+    font-size: 16px;
+}
+
+.http {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.httpExample {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.parameters {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.parameter {
+    margin-bottom: 10px;
+}
+
+.parameterName {
+    font-weight: bold;
+}
+
+.parameterLocation,
+.parameterType,
+.parameterRequired {
+    color: #999;
+    font-size: 14px;
+}
+
+.parameterDescription {
+    color: #666;
+    font-size: 16px;
+}
+
+.requestContent,
+.responses {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.schema {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.response {
+    margin-bottom: 10px;
+}
+
+.statusLine {
+    font-weight: bold;
+}

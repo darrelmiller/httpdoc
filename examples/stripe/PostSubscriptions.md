@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><article><section  class="requestOverview"><h1  class="requestSummary">PostSubscriptions</h1><p  class="requestDescription"><p>Creates a new subscription on an existing customer. Each customer can have up to 500 active or scheduled subscriptions.</p>
+
+<p>When you create a subscription with <code>collection_method=charge_automatically</code>, the first invoice is finalized as part of the request.
+The <code>payment_behavior</code> parameter determines the exact behavior of the initial payment.</p>
+
+<p>To start subscriptions where the first invoice always begins in a <code>draft</code> status, use <a href="/docs/billing/subscriptions/subscription-schedules#managing">subscription schedules</a> instead.
+Schedules provide the flexibility to model more complex billing configurations that change over time.</p></p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">+{baseUrl}\v1\subscriptions</span> <span  class="httpVersion">HTTP/1.1</span>
+<span  class="headerLine">host</span>: <span  class="headerValue">example.org:443</span>
+<span  class="headerLine">accept</span>: <span  class="headerValue">application/json</span>
+</pre></section><dl  class="parameters"><h3>Parameters</h3></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema"></pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">200</span> <span  class="statusDescription">Successful response.</span></li><li  class="response"><span  class="statusLine">default</span> <span  class="statusDescription">Error response.</span></li></ul></section></article></body></html>

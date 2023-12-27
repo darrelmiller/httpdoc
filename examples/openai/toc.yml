@@ -1,0 +1,204 @@
+- name: chat
+  items:
+  - name: completions
+    items:
+    - name: "POST"
+      href: createChatCompletion.md
+- name: completions
+  items:
+  - name: "POST"
+    href: createCompletion.md
+- name: edits
+  items:
+  - name: "POST"
+    href: createEdit.md
+- name: images
+  items:
+  - name: generations
+    items:
+    - name: "POST"
+      href: createImage.md
+  - name: edits
+    items:
+    - name: "POST"
+      href: createImageEdit.md
+  - name: variations
+    items:
+    - name: "POST"
+      href: createImageVariation.md
+- name: embeddings
+  items:
+  - name: "POST"
+    href: createEmbedding.md
+- name: audio
+  items:
+  - name: speech
+    items:
+    - name: "POST"
+      href: createSpeech.md
+  - name: transcriptions
+    items:
+    - name: "POST"
+      href: createTranscription.md
+  - name: translations
+    items:
+    - name: "POST"
+      href: createTranslation.md
+- name: files
+  items:
+  - name: "GET"
+    href: listFiles.md
+  - name: "POST"
+    href: createFile.md
+  - name: file_id
+    items:
+    - name: "DELETE"
+      href: deleteFile.md
+    - name: "GET"
+      href: retrieveFile.md
+    - name: content
+      items:
+      - name: "GET"
+        href: downloadFile.md
+- name: fine_tuning
+  items:
+  - name: jobs
+    items:
+    - name: "POST"
+      href: createFineTuningJob.md
+    - name: "GET"
+      href: listPaginatedFineTuningJobs.md
+    - name: fine_tuning_job_id
+      items:
+      - name: "GET"
+        href: retrieveFineTuningJob.md
+      - name: events
+        items:
+        - name: "GET"
+          href: listFineTuningEvents.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: cancelFineTuningJob.md
+- name: fine-tunes
+  items:
+  - name: "POST"
+    href: createFineTune.md
+  - name: "GET"
+    href: listFineTunes.md
+  - name: fine_tune_id
+    items:
+    - name: "GET"
+      href: retrieveFineTune.md
+    - name: cancel
+      items:
+      - name: "POST"
+        href: cancelFineTune.md
+    - name: events
+      items:
+      - name: "GET"
+        href: listFineTuneEvents.md
+- name: models
+  items:
+  - name: "GET"
+    href: listModels.md
+  - name: model
+    items:
+    - name: "GET"
+      href: retrieveModel.md
+    - name: "DELETE"
+      href: deleteModel.md
+- name: moderations
+  items:
+  - name: "POST"
+    href: createModeration.md
+- name: assistants
+  items:
+  - name: "GET"
+    href: listAssistants.md
+  - name: "POST"
+    href: createAssistant.md
+  - name: assistant_id
+    items:
+    - name: "GET"
+      href: getAssistant.md
+    - name: "POST"
+      href: modifyAssistant.md
+    - name: "DELETE"
+      href: deleteAssistant.md
+    - name: files
+      items:
+      - name: "GET"
+        href: listAssistantFiles.md
+      - name: "POST"
+        href: createAssistantFile.md
+      - name: file_id
+        items:
+        - name: "GET"
+          href: getAssistantFile.md
+        - name: "DELETE"
+          href: deleteAssistantFile.md
+- name: threads
+  items:
+  - name: "POST"
+    href: createThread.md
+  - name: thread_id
+    items:
+    - name: "GET"
+      href: getThread.md
+    - name: "POST"
+      href: modifyThread.md
+    - name: "DELETE"
+      href: deleteThread.md
+    - name: messages
+      items:
+      - name: "GET"
+        href: listMessages.md
+      - name: "POST"
+        href: createMessage.md
+      - name: message_id
+        items:
+        - name: "GET"
+          href: getMessage.md
+        - name: "POST"
+          href: modifyMessage.md
+        - name: files
+          items:
+          - name: "GET"
+            href: listMessageFiles.md
+          - name: file_id
+            items:
+            - name: "GET"
+              href: getMessageFile.md
+    - name: runs
+      items:
+      - name: "GET"
+        href: listRuns.md
+      - name: "POST"
+        href: createRun.md
+      - name: run_id
+        items:
+        - name: "GET"
+          href: getRun.md
+        - name: "POST"
+          href: modifyRun.md
+        - name: submit_tool_outputs
+          items:
+          - name: "POST"
+            href: submitToolOuputsToRun.md
+        - name: cancel
+          items:
+          - name: "POST"
+            href: cancelRun.md
+        - name: steps
+          items:
+          - name: "GET"
+            href: listRunSteps.md
+          - name: step_id
+            items:
+            - name: "GET"
+              href: getRunStep.md
+  - name: runs
+    items:
+    - name: "POST"
+      href: createThreadAndRun.md

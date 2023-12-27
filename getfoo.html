@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Get Foo</title>
+    <link rel="stylesheet" href="./OpenApi.css"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<article class="httpRequest">
+    <sections>
+        <h2 class="requestSummary">Get foo</h2>
+        <p class="requestDescription">A big long description about this request</p>
+    </section>
+    <section">
+        <h2>HTTP Request</h2>
+        <pre>
+            <span class="httpMethod">GET</span> <span class="httpPath">/foo/{id}</span><span class="httpQuery">?format={format}</span> <span class="httpVersion">HTTP/1.1</span>
+            <span class="headerName">host</span>: <span class="headerValue">example.org:443</span>
+            <span class="headerName">Accept</span>: <span class="headerValue">application/json</span>
+
+            <!-- <span class="httpBody">{Body content}</span> -->
+        </pre>
+    </section>
+    <section class="parameters">
+        <h3>Parameters</h3>
+        <dl class="requestParameters">
+            <dt class="pathParameter">id</dt>
+            <dd><span class="parameterDescription">this is the description of id</span><span class="parameterValue"><input/></span></dd>
+            <dt class="queryParameter">format</dt>
+            <dd><span class="parameterDescription"></span>Response format (json, xml)</span><span><input/></span></dd>
+            <dt class="header">Accept</dt>
+            <dd>application/json</dd>
+        </dl>
+    </section>
+    <section id="requestContent"/>
+    <section id="responses">
+        <h2>Responses</h2>
+        <ul>
+            <li>
+                <h3>200 OK</h3>
+                <p class="responseDescription">Everything worked as expected.</p>
+                <h4>Response Headers</h4>
+                <dl class="responseHeaders">
+                    <dt>Content-Type</dt>
+                    <dd>application/json</dd>
+                </dl>
+                <h4>Response Body</h4>
+                <pre class="prettyprint">
+                    <code class="language-json">
+                        {
+                            "id": 1,
+                            "name": "Foo"
+                        }
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <h3>400 Bad Request</h3>
+                <p class="responseDescription">The request was unacceptable, often due to missing a required parameter.</p>
+                <h4>Response Headers</h4>
+                <dl class="responseHeaders">
+                    <dt>Content-Type</dt>
+                    <dd>application/json</dd>
+                </dl>
+                <h4>Response Body</h4>
+                <pre class="prettyprint">
+                    <code class="language-json">
+                        {
+                            "error": "Missing parameter: id"
+                        }
+                    </code>
+                </pre>
+        </ul>
+</article>
+</body>
+</html>

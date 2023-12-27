@@ -1,0 +1,34 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "**/*.html",
+          "*.css"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "httpdocs",
+      "_appTitle": "httpdocs",
+      "_enableSearch": false,
+      "pdf": false
+    }
+  }
+}

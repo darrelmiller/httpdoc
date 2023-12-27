@@ -1,0 +1,1574 @@
+- name: v1
+  items:
+  - name: account
+    items:
+    - name: "GET"
+      href: GetAccount.md
+  - name: account_links
+    items:
+    - name: "POST"
+      href: PostAccountLinks.md
+  - name: accounts
+    items:
+    - name: "GET"
+      href: GetAccounts.md
+    - name: "POST"
+      href: PostAccounts.md
+    - name: account
+      items:
+      - name: "DELETE"
+        href: DeleteAccountsAccount.md
+      - name: "GET"
+        href: GetAccountsAccount.md
+      - name: "POST"
+        href: PostAccountsAccount.md
+      - name: bank_accounts
+        items:
+        - name: "POST"
+          href: PostAccountsAccountBankAccounts.md
+        - name: id
+          items:
+          - name: "DELETE"
+            href: DeleteAccountsAccountBankAccountsId.md
+          - name: "GET"
+            href: GetAccountsAccountBankAccountsId.md
+          - name: "POST"
+            href: PostAccountsAccountBankAccountsId.md
+      - name: capabilities
+        items:
+        - name: "GET"
+          href: GetAccountsAccountCapabilities.md
+        - name: capability
+          items:
+          - name: "GET"
+            href: GetAccountsAccountCapabilitiesCapability.md
+          - name: "POST"
+            href: PostAccountsAccountCapabilitiesCapability.md
+      - name: external_accounts
+        items:
+        - name: "GET"
+          href: GetAccountsAccountExternalAccounts.md
+        - name: "POST"
+          href: PostAccountsAccountExternalAccounts.md
+        - name: id
+          items:
+          - name: "DELETE"
+            href: DeleteAccountsAccountExternalAccountsId.md
+          - name: "GET"
+            href: GetAccountsAccountExternalAccountsId.md
+          - name: "POST"
+            href: PostAccountsAccountExternalAccountsId.md
+      - name: login_links
+        items:
+        - name: "POST"
+          href: PostAccountsAccountLoginLinks.md
+      - name: people
+        items:
+        - name: "GET"
+          href: GetAccountsAccountPeople.md
+        - name: "POST"
+          href: PostAccountsAccountPeople.md
+        - name: person
+          items:
+          - name: "DELETE"
+            href: DeleteAccountsAccountPeoplePerson.md
+          - name: "GET"
+            href: GetAccountsAccountPeoplePerson.md
+          - name: "POST"
+            href: PostAccountsAccountPeoplePerson.md
+      - name: persons
+        items:
+        - name: "GET"
+          href: GetAccountsAccountPersons.md
+        - name: "POST"
+          href: PostAccountsAccountPersons.md
+        - name: person
+          items:
+          - name: "DELETE"
+            href: DeleteAccountsAccountPersonsPerson.md
+          - name: "GET"
+            href: GetAccountsAccountPersonsPerson.md
+          - name: "POST"
+            href: PostAccountsAccountPersonsPerson.md
+      - name: reject
+        items:
+        - name: "POST"
+          href: PostAccountsAccountReject.md
+  - name: apple_pay
+    items:
+    - name: domains
+      items:
+      - name: "GET"
+        href: GetApplePayDomains.md
+      - name: "POST"
+        href: PostApplePayDomains.md
+      - name: domain
+        items:
+        - name: "DELETE"
+          href: DeleteApplePayDomainsDomain.md
+        - name: "GET"
+          href: GetApplePayDomainsDomain.md
+  - name: application_fees
+    items:
+    - name: "GET"
+      href: GetApplicationFees.md
+    - name: fee
+      items:
+      - name: refunds
+        items:
+        - name: id
+          items:
+          - name: "GET"
+            href: GetApplicationFeesFeeRefundsId.md
+          - name: "POST"
+            href: PostApplicationFeesFeeRefundsId.md
+    - name: id
+      items:
+      - name: "GET"
+        href: GetApplicationFeesId.md
+      - name: refund
+        items:
+        - name: "POST"
+          href: PostApplicationFeesIdRefund.md
+      - name: refunds
+        items:
+        - name: "GET"
+          href: GetApplicationFeesIdRefunds.md
+        - name: "POST"
+          href: PostApplicationFeesIdRefunds.md
+  - name: apps
+    items:
+    - name: secrets
+      items:
+      - name: "GET"
+        href: GetAppsSecrets.md
+      - name: "POST"
+        href: PostAppsSecrets.md
+      - name: delete
+        items:
+        - name: "POST"
+          href: PostAppsSecretsDelete.md
+      - name: find
+        items:
+        - name: "GET"
+          href: GetAppsSecretsFind.md
+  - name: balance
+    items:
+    - name: "GET"
+      href: GetBalance.md
+    - name: history
+      items:
+      - name: "GET"
+        href: GetBalanceHistory.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetBalanceHistoryId.md
+  - name: balance_transactions
+    items:
+    - name: "GET"
+      href: GetBalanceTransactions.md
+    - name: id
+      items:
+      - name: "GET"
+        href: GetBalanceTransactionsId.md
+  - name: billing_portal
+    items:
+    - name: configurations
+      items:
+      - name: "GET"
+        href: GetBillingPortalConfigurations.md
+      - name: "POST"
+        href: PostBillingPortalConfigurations.md
+      - name: configuration
+        items:
+        - name: "GET"
+          href: GetBillingPortalConfigurationsConfiguration.md
+        - name: "POST"
+          href: PostBillingPortalConfigurationsConfiguration.md
+    - name: sessions
+      items:
+      - name: "POST"
+        href: PostBillingPortalSessions.md
+  - name: charges
+    items:
+    - name: "GET"
+      href: GetCharges.md
+    - name: "POST"
+      href: PostCharges.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetChargesSearch.md
+    - name: charge
+      items:
+      - name: "GET"
+        href: GetChargesCharge.md
+      - name: "POST"
+        href: PostChargesCharge.md
+      - name: capture
+        items:
+        - name: "POST"
+          href: PostChargesChargeCapture.md
+      - name: dispute
+        items:
+        - name: "GET"
+          href: GetChargesChargeDispute.md
+        - name: "POST"
+          href: PostChargesChargeDispute.md
+        - name: close
+          items:
+          - name: "POST"
+            href: PostChargesChargeDisputeClose.md
+      - name: refund
+        items:
+        - name: "POST"
+          href: PostChargesChargeRefund.md
+      - name: refunds
+        items:
+        - name: "GET"
+          href: GetChargesChargeRefunds.md
+        - name: "POST"
+          href: PostChargesChargeRefunds.md
+        - name: refund
+          items:
+          - name: "GET"
+            href: GetChargesChargeRefundsRefund.md
+          - name: "POST"
+            href: PostChargesChargeRefundsRefund.md
+  - name: checkout
+    items:
+    - name: sessions
+      items:
+      - name: "GET"
+        href: GetCheckoutSessions.md
+      - name: "POST"
+        href: PostCheckoutSessions.md
+      - name: session
+        items:
+        - name: "GET"
+          href: GetCheckoutSessionsSession.md
+        - name: expire
+          items:
+          - name: "POST"
+            href: PostCheckoutSessionsSessionExpire.md
+        - name: line_items
+          items:
+          - name: "GET"
+            href: GetCheckoutSessionsSessionLineItems.md
+  - name: country_specs
+    items:
+    - name: "GET"
+      href: GetCountrySpecs.md
+    - name: country
+      items:
+      - name: "GET"
+        href: GetCountrySpecsCountry.md
+  - name: coupons
+    items:
+    - name: "GET"
+      href: GetCoupons.md
+    - name: "POST"
+      href: PostCoupons.md
+    - name: coupon
+      items:
+      - name: "DELETE"
+        href: DeleteCouponsCoupon.md
+      - name: "GET"
+        href: GetCouponsCoupon.md
+      - name: "POST"
+        href: PostCouponsCoupon.md
+  - name: credit_notes
+    items:
+    - name: "GET"
+      href: GetCreditNotes.md
+    - name: "POST"
+      href: PostCreditNotes.md
+    - name: preview
+      items:
+      - name: "GET"
+        href: GetCreditNotesPreview.md
+      - name: lines
+        items:
+        - name: "GET"
+          href: GetCreditNotesPreviewLines.md
+    - name: credit_note
+      items:
+      - name: lines
+        items:
+        - name: "GET"
+          href: GetCreditNotesCreditNoteLines.md
+    - name: id
+      items:
+      - name: "GET"
+        href: GetCreditNotesId.md
+      - name: "POST"
+        href: PostCreditNotesId.md
+      - name: void
+        items:
+        - name: "POST"
+          href: PostCreditNotesIdVoid.md
+  - name: customers
+    items:
+    - name: "GET"
+      href: GetCustomers.md
+    - name: "POST"
+      href: PostCustomers.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetCustomersSearch.md
+    - name: customer
+      items:
+      - name: "DELETE"
+        href: DeleteCustomersCustomer.md
+      - name: "GET"
+        href: GetCustomersCustomer.md
+      - name: "POST"
+        href: PostCustomersCustomer.md
+      - name: balance_transactions
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerBalanceTransactions.md
+        - name: "POST"
+          href: PostCustomersCustomerBalanceTransactions.md
+        - name: transaction
+          items:
+          - name: "GET"
+            href: GetCustomersCustomerBalanceTransactionsTransaction.md
+          - name: "POST"
+            href: PostCustomersCustomerBalanceTransactionsTransaction.md
+      - name: bank_accounts
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerBankAccounts.md
+        - name: "POST"
+          href: PostCustomersCustomerBankAccounts.md
+        - name: id
+          items:
+          - name: "DELETE"
+            href: DeleteCustomersCustomerBankAccountsId.md
+          - name: "GET"
+            href: GetCustomersCustomerBankAccountsId.md
+          - name: "POST"
+            href: PostCustomersCustomerBankAccountsId.md
+          - name: verify
+            items:
+            - name: "POST"
+              href: PostCustomersCustomerBankAccountsIdVerify.md
+      - name: cards
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerCards.md
+        - name: "POST"
+          href: PostCustomersCustomerCards.md
+        - name: id
+          items:
+          - name: "DELETE"
+            href: DeleteCustomersCustomerCardsId.md
+          - name: "GET"
+            href: GetCustomersCustomerCardsId.md
+          - name: "POST"
+            href: PostCustomersCustomerCardsId.md
+      - name: cash_balance
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerCashBalance.md
+        - name: "POST"
+          href: PostCustomersCustomerCashBalance.md
+      - name: cash_balance_transactions
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerCashBalanceTransactions.md
+        - name: transaction
+          items:
+          - name: "GET"
+            href: GetCustomersCustomerCashBalanceTransactionsTransaction.md
+      - name: discount
+        items:
+        - name: "DELETE"
+          href: DeleteCustomersCustomerDiscount.md
+        - name: "GET"
+          href: GetCustomersCustomerDiscount.md
+      - name: funding_instructions
+        items:
+        - name: "POST"
+          href: PostCustomersCustomerFundingInstructions.md
+      - name: payment_methods
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerPaymentMethods.md
+        - name: payment_method
+          items:
+          - name: "GET"
+            href: GetCustomersCustomerPaymentMethodsPaymentMethod.md
+      - name: sources
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerSources.md
+        - name: "POST"
+          href: PostCustomersCustomerSources.md
+        - name: id
+          items:
+          - name: "DELETE"
+            href: DeleteCustomersCustomerSourcesId.md
+          - name: "GET"
+            href: GetCustomersCustomerSourcesId.md
+          - name: "POST"
+            href: PostCustomersCustomerSourcesId.md
+          - name: verify
+            items:
+            - name: "POST"
+              href: PostCustomersCustomerSourcesIdVerify.md
+      - name: subscriptions
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerSubscriptions.md
+        - name: "POST"
+          href: PostCustomersCustomerSubscriptions.md
+        - name: subscription_exposed_id
+          items:
+          - name: "DELETE"
+            href: DeleteCustomersCustomerSubscriptionsSubscriptionExposedId.md
+          - name: "GET"
+            href: GetCustomersCustomerSubscriptionsSubscriptionExposedId.md
+          - name: "POST"
+            href: PostCustomersCustomerSubscriptionsSubscriptionExposedId.md
+          - name: discount
+            items:
+            - name: "DELETE"
+              href: DeleteCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount.md
+            - name: "GET"
+              href: GetCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount.md
+      - name: tax_ids
+        items:
+        - name: "GET"
+          href: GetCustomersCustomerTaxIds.md
+        - name: "POST"
+          href: PostCustomersCustomerTaxIds.md
+        - name: id
+          items:
+          - name: "DELETE"
+            href: DeleteCustomersCustomerTaxIdsId.md
+          - name: "GET"
+            href: GetCustomersCustomerTaxIdsId.md
+  - name: disputes
+    items:
+    - name: "GET"
+      href: GetDisputes.md
+    - name: dispute
+      items:
+      - name: "GET"
+        href: GetDisputesDispute.md
+      - name: "POST"
+        href: PostDisputesDispute.md
+      - name: close
+        items:
+        - name: "POST"
+          href: PostDisputesDisputeClose.md
+  - name: ephemeral_keys
+    items:
+    - name: "POST"
+      href: PostEphemeralKeys.md
+    - name: key
+      items:
+      - name: "DELETE"
+        href: DeleteEphemeralKeysKey.md
+  - name: events
+    items:
+    - name: "GET"
+      href: GetEvents.md
+    - name: id
+      items:
+      - name: "GET"
+        href: GetEventsId.md
+  - name: exchange_rates
+    items:
+    - name: "GET"
+      href: GetExchangeRates.md
+    - name: rate_id
+      items:
+      - name: "GET"
+        href: GetExchangeRatesRateId.md
+  - name: file_links
+    items:
+    - name: "GET"
+      href: GetFileLinks.md
+    - name: "POST"
+      href: PostFileLinks.md
+    - name: link
+      items:
+      - name: "GET"
+        href: GetFileLinksLink.md
+      - name: "POST"
+        href: PostFileLinksLink.md
+  - name: files
+    items:
+    - name: "GET"
+      href: GetFiles.md
+    - name: "POST"
+      href: PostFiles.md
+    - name: file
+      items:
+      - name: "GET"
+        href: GetFilesFile.md
+  - name: financial_connections
+    items:
+    - name: accounts
+      items:
+      - name: "GET"
+        href: GetFinancialConnectionsAccounts.md
+      - name: account
+        items:
+        - name: "GET"
+          href: GetFinancialConnectionsAccountsAccount.md
+        - name: disconnect
+          items:
+          - name: "POST"
+            href: PostFinancialConnectionsAccountsAccountDisconnect.md
+        - name: owners
+          items:
+          - name: "GET"
+            href: GetFinancialConnectionsAccountsAccountOwners.md
+        - name: refresh
+          items:
+          - name: "POST"
+            href: PostFinancialConnectionsAccountsAccountRefresh.md
+    - name: sessions
+      items:
+      - name: "POST"
+        href: PostFinancialConnectionsSessions.md
+      - name: session
+        items:
+        - name: "GET"
+          href: GetFinancialConnectionsSessionsSession.md
+  - name: identity
+    items:
+    - name: verification_reports
+      items:
+      - name: "GET"
+        href: GetIdentityVerificationReports.md
+      - name: report
+        items:
+        - name: "GET"
+          href: GetIdentityVerificationReportsReport.md
+    - name: verification_sessions
+      items:
+      - name: "GET"
+        href: GetIdentityVerificationSessions.md
+      - name: "POST"
+        href: PostIdentityVerificationSessions.md
+      - name: session
+        items:
+        - name: "GET"
+          href: GetIdentityVerificationSessionsSession.md
+        - name: "POST"
+          href: PostIdentityVerificationSessionsSession.md
+        - name: cancel
+          items:
+          - name: "POST"
+            href: PostIdentityVerificationSessionsSessionCancel.md
+        - name: redact
+          items:
+          - name: "POST"
+            href: PostIdentityVerificationSessionsSessionRedact.md
+  - name: invoiceitems
+    items:
+    - name: "GET"
+      href: GetInvoiceitems.md
+    - name: "POST"
+      href: PostInvoiceitems.md
+    - name: invoiceitem
+      items:
+      - name: "DELETE"
+        href: DeleteInvoiceitemsInvoiceitem.md
+      - name: "GET"
+        href: GetInvoiceitemsInvoiceitem.md
+      - name: "POST"
+        href: PostInvoiceitemsInvoiceitem.md
+  - name: invoices
+    items:
+    - name: "GET"
+      href: GetInvoices.md
+    - name: "POST"
+      href: PostInvoices.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetInvoicesSearch.md
+    - name: upcoming
+      items:
+      - name: "GET"
+        href: GetInvoicesUpcoming.md
+      - name: lines
+        items:
+        - name: "GET"
+          href: GetInvoicesUpcomingLines.md
+    - name: invoice
+      items:
+      - name: "DELETE"
+        href: DeleteInvoicesInvoice.md
+      - name: "GET"
+        href: GetInvoicesInvoice.md
+      - name: "POST"
+        href: PostInvoicesInvoice.md
+      - name: finalize
+        items:
+        - name: "POST"
+          href: PostInvoicesInvoiceFinalize.md
+      - name: lines
+        items:
+        - name: "GET"
+          href: GetInvoicesInvoiceLines.md
+      - name: mark_uncollectible
+        items:
+        - name: "POST"
+          href: PostInvoicesInvoiceMarkUncollectible.md
+      - name: pay
+        items:
+        - name: "POST"
+          href: PostInvoicesInvoicePay.md
+      - name: send
+        items:
+        - name: "POST"
+          href: PostInvoicesInvoiceSend.md
+      - name: void
+        items:
+        - name: "POST"
+          href: PostInvoicesInvoiceVoid.md
+  - name: issuing
+    items:
+    - name: authorizations
+      items:
+      - name: "GET"
+        href: GetIssuingAuthorizations.md
+      - name: authorization
+        items:
+        - name: "GET"
+          href: GetIssuingAuthorizationsAuthorization.md
+        - name: "POST"
+          href: PostIssuingAuthorizationsAuthorization.md
+        - name: approve
+          items:
+          - name: "POST"
+            href: PostIssuingAuthorizationsAuthorizationApprove.md
+        - name: decline
+          items:
+          - name: "POST"
+            href: PostIssuingAuthorizationsAuthorizationDecline.md
+    - name: cardholders
+      items:
+      - name: "GET"
+        href: GetIssuingCardholders.md
+      - name: "POST"
+        href: PostIssuingCardholders.md
+      - name: cardholder
+        items:
+        - name: "GET"
+          href: GetIssuingCardholdersCardholder.md
+        - name: "POST"
+          href: PostIssuingCardholdersCardholder.md
+    - name: cards
+      items:
+      - name: "GET"
+        href: GetIssuingCards.md
+      - name: "POST"
+        href: PostIssuingCards.md
+      - name: card
+        items:
+        - name: "GET"
+          href: GetIssuingCardsCard.md
+        - name: "POST"
+          href: PostIssuingCardsCard.md
+    - name: disputes
+      items:
+      - name: "GET"
+        href: GetIssuingDisputes.md
+      - name: "POST"
+        href: PostIssuingDisputes.md
+      - name: dispute
+        items:
+        - name: "GET"
+          href: GetIssuingDisputesDispute.md
+        - name: "POST"
+          href: PostIssuingDisputesDispute.md
+        - name: submit
+          items:
+          - name: "POST"
+            href: PostIssuingDisputesDisputeSubmit.md
+    - name: settlements
+      items:
+      - name: "GET"
+        href: GetIssuingSettlements.md
+      - name: settlement
+        items:
+        - name: "GET"
+          href: GetIssuingSettlementsSettlement.md
+        - name: "POST"
+          href: PostIssuingSettlementsSettlement.md
+    - name: transactions
+      items:
+      - name: "GET"
+        href: GetIssuingTransactions.md
+      - name: transaction
+        items:
+        - name: "GET"
+          href: GetIssuingTransactionsTransaction.md
+        - name: "POST"
+          href: PostIssuingTransactionsTransaction.md
+  - name: link_account_sessions
+    items:
+    - name: "POST"
+      href: PostLinkAccountSessions.md
+    - name: session
+      items:
+      - name: "GET"
+        href: GetLinkAccountSessionsSession.md
+  - name: linked_accounts
+    items:
+    - name: "GET"
+      href: GetLinkedAccounts.md
+    - name: account
+      items:
+      - name: "GET"
+        href: GetLinkedAccountsAccount.md
+      - name: disconnect
+        items:
+        - name: "POST"
+          href: PostLinkedAccountsAccountDisconnect.md
+      - name: owners
+        items:
+        - name: "GET"
+          href: GetLinkedAccountsAccountOwners.md
+      - name: refresh
+        items:
+        - name: "POST"
+          href: PostLinkedAccountsAccountRefresh.md
+  - name: mandates
+    items:
+    - name: mandate
+      items:
+      - name: "GET"
+        href: GetMandatesMandate.md
+  - name: payment_intents
+    items:
+    - name: "GET"
+      href: GetPaymentIntents.md
+    - name: "POST"
+      href: PostPaymentIntents.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetPaymentIntentsSearch.md
+    - name: intent
+      items:
+      - name: "GET"
+        href: GetPaymentIntentsIntent.md
+      - name: "POST"
+        href: PostPaymentIntentsIntent.md
+      - name: apply_customer_balance
+        items:
+        - name: "POST"
+          href: PostPaymentIntentsIntentApplyCustomerBalance.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostPaymentIntentsIntentCancel.md
+      - name: capture
+        items:
+        - name: "POST"
+          href: PostPaymentIntentsIntentCapture.md
+      - name: confirm
+        items:
+        - name: "POST"
+          href: PostPaymentIntentsIntentConfirm.md
+      - name: increment_authorization
+        items:
+        - name: "POST"
+          href: PostPaymentIntentsIntentIncrementAuthorization.md
+      - name: verify_microdeposits
+        items:
+        - name: "POST"
+          href: PostPaymentIntentsIntentVerifyMicrodeposits.md
+  - name: payment_links
+    items:
+    - name: "GET"
+      href: GetPaymentLinks.md
+    - name: "POST"
+      href: PostPaymentLinks.md
+    - name: payment_link
+      items:
+      - name: "GET"
+        href: GetPaymentLinksPaymentLink.md
+      - name: "POST"
+        href: PostPaymentLinksPaymentLink.md
+      - name: line_items
+        items:
+        - name: "GET"
+          href: GetPaymentLinksPaymentLinkLineItems.md
+  - name: payment_methods
+    items:
+    - name: "GET"
+      href: GetPaymentMethods.md
+    - name: "POST"
+      href: PostPaymentMethods.md
+    - name: payment_method
+      items:
+      - name: "GET"
+        href: GetPaymentMethodsPaymentMethod.md
+      - name: "POST"
+        href: PostPaymentMethodsPaymentMethod.md
+      - name: attach
+        items:
+        - name: "POST"
+          href: PostPaymentMethodsPaymentMethodAttach.md
+      - name: detach
+        items:
+        - name: "POST"
+          href: PostPaymentMethodsPaymentMethodDetach.md
+  - name: payouts
+    items:
+    - name: "GET"
+      href: GetPayouts.md
+    - name: "POST"
+      href: PostPayouts.md
+    - name: payout
+      items:
+      - name: "GET"
+        href: GetPayoutsPayout.md
+      - name: "POST"
+        href: PostPayoutsPayout.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostPayoutsPayoutCancel.md
+      - name: reverse
+        items:
+        - name: "POST"
+          href: PostPayoutsPayoutReverse.md
+  - name: plans
+    items:
+    - name: "GET"
+      href: GetPlans.md
+    - name: "POST"
+      href: PostPlans.md
+    - name: plan
+      items:
+      - name: "DELETE"
+        href: DeletePlansPlan.md
+      - name: "GET"
+        href: GetPlansPlan.md
+      - name: "POST"
+        href: PostPlansPlan.md
+  - name: prices
+    items:
+    - name: "GET"
+      href: GetPrices.md
+    - name: "POST"
+      href: PostPrices.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetPricesSearch.md
+    - name: price
+      items:
+      - name: "GET"
+        href: GetPricesPrice.md
+      - name: "POST"
+        href: PostPricesPrice.md
+  - name: products
+    items:
+    - name: "GET"
+      href: GetProducts.md
+    - name: "POST"
+      href: PostProducts.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetProductsSearch.md
+    - name: id
+      items:
+      - name: "DELETE"
+        href: DeleteProductsId.md
+      - name: "GET"
+        href: GetProductsId.md
+      - name: "POST"
+        href: PostProductsId.md
+  - name: promotion_codes
+    items:
+    - name: "GET"
+      href: GetPromotionCodes.md
+    - name: "POST"
+      href: PostPromotionCodes.md
+    - name: promotion_code
+      items:
+      - name: "GET"
+        href: GetPromotionCodesPromotionCode.md
+      - name: "POST"
+        href: PostPromotionCodesPromotionCode.md
+  - name: quotes
+    items:
+    - name: "GET"
+      href: GetQuotes.md
+    - name: "POST"
+      href: PostQuotes.md
+    - name: quote
+      items:
+      - name: "GET"
+        href: GetQuotesQuote.md
+      - name: "POST"
+        href: PostQuotesQuote.md
+      - name: accept
+        items:
+        - name: "POST"
+          href: PostQuotesQuoteAccept.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostQuotesQuoteCancel.md
+      - name: computed_upfront_line_items
+        items:
+        - name: "GET"
+          href: GetQuotesQuoteComputedUpfrontLineItems.md
+      - name: finalize
+        items:
+        - name: "POST"
+          href: PostQuotesQuoteFinalize.md
+      - name: line_items
+        items:
+        - name: "GET"
+          href: GetQuotesQuoteLineItems.md
+      - name: pdf
+        items:
+        - name: "GET"
+          href: GetQuotesQuotePdf.md
+  - name: radar
+    items:
+    - name: early_fraud_warnings
+      items:
+      - name: "GET"
+        href: GetRadarEarlyFraudWarnings.md
+      - name: early_fraud_warning
+        items:
+        - name: "GET"
+          href: GetRadarEarlyFraudWarningsEarlyFraudWarning.md
+    - name: value_list_items
+      items:
+      - name: "GET"
+        href: GetRadarValueListItems.md
+      - name: "POST"
+        href: PostRadarValueListItems.md
+      - name: item
+        items:
+        - name: "DELETE"
+          href: DeleteRadarValueListItemsItem.md
+        - name: "GET"
+          href: GetRadarValueListItemsItem.md
+    - name: value_lists
+      items:
+      - name: "GET"
+        href: GetRadarValueLists.md
+      - name: "POST"
+        href: PostRadarValueLists.md
+      - name: value_list
+        items:
+        - name: "DELETE"
+          href: DeleteRadarValueListsValueList.md
+        - name: "GET"
+          href: GetRadarValueListsValueList.md
+        - name: "POST"
+          href: PostRadarValueListsValueList.md
+  - name: refunds
+    items:
+    - name: "GET"
+      href: GetRefunds.md
+    - name: "POST"
+      href: PostRefunds.md
+    - name: refund
+      items:
+      - name: "GET"
+        href: GetRefundsRefund.md
+      - name: "POST"
+        href: PostRefundsRefund.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostRefundsRefundCancel.md
+  - name: reporting
+    items:
+    - name: report_runs
+      items:
+      - name: "GET"
+        href: GetReportingReportRuns.md
+      - name: "POST"
+        href: PostReportingReportRuns.md
+      - name: report_run
+        items:
+        - name: "GET"
+          href: GetReportingReportRunsReportRun.md
+    - name: report_types
+      items:
+      - name: "GET"
+        href: GetReportingReportTypes.md
+      - name: report_type
+        items:
+        - name: "GET"
+          href: GetReportingReportTypesReportType.md
+  - name: reviews
+    items:
+    - name: "GET"
+      href: GetReviews.md
+    - name: review
+      items:
+      - name: "GET"
+        href: GetReviewsReview.md
+      - name: approve
+        items:
+        - name: "POST"
+          href: PostReviewsReviewApprove.md
+  - name: setup_attempts
+    items:
+    - name: "GET"
+      href: GetSetupAttempts.md
+  - name: setup_intents
+    items:
+    - name: "GET"
+      href: GetSetupIntents.md
+    - name: "POST"
+      href: PostSetupIntents.md
+    - name: intent
+      items:
+      - name: "GET"
+        href: GetSetupIntentsIntent.md
+      - name: "POST"
+        href: PostSetupIntentsIntent.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostSetupIntentsIntentCancel.md
+      - name: confirm
+        items:
+        - name: "POST"
+          href: PostSetupIntentsIntentConfirm.md
+      - name: verify_microdeposits
+        items:
+        - name: "POST"
+          href: PostSetupIntentsIntentVerifyMicrodeposits.md
+  - name: shipping_rates
+    items:
+    - name: "GET"
+      href: GetShippingRates.md
+    - name: "POST"
+      href: PostShippingRates.md
+    - name: shipping_rate_token
+      items:
+      - name: "GET"
+        href: GetShippingRatesShippingRateToken.md
+      - name: "POST"
+        href: PostShippingRatesShippingRateToken.md
+  - name: sigma
+    items:
+    - name: scheduled_query_runs
+      items:
+      - name: "GET"
+        href: GetSigmaScheduledQueryRuns.md
+      - name: scheduled_query_run
+        items:
+        - name: "GET"
+          href: GetSigmaScheduledQueryRunsScheduledQueryRun.md
+  - name: sources
+    items:
+    - name: "POST"
+      href: PostSources.md
+    - name: source
+      items:
+      - name: "GET"
+        href: GetSourcesSource.md
+      - name: "POST"
+        href: PostSourcesSource.md
+      - name: mandate_notifications
+        items:
+        - name: mandate_notification
+          items:
+          - name: "GET"
+            href: GetSourcesSourceMandateNotificationsMandateNotification.md
+      - name: source_transactions
+        items:
+        - name: "GET"
+          href: GetSourcesSourceSourceTransactions.md
+        - name: source_transaction
+          items:
+          - name: "GET"
+            href: GetSourcesSourceSourceTransactionsSourceTransaction.md
+      - name: verify
+        items:
+        - name: "POST"
+          href: PostSourcesSourceVerify.md
+  - name: subscription_items
+    items:
+    - name: "GET"
+      href: GetSubscriptionItems.md
+    - name: "POST"
+      href: PostSubscriptionItems.md
+    - name: item
+      items:
+      - name: "DELETE"
+        href: DeleteSubscriptionItemsItem.md
+      - name: "GET"
+        href: GetSubscriptionItemsItem.md
+      - name: "POST"
+        href: PostSubscriptionItemsItem.md
+    - name: subscription_item
+      items:
+      - name: usage_record_summaries
+        items:
+        - name: "GET"
+          href: GetSubscriptionItemsSubscriptionItemUsageRecordSummaries.md
+      - name: usage_records
+        items:
+        - name: "POST"
+          href: PostSubscriptionItemsSubscriptionItemUsageRecords.md
+  - name: subscription_schedules
+    items:
+    - name: "GET"
+      href: GetSubscriptionSchedules.md
+    - name: "POST"
+      href: PostSubscriptionSchedules.md
+    - name: schedule
+      items:
+      - name: "GET"
+        href: GetSubscriptionSchedulesSchedule.md
+      - name: "POST"
+        href: PostSubscriptionSchedulesSchedule.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostSubscriptionSchedulesScheduleCancel.md
+      - name: release
+        items:
+        - name: "POST"
+          href: PostSubscriptionSchedulesScheduleRelease.md
+  - name: subscriptions
+    items:
+    - name: "GET"
+      href: GetSubscriptions.md
+    - name: "POST"
+      href: PostSubscriptions.md
+    - name: search
+      items:
+      - name: "GET"
+        href: GetSubscriptionsSearch.md
+    - name: subscription_exposed_id
+      items:
+      - name: "DELETE"
+        href: DeleteSubscriptionsSubscriptionExposedId.md
+      - name: "GET"
+        href: GetSubscriptionsSubscriptionExposedId.md
+      - name: "POST"
+        href: PostSubscriptionsSubscriptionExposedId.md
+      - name: discount
+        items:
+        - name: "DELETE"
+          href: DeleteSubscriptionsSubscriptionExposedIdDiscount.md
+    - name: subscription
+      items:
+      - name: resume
+        items:
+        - name: "POST"
+          href: PostSubscriptionsSubscriptionResume.md
+  - name: tax_codes
+    items:
+    - name: "GET"
+      href: GetTaxCodes.md
+    - name: id
+      items:
+      - name: "GET"
+        href: GetTaxCodesId.md
+  - name: tax_rates
+    items:
+    - name: "GET"
+      href: GetTaxRates.md
+    - name: "POST"
+      href: PostTaxRates.md
+    - name: tax_rate
+      items:
+      - name: "GET"
+        href: GetTaxRatesTaxRate.md
+      - name: "POST"
+        href: PostTaxRatesTaxRate.md
+  - name: terminal
+    items:
+    - name: configurations
+      items:
+      - name: "GET"
+        href: GetTerminalConfigurations.md
+      - name: "POST"
+        href: PostTerminalConfigurations.md
+      - name: configuration
+        items:
+        - name: "DELETE"
+          href: DeleteTerminalConfigurationsConfiguration.md
+        - name: "GET"
+          href: GetTerminalConfigurationsConfiguration.md
+        - name: "POST"
+          href: PostTerminalConfigurationsConfiguration.md
+    - name: connection_tokens
+      items:
+      - name: "POST"
+        href: PostTerminalConnectionTokens.md
+    - name: locations
+      items:
+      - name: "GET"
+        href: GetTerminalLocations.md
+      - name: "POST"
+        href: PostTerminalLocations.md
+      - name: location
+        items:
+        - name: "DELETE"
+          href: DeleteTerminalLocationsLocation.md
+        - name: "GET"
+          href: GetTerminalLocationsLocation.md
+        - name: "POST"
+          href: PostTerminalLocationsLocation.md
+    - name: readers
+      items:
+      - name: "GET"
+        href: GetTerminalReaders.md
+      - name: "POST"
+        href: PostTerminalReaders.md
+      - name: reader
+        items:
+        - name: "DELETE"
+          href: DeleteTerminalReadersReader.md
+        - name: "GET"
+          href: GetTerminalReadersReader.md
+        - name: "POST"
+          href: PostTerminalReadersReader.md
+        - name: cancel_action
+          items:
+          - name: "POST"
+            href: PostTerminalReadersReaderCancelAction.md
+        - name: process_payment_intent
+          items:
+          - name: "POST"
+            href: PostTerminalReadersReaderProcessPaymentIntent.md
+        - name: process_setup_intent
+          items:
+          - name: "POST"
+            href: PostTerminalReadersReaderProcessSetupIntent.md
+        - name: refund_payment
+          items:
+          - name: "POST"
+            href: PostTerminalReadersReaderRefundPayment.md
+        - name: set_reader_display
+          items:
+          - name: "POST"
+            href: PostTerminalReadersReaderSetReaderDisplay.md
+  - name: test_helpers
+    items:
+    - name: customers
+      items:
+      - name: customer
+        items:
+        - name: fund_cash_balance
+          items:
+          - name: "POST"
+            href: PostTestHelpersCustomersCustomerFundCashBalance.md
+    - name: issuing
+      items:
+      - name: cards
+        items:
+        - name: card
+          items:
+          - name: shipping
+            items:
+            - name: deliver
+              items:
+              - name: "POST"
+                href: PostTestHelpersIssuingCardsCardShippingDeliver.md
+            - name: fail
+              items:
+              - name: "POST"
+                href: PostTestHelpersIssuingCardsCardShippingFail.md
+            - name: return
+              items:
+              - name: "POST"
+                href: PostTestHelpersIssuingCardsCardShippingReturn.md
+            - name: ship
+              items:
+              - name: "POST"
+                href: PostTestHelpersIssuingCardsCardShippingShip.md
+    - name: refunds
+      items:
+      - name: refund
+        items:
+        - name: expire
+          items:
+          - name: "POST"
+            href: PostTestHelpersRefundsRefundExpire.md
+    - name: terminal
+      items:
+      - name: readers
+        items:
+        - name: reader
+          items:
+          - name: present_payment_method
+            items:
+            - name: "POST"
+              href: PostTestHelpersTerminalReadersReaderPresentPaymentMethod.md
+    - name: test_clocks
+      items:
+      - name: "GET"
+        href: GetTestHelpersTestClocks.md
+      - name: "POST"
+        href: PostTestHelpersTestClocks.md
+      - name: test_clock
+        items:
+        - name: "DELETE"
+          href: DeleteTestHelpersTestClocksTestClock.md
+        - name: "GET"
+          href: GetTestHelpersTestClocksTestClock.md
+        - name: advance
+          items:
+          - name: "POST"
+            href: PostTestHelpersTestClocksTestClockAdvance.md
+    - name: treasury
+      items:
+      - name: inbound_transfers
+        items:
+        - name: id
+          items:
+          - name: fail
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryInboundTransfersIdFail.md
+          - name: return
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryInboundTransfersIdReturn.md
+          - name: succeed
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryInboundTransfersIdSucceed.md
+      - name: outbound_payments
+        items:
+        - name: id
+          items:
+          - name: fail
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryOutboundPaymentsIdFail.md
+          - name: post
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryOutboundPaymentsIdPost.md
+          - name: return
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryOutboundPaymentsIdReturn.md
+      - name: outbound_transfers
+        items:
+        - name: outbound_transfer
+          items:
+          - name: fail
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryOutboundTransfersOutboundTransferFail.md
+          - name: post
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryOutboundTransfersOutboundTransferPost.md
+          - name: return
+            items:
+            - name: "POST"
+              href: PostTestHelpersTreasuryOutboundTransfersOutboundTransferReturn.md
+      - name: received_credits
+        items:
+        - name: "POST"
+          href: PostTestHelpersTreasuryReceivedCredits.md
+      - name: received_debits
+        items:
+        - name: "POST"
+          href: PostTestHelpersTreasuryReceivedDebits.md
+  - name: tokens
+    items:
+    - name: "POST"
+      href: PostTokens.md
+    - name: token
+      items:
+      - name: "GET"
+        href: GetTokensToken.md
+  - name: topups
+    items:
+    - name: "GET"
+      href: GetTopups.md
+    - name: "POST"
+      href: PostTopups.md
+    - name: topup
+      items:
+      - name: "GET"
+        href: GetTopupsTopup.md
+      - name: "POST"
+        href: PostTopupsTopup.md
+      - name: cancel
+        items:
+        - name: "POST"
+          href: PostTopupsTopupCancel.md
+  - name: transfers
+    items:
+    - name: "GET"
+      href: GetTransfers.md
+    - name: "POST"
+      href: PostTransfers.md
+    - name: id
+      items:
+      - name: reversals
+        items:
+        - name: "GET"
+          href: GetTransfersIdReversals.md
+        - name: "POST"
+          href: PostTransfersIdReversals.md
+    - name: transfer
+      items:
+      - name: "GET"
+        href: GetTransfersTransfer.md
+      - name: "POST"
+        href: PostTransfersTransfer.md
+      - name: reversals
+        items:
+        - name: id
+          items:
+          - name: "GET"
+            href: GetTransfersTransferReversalsId.md
+          - name: "POST"
+            href: PostTransfersTransferReversalsId.md
+  - name: treasury
+    items:
+    - name: credit_reversals
+      items:
+      - name: "GET"
+        href: GetTreasuryCreditReversals.md
+      - name: "POST"
+        href: PostTreasuryCreditReversals.md
+      - name: credit_reversal
+        items:
+        - name: "GET"
+          href: GetTreasuryCreditReversalsCreditReversal.md
+    - name: debit_reversals
+      items:
+      - name: "GET"
+        href: GetTreasuryDebitReversals.md
+      - name: "POST"
+        href: PostTreasuryDebitReversals.md
+      - name: debit_reversal
+        items:
+        - name: "GET"
+          href: GetTreasuryDebitReversalsDebitReversal.md
+    - name: financial_accounts
+      items:
+      - name: "GET"
+        href: GetTreasuryFinancialAccounts.md
+      - name: "POST"
+        href: PostTreasuryFinancialAccounts.md
+      - name: financial_account
+        items:
+        - name: "GET"
+          href: GetTreasuryFinancialAccountsFinancialAccount.md
+        - name: "POST"
+          href: PostTreasuryFinancialAccountsFinancialAccount.md
+        - name: features
+          items:
+          - name: "GET"
+            href: GetTreasuryFinancialAccountsFinancialAccountFeatures.md
+          - name: "POST"
+            href: PostTreasuryFinancialAccountsFinancialAccountFeatures.md
+    - name: inbound_transfers
+      items:
+      - name: "GET"
+        href: GetTreasuryInboundTransfers.md
+      - name: "POST"
+        href: PostTreasuryInboundTransfers.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetTreasuryInboundTransfersId.md
+      - name: inbound_transfer
+        items:
+        - name: cancel
+          items:
+          - name: "POST"
+            href: PostTreasuryInboundTransfersInboundTransferCancel.md
+    - name: outbound_payments
+      items:
+      - name: "GET"
+        href: GetTreasuryOutboundPayments.md
+      - name: "POST"
+        href: PostTreasuryOutboundPayments.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetTreasuryOutboundPaymentsId.md
+        - name: cancel
+          items:
+          - name: "POST"
+            href: PostTreasuryOutboundPaymentsIdCancel.md
+    - name: outbound_transfers
+      items:
+      - name: "GET"
+        href: GetTreasuryOutboundTransfers.md
+      - name: "POST"
+        href: PostTreasuryOutboundTransfers.md
+      - name: outbound_transfer
+        items:
+        - name: "GET"
+          href: GetTreasuryOutboundTransfersOutboundTransfer.md
+        - name: cancel
+          items:
+          - name: "POST"
+            href: PostTreasuryOutboundTransfersOutboundTransferCancel.md
+    - name: received_credits
+      items:
+      - name: "GET"
+        href: GetTreasuryReceivedCredits.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetTreasuryReceivedCreditsId.md
+    - name: received_debits
+      items:
+      - name: "GET"
+        href: GetTreasuryReceivedDebits.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetTreasuryReceivedDebitsId.md
+    - name: transaction_entries
+      items:
+      - name: "GET"
+        href: GetTreasuryTransactionEntries.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetTreasuryTransactionEntriesId.md
+    - name: transactions
+      items:
+      - name: "GET"
+        href: GetTreasuryTransactions.md
+      - name: id
+        items:
+        - name: "GET"
+          href: GetTreasuryTransactionsId.md
+  - name: webhook_endpoints
+    items:
+    - name: "GET"
+      href: GetWebhookEndpoints.md
+    - name: "POST"
+      href: PostWebhookEndpoints.md
+    - name: webhook_endpoint
+      items:
+      - name: "DELETE"
+        href: DeleteWebhookEndpointsWebhookEndpoint.md
+      - name: "GET"
+        href: GetWebhookEndpointsWebhookEndpoint.md
+      - name: "POST"
+        href: PostWebhookEndpointsWebhookEndpoint.md
