@@ -1,0 +1,109 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+paths:
+  /speakers:
+    get:
+      summary: List all speakers
+      operationId: listSpeakers
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Speaker'
+              examples:
+                example-1:
+                  value:
+                    - name: John Doe
+                      title: CEO
+                      company: Acme Inc.
+                      twitter: johndoe
+                      github: johndoe
+                      website: https://johndoe.com
+                      bio: John Doe is the CEO of Acme Inc.
+                      avatar: https://johndoe.com/avatar.png
+                    - name: Jane Doe
+                      title: CTO
+                      company: Acme Inc.
+                      twitter: janedoe
+                      github: janedoe
+                      website: https://janedoe.com
+                      bio: Jane Doe is the CTO of Acme Inc.
+                      avatar: https://janedoe.com/avatar.png
+                example-2:
+                  value:
+                    - name: John Doe
+                      title: CEO
+                      company: Acme Inc.
+                      twitter: johndoe
+                      github: johndoe
+                      website: https://johndoe.com
+                      bio: John Doe is the CEO of Acme Inc.
+                      avatar: https://johndoe.com/avatar.png
+                    - name: Jane Doe
+                      title: CTO
+                      company: Acme Inc.
+                      twitter: janedoe
+                      github: janedoe
+                      website: https://janedoe.com
+                      bio: Jane Doe is the CTO of Acme Inc.
+                      avatar: https://janedoe.com/avatar.png
+    post:
+      summary: Create a new speaker
+      operationId: createSpeaker
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Speaker'
+            examples:
+              example-1:
+                value:
+                  name: John Doe
+                  title: CEO
+                  company: Acme Inc.
+                  twitter: johndoe
+                  github: johndoe
+                  website: https://johndoe.com
+                  bio: John Doe is the CEO of Acme Inc.
+                  avatar: https://johndoe.com/avatar.png
+              example-2:
+                value:
+                  name: Jane Doe
+                  title: CTO
+                  company: Acme Inc.
+                  twitter: janedoe
+                  github: janedoe
+                  website: https://janedoe.com
+                  bio: Jane Doe is the CTO of Acme Inc.
+                  avatar: https://janedoe.com/avatar.png
+      responses:
+        '201':
+          description: Created
+components:
+  schemas:
+    Speaker:
+      type: object
+      properties:
+        name:
+          type: string
+        title:
+          type: string
+        company:
+          type: string
+        twitter:
+          type: string
+        github:
+          type: string
+        website:
+          type: string
+        bio:
+          type: string
+        avatar:
+          type: string

@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PostQuotes | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PostQuotes | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostQuotes.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">PostQuotes</h1><p class="requestDescription"><p>A quote models prices and services for a customer. Default options for <code>header</code>, <code>description</code>, <code>footer</code>, and <code>expires_at</code> can be set in the dashboard via the <a href="https://dashboard.stripe.com/settings/billing/quote">quote template</a>.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\v1\quotes</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">&quot;23423432&quot;</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span></p>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;application_fee_amount&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;integer&quot;
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;The amount of the application fee (if any) that will be requested to be applied to the payment and transferred to the application owner's Stripe account. There cannot be any line items with recurring prices when using this field.&quot;
+    },
+    &quot;application_fee_percent&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;A non-negative decimal between 0 and 100, with at most two decimal places. This represents the percentage of the subscription invoice subtotal that will be transferred to the application owner's Stripe account. There must be at least 1 line item with a recurring price to use this field.&quot;
+    },
+    &quot;automatic_tax&quot;: {
+      &quot;title&quot;: &quot;automatic_tax_param&quot;,
+      &quot;required&quot;: [
+        &quot;enabled&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;enabled&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Settings for automatic tax lookup for this quote and resulting invoices and subscriptions.&quot;
+    },
+    &quot;collection_method&quot;: {
+      &quot;enum&quot;: [
+        &quot;charge_automatically&quot;,
+        &quot;send_invoice&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Either <code>charge_automatically</code>, or <code>send_invoice</code>. When charging automatically, Stripe will attempt to pay invoices at the end of the subscription cycle or at invoice finalization using the default payment method attached to the subscription or customer. When sending an invoice, Stripe will email your customer an invoice with payment instructions and mark the subscription as <code>active</code>. Defaults to <code>charge_automatically</code>.&quot;
+    },
+    &quot;customer&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The customer for which this quote belongs to. A customer is required before finalizing the quote. Once specified, it cannot be changed.&quot;
+    },
+    &quot;default_tax_rates&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;The tax rates that will apply to any line item that does not have <code>tax_rates</code> set.&quot;
+    },
+    &quot;description&quot;: {
+      &quot;maxLength&quot;: 500,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;A description that will be displayed on the quote PDF. If no value is passed, the default description configured in your <a href="https://dashboard.stripe.com/settings/billing/quote">quote template settings</a> will be used.&quot;
+    },
+    &quot;discounts&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;title&quot;: &quot;discounts_data_param&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;coupon&quot;: {
+                &quot;maxLength&quot;: 5000,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;discount&quot;: {
+                &quot;maxLength&quot;: 5000,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;The discounts applied to the quote. You can only set up to one discount.&quot;
+    },
+    &quot;expand&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;maxLength&quot;: 5000,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Specifies which fields in the response should be expanded.&quot;
+    },
+    &quot;expires_at&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;description&quot;: &quot;A future timestamp on which the quote will be canceled if in <code>open</code> or <code>draft</code> status. Measured in seconds since the Unix epoch. If no value is passed, the default expiration date configured in your <a href="https://dashboard.stripe.com/settings/billing/quote">quote template settings</a> will be used.&quot;,
+      &quot;format&quot;: &quot;unix-time&quot;
+    },
+    &quot;footer&quot;: {
+      &quot;maxLength&quot;: 500,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;A footer that will be displayed on the quote PDF. If no value is passed, the default footer configured in your <a href="https://dashboard.stripe.com/settings/billing/quote">quote template settings</a> will be used.&quot;
+    },
+    &quot;from_quote&quot;: {
+      &quot;title&quot;: &quot;from_quote_params&quot;,
+      &quot;required&quot;: [
+        &quot;quote&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;is_revision&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;quote&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Clone an existing quote. The new quote will be created in <code>status=draft</code>. When using this parameter, you cannot specify any other parameters except for <code>expires_at</code>.&quot;
+    },
+    &quot;header&quot;: {
+      &quot;maxLength&quot;: 50,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;A header that will be displayed on the quote PDF. If no value is passed, the default header configured in your <a href="https://dashboard.stripe.com/settings/billing/quote">quote template settings</a> will be used.&quot;
+    },
+    &quot;invoice_settings&quot;: {
+      &quot;title&quot;: &quot;quote_param&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;days_until_due&quot;: {
+          &quot;type&quot;: &quot;integer&quot;
+        }
+      },
+      &quot;description&quot;: &quot;All invoices will be billed using the specified settings.&quot;
+    },
+    &quot;line_items&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;title&quot;: &quot;line_item_create_params&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;price&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;price_data&quot;: {
+            &quot;title&quot;: &quot;price_data&quot;,
+            &quot;required&quot;: [
+              &quot;currency&quot;,
+              &quot;product&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;currency&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;product&quot;: {
+                &quot;maxLength&quot;: 5000,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;recurring&quot;: {
+                &quot;title&quot;: &quot;recurring_adhoc&quot;,
+                &quot;required&quot;: [
+                  &quot;interval&quot;
+                ],
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;interval&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;day&quot;,
+                      &quot;month&quot;,
+                      &quot;week&quot;,
+                      &quot;year&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;interval_count&quot;: {
+                    &quot;type&quot;: &quot;integer&quot;
+                  }
+                }
+              },
+              &quot;tax_behavior&quot;: {
+                &quot;enum&quot;: [
+                  &quot;exclusive&quot;,
+                  &quot;inclusive&quot;,
+                  &quot;unspecified&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;unit_amount&quot;: {
+                &quot;type&quot;: &quot;integer&quot;
+              },
+              &quot;unit_amount_decimal&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;decimal&quot;
+              }
+            }
+          },
+          &quot;quantity&quot;: {
+            &quot;type&quot;: &quot;integer&quot;
+          },
+          &quot;tax_rates&quot;: {
+            &quot;anyOf&quot;: [
+              {
+                &quot;type&quot;: &quot;array&quot;,
+                &quot;items&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              },
+              {
+                &quot;enum&quot;: [
+                  &quot;&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          }
+        }
+      },
+      &quot;description&quot;: &quot;A list of line items the customer is being quoted for. Each line item includes information about the product, the quantity, and the resulting cost.&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;additionalProperties&quot;: {
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to <code>metadata</code>.&quot;
+    },
+    &quot;on_behalf_of&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;The account on behalf of which to charge.&quot;
+    },
+    &quot;subscription_data&quot;: {
+      &quot;title&quot;: &quot;subscription_data_create_params&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;description&quot;: {
+          &quot;maxLength&quot;: 500,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;effective_date&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;maxLength&quot;: 5000,
+              &quot;enum&quot;: [
+                &quot;current_period_end&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            {
+              &quot;type&quot;: &quot;integer&quot;,
+              &quot;format&quot;: &quot;unix-time&quot;
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        },
+        &quot;trial_period_days&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;type&quot;: &quot;integer&quot;
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        }
+      },
+      &quot;description&quot;: &quot;When creating a subscription or subscription schedule, the specified configuration data will be used. There must be at least one line item with a recurring price for a subscription or subscription schedule to be created. A subscription schedule is created if <code>subscription_data[effective_date]</code> is present and in the future, otherwise a subscription is created.&quot;
+    },
+    &quot;test_clock&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;ID of the test clock to attach to the quote.&quot;
+    },
+    &quot;transfer_data&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;title&quot;: &quot;transfer_data_specs&quot;,
+          &quot;required&quot;: [
+            &quot;destination&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;amount&quot;: {
+              &quot;type&quot;: &quot;integer&quot;
+            },
+            &quot;amount_percent&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;destination&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;The data with which to automatically create a Transfer for each of the invoices.&quot;
+    }
+  },
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostQuotes.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

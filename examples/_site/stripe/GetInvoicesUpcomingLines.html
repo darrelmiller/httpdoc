@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>GetInvoicesUpcomingLines | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="GetInvoicesUpcomingLines | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/GetInvoicesUpcomingLines.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">GetInvoicesUpcomingLines</h1><p class="requestDescription"><p>When retrieving an upcoming invoice, you’ll get a <strong>lines</strong> property containing the total count of line items and the first handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">GET</span> <span class="httpTarget">\v1\invoices\upcoming\lines{?automatic_tax*,coupon*,currency*,customer*,customer_details*,discounts*,ending_before*,expand*,invoice_items*,limit*,schedule*,starting_after*,subscription*,subscription_billing_cycle_anchor*,subscription_cancel_at*,subscription_cancel_at_period_end*,subscription_cancel_now*,subscription_default_tax_rates*,subscription_items*,subscription_proration_behavior*,subscription_proration_date*,subscription_resume_at*,subscription_start_date*,subscription_trial_end*,subscription_trial_from_plan*}</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">&quot;23423432&quot;</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span></p>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">automatic_tax</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">object</span> ]</dt><dd class="parameter"><span class="parameterDescription">Settings for automatic tax lookup for this invoice preview.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">coupon</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The code of the coupon to apply. If <code>subscription</code> or <code>subscription_items</code> is provided, the invoice returned will preview updating or creating a subscription with that coupon. Otherwise, it will preview applying that coupon to the customer for the next upcoming invoice from among the customer's subscriptions. The invoice can be previewed without a coupon by passing this value as an empty string.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">currency</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The currency to preview this invoice in. Defaults to that of <code>customer</code> if not specified.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">customer</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The identifier of the customer whose upcoming invoice you'd like to retrieve.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">customer_details</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">object</span> ]</dt><dd class="parameter"><span class="parameterDescription">Details about the customer you want to invoice or overrides for an existing customer.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">discounts</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType"></span> ]</dt><dd class="parameter"><span class="parameterDescription">The coupons to redeem into discounts for the invoice preview. If not specified, inherits the discount from the customer or subscription. This only works for coupons directly applied to the invoice. To apply a coupon to a subscription, you must use the <code>coupon</code> parameter instead. Pass an empty string to avoid inheriting any discounts. To preview the upcoming invoice for a subscription that hasn't been created, use <code>coupon</code> instead.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">ending_before</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">A cursor for use in pagination. <code>ending_before</code> is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with <code>obj_bar</code>, your subsequent call can include <code>ending_before=obj_bar</code> in order to fetch the previous page of the list.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">expand</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">array</span> ]</dt><dd class="parameter"><span class="parameterDescription">Specifies which fields in the response should be expanded.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">invoice_items</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">array</span> ]</dt><dd class="parameter"><span class="parameterDescription">List of invoice items to add or update in the upcoming invoice preview.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">limit</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">schedule</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The identifier of the unstarted schedule whose upcoming invoice you'd like to retrieve. Cannot be used with subscription or subscription fields.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">starting_after</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">A cursor for use in pagination. <code>starting_after</code> is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with <code>obj_foo</code>, your subsequent call can include <code>starting_after=obj_foo</code> in order to fetch the next page of the list.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The identifier of the subscription for which you'd like to retrieve the upcoming invoice. If not provided, but a <code>subscription_items</code> is provided, you will preview creating a subscription with those items. If neither <code>subscription</code> nor <code>subscription_items</code> is provided, you will retrieve the next upcoming invoice from among the customer's subscriptions.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_billing_cycle_anchor</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType"></span> ]</dt><dd class="parameter"><span class="parameterDescription">For new subscriptions, a future timestamp to anchor the subscription's <a href="https://stripe.com/docs/subscriptions/billing-cycle">billing cycle</a>. This is used to determine the date of the first full invoice, and, for plans with <code>month</code> or <code>year</code> intervals, the day of the month for subsequent invoices. For existing subscriptions, the value can only be set to <code>now</code> or <code>unchanged</code>.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_cancel_at</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType"></span> ]</dt><dd class="parameter"><span class="parameterDescription">Timestamp indicating when the subscription should be scheduled to cancel. Will prorate if within the current period and prorations have been enabled using <code>proration_behavior</code>.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_cancel_at_period_end</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">boolean</span> ]</dt><dd class="parameter"><span class="parameterDescription">Boolean indicating whether this subscription should cancel at the end of the current period.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_cancel_now</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">boolean</span> ]</dt><dd class="parameter"><span class="parameterDescription">This simulates the subscription being canceled or expired immediately.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_default_tax_rates</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType"></span> ]</dt><dd class="parameter"><span class="parameterDescription">If provided, the invoice returned will preview updating or creating a subscription with these default tax rates. The default tax rates will apply to any line item that does not have <code>tax_rates</code> set.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_items</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">array</span> ]</dt><dd class="parameter"><span class="parameterDescription">A list of up to 20 subscription items, each with an attached price.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_proration_behavior</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">Determines how to handle <a href="https://stripe.com/docs/subscriptions/billing-cycle#prorations">prorations</a> when the billing cycle changes (e.g., when switching plans, resetting <code>billing_cycle_anchor=now</code>, or starting a trial), or if an item's <code>quantity</code> changes. The default value is <code>create_prorations</code>.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_proration_date</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">If previewing an update to a subscription, and doing proration, <code>subscription_proration_date</code> forces the proration to be calculated as though the update was done at the specified time. The time given must be within the current subscription period and within the current phase of the schedule backing this subscription, if the schedule exists. If set, <code>subscription</code>, and one of <code>subscription_items</code>, or <code>subscription_trial_end</code> are required. Also, <code>subscription_proration_behavior</code> cannot be set to 'none'.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_resume_at</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">For paused subscriptions, setting <code>subscription_resume_at</code> to <code>now</code> will preview the invoice that will be generated if the subscription is resumed.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_start_date</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">Date a subscription is intended to start (can be future or past)</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_trial_end</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType"></span> ]</dt><dd class="parameter"><span class="parameterDescription">If provided, the invoice returned will preview updating or creating a subscription with that trial end. If set, one of <code>subscription_items</code> or <code>subscription</code> is required.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">subscription_trial_from_plan</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">boolean</span> ]</dt><dd class="parameter"><span class="parameterDescription">Indicates if a plan's <code>trial_period_days</code> should be applied to the subscription. Setting <code>subscription_trial_end</code> per subscription is preferred, and this defaults to <code>false</code>. Setting this flag to <code>true</code> together with <code>subscription_trial_end</code> is not allowed. See <a href="https://stripe.com/docs/billing/subscriptions/trials">Using trial periods on subscriptions</a> to learn more.</span> <span class="parameterRequired">optional</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/GetInvoicesUpcomingLines.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

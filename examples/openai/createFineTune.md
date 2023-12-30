@@ -8,7 +8,129 @@ Response includes details of the enqueued job including job status and the name 
 Response includes details of the enqueued job including job status and the name of the fine-tuned models once complete.
 
 [Learn more about fine-tuning](/docs/guides/legacy-fine-tuning)
-</h1><p  class="requestDescription"></p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">+{baseUrl}\fine-tunes</span> <span  class="httpVersion">HTTP/1.1</span>
-<span  class="headerLine">host</span>: <span  class="headerValue">example.org:443</span>
+</h1><p  class="requestDescription"></p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">\fine-tunes</span> <span  class="httpVersion">HTTP/1.1</span>
+<span  class="headerLine">host</span>: <span  class="headerValue">api.openai.com:443</span>
 <span  class="headerLine">accept</span>: <span  class="headerValue">application/json</span>
-</pre></section><dl  class="parameters"><h3>Parameters</h3></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema"></pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">200</span> <span  class="statusDescription">OK</span></li></ul></section></article></body></html>
+<span  class="headerLine">content-type</span>: <span  class="headerValue">application/json</span>
+</pre></section><dl  class="parameters"><h3>Parameters</h3></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema">{
+  "required": [
+    "training_file"
+  ],
+  "type": "object",
+  "properties": {
+    "training_file": {
+      "type": "string",
+      "description": "The ID of an uploaded file that contains training data.\n\nSee [upload file](/docs/api-reference/files/upload) for how to upload a file.\n\nYour dataset must be formatted as a JSONL file, where each training\nexample is a JSON object with the keys \"prompt\" and \"completion\".\nAdditionally, you must upload your file with the purpose `fine-tune`.\n\nSee the [fine-tuning guide](/docs/guides/legacy-fine-tuning/creating-training-data) for more details.\n",
+      "example": "file-abc123"
+    },
+    "batch_size": {
+      "type": "integer",
+      "description": "The batch size to use for training. The batch size is the number of\ntraining examples used to train a single forward and backward pass.\n\nBy default, the batch size will be dynamically configured to be\n~0.2% of the number of examples in the training set, capped at 256 -\nin general, we've found that larger batch sizes tend to work better\nfor larger datasets.\n",
+      "default": null,
+      "nullable": true
+    },
+    "classification_betas": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "If this is provided, we calculate F-beta scores at the specified\nbeta values. The F-beta score is a generalization of F-1 score.\nThis is only used for binary classification.\n\nWith a beta of 1 (i.e. the F-1 score), precision and recall are\ngiven the same weight. A larger beta score puts more weight on\nrecall and less on precision. A smaller beta score puts more weight\non precision and less on recall.\n",
+      "default": null,
+      "nullable": true,
+      "example": [
+        0.6,
+        1,
+        1.5,
+        2
+      ]
+    },
+    "classification_n_classes": {
+      "type": "integer",
+      "description": "The number of classes in a classification task.\n\nThis parameter is required for multiclass classification.\n",
+      "default": null,
+      "nullable": true
+    },
+    "classification_positive_class": {
+      "type": "string",
+      "description": "The positive class in binary classification.\n\nThis parameter is needed to generate precision, recall, and F1\nmetrics when doing binary classification.\n",
+      "default": null,
+      "nullable": true
+    },
+    "compute_classification_metrics": {
+      "type": "boolean",
+      "description": "If set, we calculate classification-specific metrics such as accuracy\nand F-1 score using the validation set at the end of every epoch.\nThese metrics can be viewed in the [results file](/docs/guides/legacy-fine-tuning/analyzing-your-fine-tuned-model).\n\nIn order to compute classification metrics, you must provide a\n`validation_file`. Additionally, you must\nspecify `classification_n_classes` for multiclass classification or\n`classification_positive_class` for binary classification.\n",
+      "default": false,
+      "nullable": true
+    },
+    "hyperparameters": {
+      "type": "object",
+      "properties": {
+        "n_epochs": {
+          "oneOf": [
+            {
+              "enum": [
+                "auto"
+              ],
+              "type": "string"
+            },
+            {
+              "maximum": 50,
+              "minimum": 1,
+              "type": "integer"
+            }
+          ],
+          "description": "The number of epochs to train the model for. An epoch refers to one\nfull cycle through the training dataset.\n",
+          "default": "auto"
+        }
+      },
+      "description": "The hyperparameters used for the fine-tuning job."
+    },
+    "learning_rate_multiplier": {
+      "type": "number",
+      "description": "The learning rate multiplier to use for training.\nThe fine-tuning learning rate is the original learning rate used for\npretraining multiplied by this value.\n\nBy default, the learning rate multiplier is the 0.05, 0.1, or 0.2\ndepending on final `batch_size` (larger learning rates tend to\nperform better with larger batch sizes). We recommend experimenting\nwith values in the range 0.02 to 0.2 to see what produces the best\nresults.\n",
+      "default": null,
+      "nullable": true
+    },
+    "model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
+            "ada",
+            "babbage",
+            "curie",
+            "davinci"
+          ],
+          "type": "string"
+        }
+      ],
+      "description": "The name of the base model to fine-tune. You can select one of \"ada\",\n\"babbage\", \"curie\", \"davinci\", or a fine-tuned model created after 2022-04-21 and before 2023-08-22.\nTo learn more about these models, see the\n[Models](/docs/models) documentation.\n",
+      "default": "curie",
+      "nullable": true,
+      "example": "curie",
+      "x-oaiTypeLabel": "string"
+    },
+    "prompt_loss_weight": {
+      "type": "number",
+      "description": "The weight to use for loss on the prompt tokens. This controls how\nmuch the model tries to learn to generate the prompt (as compared\nto the completion which always has a weight of 1.0), and can add\na stabilizing effect to training when completions are short.\n\nIf prompts are extremely long (relative to completions), it may make\nsense to reduce this weight so as to avoid over-prioritizing\nlearning the prompt.\n",
+      "default": 0.01,
+      "nullable": true
+    },
+    "suffix": {
+      "maxLength": 40,
+      "minLength": 1,
+      "type": "string",
+      "description": "A string of up to 40 characters that will be added to your fine-tuned model name.\n\nFor example, a `suffix` of \"custom-model-name\" would produce a model name like `ada:ft-your-org:custom-model-name-2022-02-15-04-21-04`.\n",
+      "default": null,
+      "nullable": true
+    },
+    "validation_file": {
+      "type": "string",
+      "description": "The ID of an uploaded file that contains validation data.\n\nIf you provide this file, the data is used to generate validation\nmetrics periodically during fine-tuning. These metrics can be viewed in\nthe [fine-tuning results file](/docs/guides/legacy-fine-tuning/analyzing-your-fine-tuned-model).\nYour train and validation data should be mutually exclusive.\n\nYour dataset must be formatted as a JSONL file, where each validation\nexample is a JSON object with the keys \"prompt\" and \"completion\".\nAdditionally, you must upload your file with the purpose `fine-tune`.\n\nSee the [fine-tuning guide](/docs/guides/legacy-fine-tuning/creating-training-data) for more details.\n",
+      "nullable": true,
+      "example": "file-abc123"
+    }
+  }
+}</pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">200</span> <span  class="statusDescription">OK</span></li></ul></section></article></body></html>

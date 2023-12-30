@@ -10,8 +10,8 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/src/httpdoc/bin/Debug/net8.0/httpdoc.dll",
-            "args": ["stripe.yaml", "stripe"],
-            "cwd": "${workspaceFolder}/src/httpdoc",
+            "args": ["apis-io-maintainers.yaml", "apis-io-maintainers"],
+            "cwd": "${workspaceFolder}/examples",
             "stopAtEntry": false,
             "console": "internalConsole"
         }

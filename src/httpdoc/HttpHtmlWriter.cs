@@ -1,8 +1,10 @@
 
+
+using System.Text.Encodings.Web;
+
 /// <summary>
 /// Class to manage writing HTTP concepts as HTML
 /// </summary>
-
 public class HttpHtmlWriter {
     // Create consts for each CSS class used in this file
     // These will be used in the CSS file to style the HTML
@@ -76,12 +78,12 @@ public class HttpHtmlWriter {
         wr.EndTag();
     }
 
-    public void WriteBlock(string tagName, string className,Action writeContent)
+    public void WriteBlock(string tagName, string className,Action<HtmlWriter> writeContent)
     {
         wr.StartTag(tagName, () =>{
             wr.WriteAttribute("class", className);
         });
-        writeContent();
+        writeContent(wr);
         wr.EndTag();
     }
 
@@ -120,8 +122,8 @@ public class HttpHtmlWriter {
 
     public void WriteRequestBody(string body) {
         if (!string.IsNullOrEmpty(body)) {
-            wr.WriteText("/n");
-            wr.WriteText(body);
+            wr.WriteText("\n");
+            wr.WriteText(HtmlEncoder.Default.Encode(body));
         }
     }
 
@@ -170,35 +172,35 @@ public class HttpHtmlWriter {
 
     internal void WriteParameter(string name, string inLocation, string description, bool required, string dataType)
     {
-        WriteBlock("dt", CSS.Parameter, () => {
-            WriteBlock("span", CSS.ParameterName, () => {
+        WriteBlock("dt", CSS.Parameter, (wr) => {
+            WriteBlock("span", CSS.ParameterName, (wr) => {
                 wr.WriteText(name);
             });
             
             wr.WriteText(" [ in: ");
             
-            WriteBlock("span", CSS.ParameterLocation, () => {
+            WriteBlock("span", CSS.ParameterLocation, (wr) => {
                 wr.WriteText(inLocation);
             });
 
             wr.WriteText(" type: ");
 
-            WriteBlock("span", CSS.ParameterType, () => {
+            WriteBlock("span", CSS.ParameterType, (wr) => {
                 wr.WriteText(dataType);
             });
 
             wr.WriteText(" ]");
         });
 
-        WriteBlock("dd", CSS.Parameter, () => {
+        WriteBlock("dd", CSS.Parameter, (wr) => {
 
-            WriteBlock("span", CSS.ParameterDescription, () => {
+            WriteBlock("span", CSS.ParameterDescription, (wr) => {
                 wr.WriteText(description);
             });
 
             wr.WriteText(" ");
 
-            WriteBlock("span", CSS.ParameterRequired, () => {
+            WriteBlock("span", CSS.ParameterRequired, (wr) => {
                 wr.WriteText(required ? "required" : "optional");
             });
 

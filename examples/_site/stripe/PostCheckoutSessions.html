@@ -1,0 +1,1930 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PostCheckoutSessions | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PostCheckoutSessions | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostCheckoutSessions.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">PostCheckoutSessions</h1><p class="requestDescription"><p>Creates a Session object.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\v1\checkout\sessions</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">&quot;23423432&quot;</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span></p>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;required&quot;: [
+    &quot;success_url&quot;
+  ],
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;after_expiration&quot;: {
+      &quot;title&quot;: &quot;after_expiration_params&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;recovery&quot;: {
+          &quot;title&quot;: &quot;recovery_params&quot;,
+          &quot;required&quot;: [
+            &quot;enabled&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;allow_promotion_codes&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            },
+            &quot;enabled&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Configure actions after a Checkout Session has expired.&quot;
+    },
+    &quot;allow_promotion_codes&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;,
+      &quot;description&quot;: &quot;Enables user redeemable promotion codes.&quot;
+    },
+    &quot;automatic_tax&quot;: {
+      &quot;title&quot;: &quot;automatic_tax_params&quot;,
+      &quot;required&quot;: [
+        &quot;enabled&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;enabled&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Settings for automatic tax lookup for this session and resulting payments, invoices, and subscriptions.&quot;
+    },
+    &quot;billing_address_collection&quot;: {
+      &quot;enum&quot;: [
+        &quot;auto&quot;,
+        &quot;required&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Specify whether Checkout should collect the customer's billing address.&quot;
+    },
+    &quot;cancel_url&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;If set, Checkout displays a back button and customers will be directed to this URL if they decide to cancel payment and return to your website.&quot;
+    },
+    &quot;client_reference_id&quot;: {
+      &quot;maxLength&quot;: 200,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;A unique string to reference the Checkout Session. This can be a\ncustomer ID, a cart ID, or similar, and can be used to reconcile the\nsession with your internal systems.&quot;
+    },
+    &quot;consent_collection&quot;: {
+      &quot;title&quot;: &quot;consent_collection_params&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;promotions&quot;: {
+          &quot;enum&quot;: [
+            &quot;auto&quot;,
+            &quot;none&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;terms_of_service&quot;: {
+          &quot;enum&quot;: [
+            &quot;none&quot;,
+            &quot;required&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Configure fields for the Checkout Session to gather active consent from customers.&quot;
+    },
+    &quot;currency&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO currency code</a>, in lowercase. Must be a <a href="https://stripe.com/docs/currencies">supported currency</a>.&quot;
+    },
+    &quot;custom_fields&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;title&quot;: &quot;custom_field_param&quot;,
+        &quot;required&quot;: [
+          &quot;key&quot;,
+          &quot;label&quot;,
+          &quot;type&quot;
+        ],
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;dropdown&quot;: {
+            &quot;title&quot;: &quot;custom_field_dropdown_param&quot;,
+            &quot;required&quot;: [
+              &quot;options&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;options&quot;: {
+                &quot;type&quot;: &quot;array&quot;,
+                &quot;items&quot;: {
+                  &quot;title&quot;: &quot;custom_field_option_param&quot;,
+                  &quot;required&quot;: [
+                    &quot;label&quot;,
+                    &quot;value&quot;
+                  ],
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;properties&quot;: {
+                    &quot;label&quot;: {
+                      &quot;maxLength&quot;: 100,
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;value&quot;: {
+                      &quot;maxLength&quot;: 100,
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  }
+                }
+              }
+            }
+          },
+          &quot;key&quot;: {
+            &quot;maxLength&quot;: 200,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;label&quot;: {
+            &quot;title&quot;: &quot;custom_field_label_param&quot;,
+            &quot;required&quot;: [
+              &quot;custom&quot;,
+              &quot;type&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;custom&quot;: {
+                &quot;maxLength&quot;: 50,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;type&quot;: {
+                &quot;enum&quot;: [
+                  &quot;custom&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          },
+          &quot;optional&quot;: {
+            &quot;type&quot;: &quot;boolean&quot;
+          },
+          &quot;type&quot;: {
+            &quot;enum&quot;: [
+              &quot;dropdown&quot;,
+              &quot;numeric&quot;,
+              &quot;text&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Collect additional information from your customer using custom fields. Up to 2 fields are supported.&quot;
+    },
+    &quot;custom_text&quot;: {
+      &quot;title&quot;: &quot;custom_text_param&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;shipping_address&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;title&quot;: &quot;custom_text_position_param&quot;,
+              &quot;required&quot;: [
+                &quot;message&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;message&quot;: {
+                  &quot;maxLength&quot;: 1000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        },
+        &quot;submit&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;title&quot;: &quot;custom_text_position_param&quot;,
+              &quot;required&quot;: [
+                &quot;message&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;message&quot;: {
+                  &quot;maxLength&quot;: 1000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        }
+      },
+      &quot;description&quot;: &quot;Display additional text for your customers using custom text.&quot;
+    },
+    &quot;customer&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;ID of an existing Customer, if one exists. In <code>payment</code> mode, the customer’s most recent card\npayment method will be used to prefill the email, name, card details, and billing address\non the Checkout page. In <code>subscription</code> mode, the customer’s <a href="https://stripe.com/docs/api/customers/update#update_customer-invoice_settings-default_payment_method">default payment method</a>\nwill be used if it’s a card, and otherwise the most recent card will be used. A valid billing address, billing name and billing email are required on the payment method for Checkout to prefill the customer's card details.\n\nIf the Customer already has a valid <a href="https://stripe.com/docs/api/customers/object#customer_object-email">email</a> set, the email will be prefilled and not editable in Checkout.\nIf the Customer does not have a valid <code>email</code>, Checkout will set the email entered during the session on the Customer.\n\nIf blank for Checkout Sessions in <code>payment</code> or <code>subscription</code> mode, Checkout will create a new Customer object based on information provided during the payment flow.\n\nYou can set <a href="https://stripe.com/docs/api/checkout/sessions/create#create_checkout_session-payment_intent_data-setup_future_usage"><code>payment_intent_data.setup_future_usage</code></a> to have Checkout automatically attach the payment method to the Customer you pass in for future reuse.&quot;
+    },
+    &quot;customer_creation&quot;: {
+      &quot;enum&quot;: [
+        &quot;always&quot;,
+        &quot;if_required&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Configure whether a Checkout Session creates a <a href="https://stripe.com/docs/api/customers">Customer</a> during Session confirmation.\n\nWhen a Customer is not created, you can still retrieve email, address, and other customer data entered in Checkout\nwith <a href="https://stripe.com/docs/api/checkout/sessions/object#checkout_session_object-customer_details">customer_details</a>.\n\nSessions that don't create Customers instead are grouped by <a href="https://stripe.com/docs/payments/checkout/guest-customers">guest customers</a>\nin the Dashboard. Promotion codes limited to first time customers will return invalid for these Sessions.\n\nCan only be set in <code>payment</code> and <code>setup</code> mode.&quot;
+    },
+    &quot;customer_email&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;If provided, this value will be used when the Customer object is created.\nIf not provided, customers will be asked to enter their email address.\nUse this parameter to prefill customer data if you already have an email\non file. To access information about the customer once a session is\ncomplete, use the <code>customer</code> field.&quot;
+    },
+    &quot;customer_update&quot;: {
+      &quot;title&quot;: &quot;customer_update_params&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;address&quot;: {
+          &quot;enum&quot;: [
+            &quot;auto&quot;,
+            &quot;never&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;x-stripeBypassValidation&quot;: true
+        },
+        &quot;name&quot;: {
+          &quot;enum&quot;: [
+            &quot;auto&quot;,
+            &quot;never&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;x-stripeBypassValidation&quot;: true
+        },
+        &quot;shipping&quot;: {
+          &quot;enum&quot;: [
+            &quot;auto&quot;,
+            &quot;never&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;x-stripeBypassValidation&quot;: true
+        }
+      },
+      &quot;description&quot;: &quot;Controls what fields on Customer can be updated by the Checkout Session. Can only be provided when <code>customer</code> is provided.&quot;
+    },
+    &quot;discounts&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;title&quot;: &quot;discount_params&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;coupon&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;promotion_code&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        }
+      },
+      &quot;description&quot;: &quot;The coupon or promotion code to apply to this Session. Currently, only up to one may be specified.&quot;
+    },
+    &quot;expand&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;maxLength&quot;: 5000,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Specifies which fields in the response should be expanded.&quot;
+    },
+    &quot;expires_at&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;description&quot;: &quot;The Epoch time in seconds at which the Checkout Session will expire. It can be anywhere from 30 minutes to 24 hours after Checkout Session creation. By default, this value is 24 hours from creation.&quot;,
+      &quot;format&quot;: &quot;unix-time&quot;
+    },
+    &quot;invoice_creation&quot;: {
+      &quot;title&quot;: &quot;invoice_creation_params&quot;,
+      &quot;required&quot;: [
+        &quot;enabled&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;enabled&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;invoice_data&quot;: {
+          &quot;title&quot;: &quot;invoice_data_params&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;account_tax_ids&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;maxLength&quot;: 5000,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            },
+            &quot;custom_fields&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;title&quot;: &quot;custom_field_params&quot;,
+                    &quot;required&quot;: [
+                      &quot;name&quot;,
+                      &quot;value&quot;
+                    ],
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;properties&quot;: {
+                      &quot;name&quot;: {
+                        &quot;maxLength&quot;: 30,
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;value&quot;: {
+                        &quot;maxLength&quot;: 30,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    }
+                  }
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            },
+            &quot;description&quot;: {
+              &quot;maxLength&quot;: 1500,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;footer&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;metadata&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;additionalProperties&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+              }
+            },
+            &quot;rendering_options&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;title&quot;: &quot;rendering_options_param&quot;,
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;properties&quot;: {
+                    &quot;amount_tax_display&quot;: {
+                      &quot;enum&quot;: [
+                        &quot;&quot;,
+                        &quot;exclude_tax&quot;,
+                        &quot;include_inclusive_tax&quot;
+                      ],
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  }
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Generate a post-purchase Invoice for one-time payments.&quot;
+    },
+    &quot;line_items&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;title&quot;: &quot;line_item_params&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;adjustable_quantity&quot;: {
+            &quot;title&quot;: &quot;adjustable_quantity_params&quot;,
+            &quot;required&quot;: [
+              &quot;enabled&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;enabled&quot;: {
+                &quot;type&quot;: &quot;boolean&quot;
+              },
+              &quot;maximum&quot;: {
+                &quot;type&quot;: &quot;integer&quot;
+              },
+              &quot;minimum&quot;: {
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            }
+          },
+          &quot;dynamic_tax_rates&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          },
+          &quot;price&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;price_data&quot;: {
+            &quot;title&quot;: &quot;price_data_with_product_data&quot;,
+            &quot;required&quot;: [
+              &quot;currency&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;currency&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;product&quot;: {
+                &quot;maxLength&quot;: 5000,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;product_data&quot;: {
+                &quot;title&quot;: &quot;product_data&quot;,
+                &quot;required&quot;: [
+                  &quot;name&quot;
+                ],
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;description&quot;: {
+                    &quot;maxLength&quot;: 40000,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;images&quot;: {
+                    &quot;type&quot;: &quot;array&quot;,
+                    &quot;items&quot;: {
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  },
+                  &quot;metadata&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;additionalProperties&quot;: {
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  },
+                  &quot;name&quot;: {
+                    &quot;maxLength&quot;: 5000,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;tax_code&quot;: {
+                    &quot;maxLength&quot;: 5000,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                }
+              },
+              &quot;recurring&quot;: {
+                &quot;title&quot;: &quot;recurring_adhoc&quot;,
+                &quot;required&quot;: [
+                  &quot;interval&quot;
+                ],
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;interval&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;day&quot;,
+                      &quot;month&quot;,
+                      &quot;week&quot;,
+                      &quot;year&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;interval_count&quot;: {
+                    &quot;type&quot;: &quot;integer&quot;
+                  }
+                }
+              },
+              &quot;tax_behavior&quot;: {
+                &quot;enum&quot;: [
+                  &quot;exclusive&quot;,
+                  &quot;inclusive&quot;,
+                  &quot;unspecified&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;unit_amount&quot;: {
+                &quot;type&quot;: &quot;integer&quot;
+              },
+              &quot;unit_amount_decimal&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;decimal&quot;
+              }
+            }
+          },
+          &quot;quantity&quot;: {
+            &quot;type&quot;: &quot;integer&quot;
+          },
+          &quot;tax_rates&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;A list of items the customer is purchasing. Use this parameter to pass one-time or recurring <a href="https://stripe.com/docs/api/prices">Prices</a>.\n\nFor <code>payment</code> mode, there is a maximum of 100 line items, however it is recommended to consolidate line items if there are more than a few dozen.\n\nFor <code>subscription</code> mode, there is a maximum of 20 line items with recurring Prices and 20 line items with one-time Prices. Line items with one-time Prices will be on the initial invoice only.&quot;
+    },
+    &quot;locale&quot;: {
+      &quot;enum&quot;: [
+        &quot;auto&quot;,
+        &quot;bg&quot;,
+        &quot;cs&quot;,
+        &quot;da&quot;,
+        &quot;de&quot;,
+        &quot;el&quot;,
+        &quot;en&quot;,
+        &quot;en-GB&quot;,
+        &quot;es&quot;,
+        &quot;es-419&quot;,
+        &quot;et&quot;,
+        &quot;fi&quot;,
+        &quot;fil&quot;,
+        &quot;fr&quot;,
+        &quot;fr-CA&quot;,
+        &quot;hr&quot;,
+        &quot;hu&quot;,
+        &quot;id&quot;,
+        &quot;it&quot;,
+        &quot;ja&quot;,
+        &quot;ko&quot;,
+        &quot;lt&quot;,
+        &quot;lv&quot;,
+        &quot;ms&quot;,
+        &quot;mt&quot;,
+        &quot;nb&quot;,
+        &quot;nl&quot;,
+        &quot;pl&quot;,
+        &quot;pt&quot;,
+        &quot;pt-BR&quot;,
+        &quot;ro&quot;,
+        &quot;ru&quot;,
+        &quot;sk&quot;,
+        &quot;sl&quot;,
+        &quot;sv&quot;,
+        &quot;th&quot;,
+        &quot;tr&quot;,
+        &quot;vi&quot;,
+        &quot;zh&quot;,
+        &quot;zh-HK&quot;,
+        &quot;zh-TW&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The IETF language tag of the locale Checkout is displayed in. If blank or <code>auto</code>, the browser's locale is used.&quot;,
+      &quot;x-stripeBypassValidation&quot;: true
+    },
+    &quot;metadata&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;additionalProperties&quot;: {
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to <code>metadata</code>.&quot;
+    },
+    &quot;mode&quot;: {
+      &quot;enum&quot;: [
+        &quot;payment&quot;,
+        &quot;setup&quot;,
+        &quot;subscription&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The mode of the Checkout Session. Pass <code>subscription</code> if the Checkout Session includes at least one recurring item.&quot;
+    },
+    &quot;payment_intent_data&quot;: {
+      &quot;title&quot;: &quot;payment_intent_data_params&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;application_fee_amount&quot;: {
+          &quot;type&quot;: &quot;integer&quot;
+        },
+        &quot;capture_method&quot;: {
+          &quot;enum&quot;: [
+            &quot;automatic&quot;,
+            &quot;manual&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;x-stripeBypassValidation&quot;: true
+        },
+        &quot;description&quot;: {
+          &quot;maxLength&quot;: 1000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;metadata&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;on_behalf_of&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;receipt_email&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;setup_future_usage&quot;: {
+          &quot;enum&quot;: [
+            &quot;off_session&quot;,
+            &quot;on_session&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;shipping&quot;: {
+          &quot;title&quot;: &quot;shipping&quot;,
+          &quot;required&quot;: [
+            &quot;address&quot;,
+            &quot;name&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;address&quot;: {
+              &quot;title&quot;: &quot;address&quot;,
+              &quot;required&quot;: [
+                &quot;line1&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;city&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;country&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;line1&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;line2&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;postal_code&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;state&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            &quot;carrier&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;name&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;phone&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;tracking_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;statement_descriptor&quot;: {
+          &quot;maxLength&quot;: 22,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;statement_descriptor_suffix&quot;: {
+          &quot;maxLength&quot;: 22,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;transfer_data&quot;: {
+          &quot;title&quot;: &quot;transfer_data_params&quot;,
+          &quot;required&quot;: [
+            &quot;destination&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;amount&quot;: {
+              &quot;type&quot;: &quot;integer&quot;
+            },
+            &quot;destination&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;transfer_group&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;description&quot;: &quot;A subset of parameters to be passed to PaymentIntent creation for Checkout Sessions in <code>payment</code> mode.&quot;
+    },
+    &quot;payment_method_collection&quot;: {
+      &quot;enum&quot;: [
+        &quot;always&quot;,
+        &quot;if_required&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Specify whether Checkout should collect a payment method. When set to <code>if_required</code>, Checkout will not collect a payment method when the total due for the session is 0.\nThis may occur if the Checkout Session includes a free trial or a discount.\n\nCan only be set in <code>subscription</code> mode.\n\nIf you'd like information on how to collect a payment method outside of Checkout, read the guide on configuring <a href="https://stripe.com/docs/payments/checkout/free-trials">subscriptions with a free trial</a>.&quot;
+    },
+    &quot;payment_method_options&quot;: {
+      &quot;title&quot;: &quot;payment_method_options_param&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;acss_debit&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;currency&quot;: {
+              &quot;enum&quot;: [
+                &quot;cad&quot;,
+                &quot;usd&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;mandate_options&quot;: {
+              &quot;title&quot;: &quot;mandate_options_param&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;custom_mandate_url&quot;: {
+                  &quot;anyOf&quot;: [
+                    {
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                      &quot;enum&quot;: [
+                        &quot;&quot;
+                      ],
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  ]
+                },
+                &quot;default_for&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;invoice&quot;,
+                      &quot;subscription&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                },
+                &quot;interval_description&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;payment_schedule&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;combined&quot;,
+                    &quot;interval&quot;,
+                    &quot;sporadic&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;transaction_type&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;business&quot;,
+                    &quot;personal&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;,
+                &quot;off_session&quot;,
+                &quot;on_session&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;verification_method&quot;: {
+              &quot;enum&quot;: [
+                &quot;automatic&quot;,
+                &quot;instant&quot;,
+                &quot;microdeposits&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        },
+        &quot;affirm&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;afterpay_clearpay&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;alipay&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;au_becs_debit&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;bacs_debit&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;,
+                &quot;off_session&quot;,
+                &quot;on_session&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;bancontact&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;boleto&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;expires_after_days&quot;: {
+              &quot;type&quot;: &quot;integer&quot;
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;,
+                &quot;off_session&quot;,
+                &quot;on_session&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;card&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;installments&quot;: {
+              &quot;title&quot;: &quot;installments_param&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;enabled&quot;: {
+                  &quot;type&quot;: &quot;boolean&quot;
+                }
+              }
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;off_session&quot;,
+                &quot;on_session&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;statement_descriptor_suffix_kana&quot;: {
+              &quot;maxLength&quot;: 22,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;statement_descriptor_suffix_kanji&quot;: {
+              &quot;maxLength&quot;: 17,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;customer_balance&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;bank_transfer&quot;: {
+              &quot;title&quot;: &quot;bank_transfer_param&quot;,
+              &quot;required&quot;: [
+                &quot;type&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;eu_bank_transfer&quot;: {
+                  &quot;title&quot;: &quot;eu_bank_transfer_params&quot;,
+                  &quot;required&quot;: [
+                    &quot;country&quot;
+                  ],
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;properties&quot;: {
+                    &quot;country&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  }
+                },
+                &quot;requested_address_types&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;iban&quot;,
+                      &quot;sepa&quot;,
+                      &quot;sort_code&quot;,
+                      &quot;spei&quot;,
+                      &quot;zengin&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;x-stripeBypassValidation&quot;: true
+                  }
+                },
+                &quot;type&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;eu_bank_transfer&quot;,
+                    &quot;gb_bank_transfer&quot;,
+                    &quot;jp_bank_transfer&quot;,
+                    &quot;mx_bank_transfer&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;x-stripeBypassValidation&quot;: true
+                }
+              }
+            },
+            &quot;funding_type&quot;: {
+              &quot;enum&quot;: [
+                &quot;bank_transfer&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;eps&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;fpx&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;giropay&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;grabpay&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;ideal&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;klarna&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;konbini&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;expires_after_days&quot;: {
+              &quot;type&quot;: &quot;integer&quot;
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;oxxo&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;expires_after_days&quot;: {
+              &quot;type&quot;: &quot;integer&quot;
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;p24&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;tos_shown_and_accepted&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;paynow&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;pix&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;expires_after_seconds&quot;: {
+              &quot;type&quot;: &quot;integer&quot;
+            }
+          }
+        },
+        &quot;sepa_debit&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;,
+                &quot;off_session&quot;,
+                &quot;on_session&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;sofort&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;us_bank_account&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;financial_connections&quot;: {
+              &quot;title&quot;: &quot;linked_account_options_param&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;permissions&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;maxLength&quot;: 5000,
+                    &quot;enum&quot;: [
+                      &quot;balances&quot;,
+                      &quot;ownership&quot;,
+                      &quot;payment_method&quot;,
+                      &quot;transactions&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;x-stripeBypassValidation&quot;: true
+                  }
+                }
+              }
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;,
+                &quot;off_session&quot;,
+                &quot;on_session&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;verification_method&quot;: {
+              &quot;enum&quot;: [
+                &quot;automatic&quot;,
+                &quot;instant&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        },
+        &quot;wechat_pay&quot;: {
+          &quot;title&quot;: &quot;payment_method_options_param&quot;,
+          &quot;required&quot;: [
+            &quot;client&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;app_id&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;client&quot;: {
+              &quot;enum&quot;: [
+                &quot;android&quot;,
+                &quot;ios&quot;,
+                &quot;web&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            },
+            &quot;setup_future_usage&quot;: {
+              &quot;enum&quot;: [
+                &quot;none&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Payment-method-specific configuration.&quot;
+    },
+    &quot;payment_method_types&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;enum&quot;: [
+          &quot;acss_debit&quot;,
+          &quot;affirm&quot;,
+          &quot;afterpay_clearpay&quot;,
+          &quot;alipay&quot;,
+          &quot;au_becs_debit&quot;,
+          &quot;bacs_debit&quot;,
+          &quot;bancontact&quot;,
+          &quot;blik&quot;,
+          &quot;boleto&quot;,
+          &quot;card&quot;,
+          &quot;customer_balance&quot;,
+          &quot;eps&quot;,
+          &quot;fpx&quot;,
+          &quot;giropay&quot;,
+          &quot;grabpay&quot;,
+          &quot;ideal&quot;,
+          &quot;klarna&quot;,
+          &quot;konbini&quot;,
+          &quot;oxxo&quot;,
+          &quot;p24&quot;,
+          &quot;paynow&quot;,
+          &quot;pix&quot;,
+          &quot;promptpay&quot;,
+          &quot;sepa_debit&quot;,
+          &quot;sofort&quot;,
+          &quot;us_bank_account&quot;,
+          &quot;wechat_pay&quot;
+        ],
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;x-stripeBypassValidation&quot;: true
+      },
+      &quot;description&quot;: &quot;A list of the types of payment methods (e.g., <code>card</code>) this Checkout Session can accept.\n\nIn <code>payment</code> and <code>subscription</code> mode, you can omit this attribute to manage your payment methods from the <a href="https://dashboard.stripe.com/settings/payment_methods">Stripe Dashboard</a>.\nIt is required in <code>setup</code> mode.\n\nRead more about the supported payment methods and their requirements in our <a href="/docs/payments/checkout/payment-methods">payment\nmethod details guide</a>.\n\nIf multiple payment methods are passed, Checkout will dynamically reorder them to\nprioritize the most relevant payment methods based on the customer's location and\nother characteristics.&quot;
+    },
+    &quot;phone_number_collection&quot;: {
+      &quot;title&quot;: &quot;phone_number_collection_params&quot;,
+      &quot;required&quot;: [
+        &quot;enabled&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;enabled&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Controls phone number collection settings for the session.\n\nWe recommend that you review your privacy policy and check with your legal contacts\nbefore using this feature. Learn more about <a href="https://stripe.com/docs/payments/checkout/phone-numbers">collecting phone numbers with Checkout</a>.&quot;
+    },
+    &quot;setup_intent_data&quot;: {
+      &quot;title&quot;: &quot;setup_intent_data_param&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;description&quot;: {
+          &quot;maxLength&quot;: 1000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;metadata&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;on_behalf_of&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;description&quot;: &quot;A subset of parameters to be passed to SetupIntent creation for Checkout Sessions in <code>setup</code> mode.&quot;
+    },
+    &quot;shipping_address_collection&quot;: {
+      &quot;title&quot;: &quot;shipping_address_collection_params&quot;,
+      &quot;required&quot;: [
+        &quot;allowed_countries&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;allowed_countries&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;enum&quot;: [
+              &quot;AC&quot;,
+              &quot;AD&quot;,
+              &quot;AE&quot;,
+              &quot;AF&quot;,
+              &quot;AG&quot;,
+              &quot;AI&quot;,
+              &quot;AL&quot;,
+              &quot;AM&quot;,
+              &quot;AO&quot;,
+              &quot;AQ&quot;,
+              &quot;AR&quot;,
+              &quot;AT&quot;,
+              &quot;AU&quot;,
+              &quot;AW&quot;,
+              &quot;AX&quot;,
+              &quot;AZ&quot;,
+              &quot;BA&quot;,
+              &quot;BB&quot;,
+              &quot;BD&quot;,
+              &quot;BE&quot;,
+              &quot;BF&quot;,
+              &quot;BG&quot;,
+              &quot;BH&quot;,
+              &quot;BI&quot;,
+              &quot;BJ&quot;,
+              &quot;BL&quot;,
+              &quot;BM&quot;,
+              &quot;BN&quot;,
+              &quot;BO&quot;,
+              &quot;BQ&quot;,
+              &quot;BR&quot;,
+              &quot;BS&quot;,
+              &quot;BT&quot;,
+              &quot;BV&quot;,
+              &quot;BW&quot;,
+              &quot;BY&quot;,
+              &quot;BZ&quot;,
+              &quot;CA&quot;,
+              &quot;CD&quot;,
+              &quot;CF&quot;,
+              &quot;CG&quot;,
+              &quot;CH&quot;,
+              &quot;CI&quot;,
+              &quot;CK&quot;,
+              &quot;CL&quot;,
+              &quot;CM&quot;,
+              &quot;CN&quot;,
+              &quot;CO&quot;,
+              &quot;CR&quot;,
+              &quot;CV&quot;,
+              &quot;CW&quot;,
+              &quot;CY&quot;,
+              &quot;CZ&quot;,
+              &quot;DE&quot;,
+              &quot;DJ&quot;,
+              &quot;DK&quot;,
+              &quot;DM&quot;,
+              &quot;DO&quot;,
+              &quot;DZ&quot;,
+              &quot;EC&quot;,
+              &quot;EE&quot;,
+              &quot;EG&quot;,
+              &quot;EH&quot;,
+              &quot;ER&quot;,
+              &quot;ES&quot;,
+              &quot;ET&quot;,
+              &quot;FI&quot;,
+              &quot;FJ&quot;,
+              &quot;FK&quot;,
+              &quot;FO&quot;,
+              &quot;FR&quot;,
+              &quot;GA&quot;,
+              &quot;GB&quot;,
+              &quot;GD&quot;,
+              &quot;GE&quot;,
+              &quot;GF&quot;,
+              &quot;GG&quot;,
+              &quot;GH&quot;,
+              &quot;GI&quot;,
+              &quot;GL&quot;,
+              &quot;GM&quot;,
+              &quot;GN&quot;,
+              &quot;GP&quot;,
+              &quot;GQ&quot;,
+              &quot;GR&quot;,
+              &quot;GS&quot;,
+              &quot;GT&quot;,
+              &quot;GU&quot;,
+              &quot;GW&quot;,
+              &quot;GY&quot;,
+              &quot;HK&quot;,
+              &quot;HN&quot;,
+              &quot;HR&quot;,
+              &quot;HT&quot;,
+              &quot;HU&quot;,
+              &quot;ID&quot;,
+              &quot;IE&quot;,
+              &quot;IL&quot;,
+              &quot;IM&quot;,
+              &quot;IN&quot;,
+              &quot;IO&quot;,
+              &quot;IQ&quot;,
+              &quot;IS&quot;,
+              &quot;IT&quot;,
+              &quot;JE&quot;,
+              &quot;JM&quot;,
+              &quot;JO&quot;,
+              &quot;JP&quot;,
+              &quot;KE&quot;,
+              &quot;KG&quot;,
+              &quot;KH&quot;,
+              &quot;KI&quot;,
+              &quot;KM&quot;,
+              &quot;KN&quot;,
+              &quot;KR&quot;,
+              &quot;KW&quot;,
+              &quot;KY&quot;,
+              &quot;KZ&quot;,
+              &quot;LA&quot;,
+              &quot;LB&quot;,
+              &quot;LC&quot;,
+              &quot;LI&quot;,
+              &quot;LK&quot;,
+              &quot;LR&quot;,
+              &quot;LS&quot;,
+              &quot;LT&quot;,
+              &quot;LU&quot;,
+              &quot;LV&quot;,
+              &quot;LY&quot;,
+              &quot;MA&quot;,
+              &quot;MC&quot;,
+              &quot;MD&quot;,
+              &quot;ME&quot;,
+              &quot;MF&quot;,
+              &quot;MG&quot;,
+              &quot;MK&quot;,
+              &quot;ML&quot;,
+              &quot;MM&quot;,
+              &quot;MN&quot;,
+              &quot;MO&quot;,
+              &quot;MQ&quot;,
+              &quot;MR&quot;,
+              &quot;MS&quot;,
+              &quot;MT&quot;,
+              &quot;MU&quot;,
+              &quot;MV&quot;,
+              &quot;MW&quot;,
+              &quot;MX&quot;,
+              &quot;MY&quot;,
+              &quot;MZ&quot;,
+              &quot;NA&quot;,
+              &quot;NC&quot;,
+              &quot;NE&quot;,
+              &quot;NG&quot;,
+              &quot;NI&quot;,
+              &quot;NL&quot;,
+              &quot;NO&quot;,
+              &quot;NP&quot;,
+              &quot;NR&quot;,
+              &quot;NU&quot;,
+              &quot;NZ&quot;,
+              &quot;OM&quot;,
+              &quot;PA&quot;,
+              &quot;PE&quot;,
+              &quot;PF&quot;,
+              &quot;PG&quot;,
+              &quot;PH&quot;,
+              &quot;PK&quot;,
+              &quot;PL&quot;,
+              &quot;PM&quot;,
+              &quot;PN&quot;,
+              &quot;PR&quot;,
+              &quot;PS&quot;,
+              &quot;PT&quot;,
+              &quot;PY&quot;,
+              &quot;QA&quot;,
+              &quot;RE&quot;,
+              &quot;RO&quot;,
+              &quot;RS&quot;,
+              &quot;RU&quot;,
+              &quot;RW&quot;,
+              &quot;SA&quot;,
+              &quot;SB&quot;,
+              &quot;SC&quot;,
+              &quot;SE&quot;,
+              &quot;SG&quot;,
+              &quot;SH&quot;,
+              &quot;SI&quot;,
+              &quot;SJ&quot;,
+              &quot;SK&quot;,
+              &quot;SL&quot;,
+              &quot;SM&quot;,
+              &quot;SN&quot;,
+              &quot;SO&quot;,
+              &quot;SR&quot;,
+              &quot;SS&quot;,
+              &quot;ST&quot;,
+              &quot;SV&quot;,
+              &quot;SX&quot;,
+              &quot;SZ&quot;,
+              &quot;TA&quot;,
+              &quot;TC&quot;,
+              &quot;TD&quot;,
+              &quot;TF&quot;,
+              &quot;TG&quot;,
+              &quot;TH&quot;,
+              &quot;TJ&quot;,
+              &quot;TK&quot;,
+              &quot;TL&quot;,
+              &quot;TM&quot;,
+              &quot;TN&quot;,
+              &quot;TO&quot;,
+              &quot;TR&quot;,
+              &quot;TT&quot;,
+              &quot;TV&quot;,
+              &quot;TW&quot;,
+              &quot;TZ&quot;,
+              &quot;UA&quot;,
+              &quot;UG&quot;,
+              &quot;US&quot;,
+              &quot;UY&quot;,
+              &quot;UZ&quot;,
+              &quot;VA&quot;,
+              &quot;VC&quot;,
+              &quot;VE&quot;,
+              &quot;VG&quot;,
+              &quot;VN&quot;,
+              &quot;VU&quot;,
+              &quot;WF&quot;,
+              &quot;WS&quot;,
+              &quot;XK&quot;,
+              &quot;YE&quot;,
+              &quot;YT&quot;,
+              &quot;ZA&quot;,
+              &quot;ZM&quot;,
+              &quot;ZW&quot;,
+              &quot;ZZ&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;
+          }
+        }
+      },
+      &quot;description&quot;: &quot;When set, provides configuration for Checkout to collect a shipping address from a customer.&quot;
+    },
+    &quot;shipping_options&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;title&quot;: &quot;shipping_option_params&quot;,
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;shipping_rate&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;shipping_rate_data&quot;: {
+            &quot;title&quot;: &quot;method_params&quot;,
+            &quot;required&quot;: [
+              &quot;display_name&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+              &quot;delivery_estimate&quot;: {
+                &quot;title&quot;: &quot;delivery_estimate&quot;,
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;maximum&quot;: {
+                    &quot;title&quot;: &quot;delivery_estimate_bound&quot;,
+                    &quot;required&quot;: [
+                      &quot;unit&quot;,
+                      &quot;value&quot;
+                    ],
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;properties&quot;: {
+                      &quot;unit&quot;: {
+                        &quot;enum&quot;: [
+                          &quot;business_day&quot;,
+                          &quot;day&quot;,
+                          &quot;hour&quot;,
+                          &quot;month&quot;,
+                          &quot;week&quot;
+                        ],
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;value&quot;: {
+                        &quot;type&quot;: &quot;integer&quot;
+                      }
+                    }
+                  },
+                  &quot;minimum&quot;: {
+                    &quot;title&quot;: &quot;delivery_estimate_bound&quot;,
+                    &quot;required&quot;: [
+                      &quot;unit&quot;,
+                      &quot;value&quot;
+                    ],
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;properties&quot;: {
+                      &quot;unit&quot;: {
+                        &quot;enum&quot;: [
+                          &quot;business_day&quot;,
+                          &quot;day&quot;,
+                          &quot;hour&quot;,
+                          &quot;month&quot;,
+                          &quot;week&quot;
+                        ],
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;value&quot;: {
+                        &quot;type&quot;: &quot;integer&quot;
+                      }
+                    }
+                  }
+                }
+              },
+              &quot;display_name&quot;: {
+                &quot;maxLength&quot;: 100,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;fixed_amount&quot;: {
+                &quot;title&quot;: &quot;fixed_amount&quot;,
+                &quot;required&quot;: [
+                  &quot;amount&quot;,
+                  &quot;currency&quot;
+                ],
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;amount&quot;: {
+                    &quot;type&quot;: &quot;integer&quot;
+                  },
+                  &quot;currency&quot;: {
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;currency_options&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;additionalProperties&quot;: {
+                      &quot;title&quot;: &quot;currency_option&quot;,
+                      &quot;required&quot;: [
+                        &quot;amount&quot;
+                      ],
+                      &quot;type&quot;: &quot;object&quot;,
+                      &quot;properties&quot;: {
+                        &quot;amount&quot;: {
+                          &quot;type&quot;: &quot;integer&quot;
+                        },
+                        &quot;tax_behavior&quot;: {
+                          &quot;enum&quot;: [
+                            &quot;exclusive&quot;,
+                            &quot;inclusive&quot;,
+                            &quot;unspecified&quot;
+                          ],
+                          &quot;type&quot;: &quot;string&quot;
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              &quot;metadata&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;additionalProperties&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              },
+              &quot;tax_behavior&quot;: {
+                &quot;enum&quot;: [
+                  &quot;exclusive&quot;,
+                  &quot;inclusive&quot;,
+                  &quot;unspecified&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;tax_code&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;type&quot;: {
+                &quot;enum&quot;: [
+                  &quot;fixed_amount&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;The shipping rate options to apply to this Session.&quot;
+    },
+    &quot;submit_type&quot;: {
+      &quot;enum&quot;: [
+        &quot;auto&quot;,
+        &quot;book&quot;,
+        &quot;donate&quot;,
+        &quot;pay&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Describes the type of transaction being performed by Checkout in order to customize\nrelevant text on the page, such as the submit button. <code>submit_type</code> can only be\nspecified on Checkout Sessions in <code>payment</code> mode, but not Checkout Sessions\nin <code>subscription</code> or <code>setup</code> mode.&quot;
+    },
+    &quot;subscription_data&quot;: {
+      &quot;title&quot;: &quot;subscription_data_params&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;application_fee_percent&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        },
+        &quot;default_tax_rates&quot;: {
+          &quot;type&quot;: &quot;array&quot;,
+          &quot;items&quot;: {
+            &quot;maxLength&quot;: 5000,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;description&quot;: {
+          &quot;maxLength&quot;: 500,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;metadata&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;on_behalf_of&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;transfer_data&quot;: {
+          &quot;title&quot;: &quot;transfer_data_specs&quot;,
+          &quot;required&quot;: [
+            &quot;destination&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;amount_percent&quot;: {
+              &quot;type&quot;: &quot;number&quot;
+            },
+            &quot;destination&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;trial_end&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;format&quot;: &quot;unix-time&quot;
+        },
+        &quot;trial_period_days&quot;: {
+          &quot;type&quot;: &quot;integer&quot;
+        },
+        &quot;trial_settings&quot;: {
+          &quot;title&quot;: &quot;trial_settings_config&quot;,
+          &quot;required&quot;: [
+            &quot;end_behavior&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;end_behavior&quot;: {
+              &quot;title&quot;: &quot;end_behavior&quot;,
+              &quot;required&quot;: [
+                &quot;missing_payment_method&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;missing_payment_method&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;cancel&quot;,
+                    &quot;create_invoice&quot;,
+                    &quot;pause&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;A subset of parameters to be passed to subscription creation for Checkout Sessions in <code>subscription</code> mode.&quot;
+    },
+    &quot;success_url&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The URL to which Stripe should send customers when payment or setup\nis complete.\nIf you’d like to use information from the successful Checkout Session on your page,\nread the guide on <a href="https://stripe.com/docs/payments/checkout/custom-success-page">customizing your success page</a>.&quot;
+    },
+    &quot;tax_id_collection&quot;: {
+      &quot;title&quot;: &quot;tax_id_collection_params&quot;,
+      &quot;required&quot;: [
+        &quot;enabled&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;enabled&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Controls tax ID collection settings for the session.&quot;
+    }
+  },
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostCheckoutSessions.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

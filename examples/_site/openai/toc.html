@@ -1,0 +1,505 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Filter by title" onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>chat</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>completions</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createChatCompletion.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>completions</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="createCompletion.html" name="" title="POST">POST</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>edits</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="createEdit.html" name="" title="POST">POST</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>images</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>generations</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createImage.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>edits</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createImageEdit.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>variations</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createImageVariation.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>embeddings</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="createEmbedding.html" name="" title="POST">POST</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>audio</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>speech</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createSpeech.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>transcriptions</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createTranscription.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>translations</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createTranslation.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>files</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="listFiles.html" name="" title="GET">GET</a>
+                          </li>
+                          <li>
+                              <a href="createFile.html" name="" title="POST">POST</a>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>file_id</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="deleteFile.html" name="" title="DELETE">DELETE</a>
+                                    </li>
+                                    <li>
+                                        <a href="retrieveFile.html" name="" title="GET">GET</a>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>content</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="downloadFile.html" name="" title="GET">GET</a>
+                                              </li>
+                                        </ul>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>fine_tuning</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>jobs</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createFineTuningJob.html" name="" title="POST">POST</a>
+                                    </li>
+                                    <li>
+                                        <a href="listPaginatedFineTuningJobs.html" name="" title="GET">GET</a>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>fine_tuning_job_id</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="retrieveFineTuningJob.html" name="" title="GET">GET</a>
+                                              </li>
+                                              <li>
+                                                  <span class="expand-stub"></span>
+                                                  <a>events</a>
+
+                                                  <ul class="nav level5">
+                                                        <li>
+                                                            <a href="listFineTuningEvents.html" name="" title="GET">GET</a>
+                                                        </li>
+                                                  </ul>
+                                              </li>
+                                              <li>
+                                                  <span class="expand-stub"></span>
+                                                  <a>cancel</a>
+
+                                                  <ul class="nav level5">
+                                                        <li>
+                                                            <a href="cancelFineTuningJob.html" name="" title="POST">POST</a>
+                                                        </li>
+                                                  </ul>
+                                              </li>
+                                        </ul>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>fine-tunes</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="createFineTune.html" name="" title="POST">POST</a>
+                          </li>
+                          <li>
+                              <a href="listFineTunes.html" name="" title="GET">GET</a>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>fine_tune_id</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="retrieveFineTune.html" name="" title="GET">GET</a>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>cancel</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="cancelFineTune.html" name="" title="POST">POST</a>
+                                              </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>events</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="listFineTuneEvents.html" name="" title="GET">GET</a>
+                                              </li>
+                                        </ul>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>models</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="listModels.html" name="" title="GET">GET</a>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>model</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="retrieveModel.html" name="" title="GET">GET</a>
+                                    </li>
+                                    <li>
+                                        <a href="deleteModel.html" name="" title="DELETE">DELETE</a>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>moderations</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="createModeration.html" name="" title="POST">POST</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>assistants</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="listAssistants.html" name="" title="GET">GET</a>
+                          </li>
+                          <li>
+                              <a href="createAssistant.html" name="" title="POST">POST</a>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>assistant_id</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="getAssistant.html" name="" title="GET">GET</a>
+                                    </li>
+                                    <li>
+                                        <a href="modifyAssistant.html" name="" title="POST">POST</a>
+                                    </li>
+                                    <li>
+                                        <a href="deleteAssistant.html" name="" title="DELETE">DELETE</a>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>files</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="listAssistantFiles.html" name="" title="GET">GET</a>
+                                              </li>
+                                              <li>
+                                                  <a href="createAssistantFile.html" name="" title="POST">POST</a>
+                                              </li>
+                                              <li>
+                                                  <span class="expand-stub"></span>
+                                                  <a>file_id</a>
+
+                                                  <ul class="nav level5">
+                                                        <li>
+                                                            <a href="getAssistantFile.html" name="" title="GET">GET</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="deleteAssistantFile.html" name="" title="DELETE">DELETE</a>
+                                                        </li>
+                                                  </ul>
+                                              </li>
+                                        </ul>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a>threads</a>
+
+                    <ul class="nav level2">
+                          <li>
+                              <a href="createThread.html" name="" title="POST">POST</a>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>thread_id</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="getThread.html" name="" title="GET">GET</a>
+                                    </li>
+                                    <li>
+                                        <a href="modifyThread.html" name="" title="POST">POST</a>
+                                    </li>
+                                    <li>
+                                        <a href="deleteThread.html" name="" title="DELETE">DELETE</a>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>messages</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="listMessages.html" name="" title="GET">GET</a>
+                                              </li>
+                                              <li>
+                                                  <a href="createMessage.html" name="" title="POST">POST</a>
+                                              </li>
+                                              <li>
+                                                  <span class="expand-stub"></span>
+                                                  <a>message_id</a>
+
+                                                  <ul class="nav level5">
+                                                        <li>
+                                                            <a href="getMessage.html" name="" title="GET">GET</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="modifyMessage.html" name="" title="POST">POST</a>
+                                                        </li>
+                                                        <li>
+                                                            <span class="expand-stub"></span>
+                                                            <a>files</a>
+
+                                                            <ul class="nav level6">
+                                                                  <li>
+                                                                      <a href="listMessageFiles.html" name="" title="GET">GET</a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <span class="expand-stub"></span>
+                                                                      <a>file_id</a>
+
+                                                                      <ul class="nav level7">
+                                                                            <li>
+                                                                                <a href="getMessageFile.html" name="" title="GET">GET</a>
+                                                                            </li>
+                                                                      </ul>
+                                                                  </li>
+                                                            </ul>
+                                                        </li>
+                                                  </ul>
+                                              </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="expand-stub"></span>
+                                        <a>runs</a>
+
+                                        <ul class="nav level4">
+                                              <li>
+                                                  <a href="listRuns.html" name="" title="GET">GET</a>
+                                              </li>
+                                              <li>
+                                                  <a href="createRun.html" name="" title="POST">POST</a>
+                                              </li>
+                                              <li>
+                                                  <span class="expand-stub"></span>
+                                                  <a>run_id</a>
+
+                                                  <ul class="nav level5">
+                                                        <li>
+                                                            <a href="getRun.html" name="" title="GET">GET</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="modifyRun.html" name="" title="POST">POST</a>
+                                                        </li>
+                                                        <li>
+                                                            <span class="expand-stub"></span>
+                                                            <a>submit_tool_outputs</a>
+
+                                                            <ul class="nav level6">
+                                                                  <li>
+                                                                      <a href="submitToolOuputsToRun.html" name="" title="POST">POST</a>
+                                                                  </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span class="expand-stub"></span>
+                                                            <a>cancel</a>
+
+                                                            <ul class="nav level6">
+                                                                  <li>
+                                                                      <a href="cancelRun.html" name="" title="POST">POST</a>
+                                                                  </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span class="expand-stub"></span>
+                                                            <a>steps</a>
+
+                                                            <ul class="nav level6">
+                                                                  <li>
+                                                                      <a href="listRunSteps.html" name="" title="GET">GET</a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <span class="expand-stub"></span>
+                                                                      <a>step_id</a>
+
+                                                                      <ul class="nav level7">
+                                                                            <li>
+                                                                                <a href="getRunStep.html" name="" title="GET">GET</a>
+                                                                            </li>
+                                                                      </ul>
+                                                                  </li>
+                                                            </ul>
+                                                        </li>
+                                                  </ul>
+                                              </li>
+                                        </ul>
+                                    </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a>runs</a>
+
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="createThreadAndRun.html" name="" title="POST">POST</a>
+                                    </li>
+                              </ul>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

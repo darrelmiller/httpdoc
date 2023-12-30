@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CreateSipDomain | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CreateSipDomain | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/twilio/CreateSipDomain.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">CreateSipDomain</h1><p class="requestDescription">Create a new Domain</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\2010-04-01\Accounts\{AccountSid}\SIP\Domains.json</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.twilio.com:443</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span>
+</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">AccountSid</span> [ in: <span class="parameterLocation">path</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The SID of the <a href="https://www.twilio.com/docs/iam/api/account">Account</a> that will create the resource.</span> <span class="parameterRequired">required</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+&quot;title&quot;: &quot;CreateSipDomainRequest&quot;,
+&quot;required&quot;: [
+&quot;DomainName&quot;
+],
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;ByocTrunkSid&quot;: {
+&quot;maxLength&quot;: 34,
+&quot;minLength&quot;: 34,
+&quot;pattern&quot;: &quot;^BY[0-9a-fA-F]{32}$&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The SID of the BYOC Trunk(Bring Your Own Carrier) resource that the Sip Domain will be associated with.&quot;
+},
+&quot;DomainName&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The unique address you reserve on Twilio to which you route your SIP traffic. Domain names can contain letters, digits, and &quot;-&quot; and must end with <code>sip.twilio.com</code>.&quot;
+},
+&quot;EmergencyCallerSid&quot;: {
+&quot;maxLength&quot;: 34,
+&quot;minLength&quot;: 34,
+&quot;pattern&quot;: &quot;^PN[0-9a-fA-F]{32}$&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;Whether an emergency caller sid is configured for the domain. If present, this phone number will be used as the callback for the emergency call.&quot;
+},
+&quot;EmergencyCallingEnabled&quot;: {
+&quot;type&quot;: &quot;boolean&quot;,
+&quot;description&quot;: &quot;Whether emergency calling is enabled for the domain. If enabled, allows emergency calls on the domain from phone numbers with validated addresses.&quot;
+},
+&quot;FriendlyName&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;A descriptive string that you created to describe the resource. It can be up to 64 characters long.&quot;
+},
+&quot;Secure&quot;: {
+&quot;type&quot;: &quot;boolean&quot;,
+&quot;description&quot;: &quot;Whether secure SIP is enabled for the domain. If enabled, TLS will be enforced and SRTP will be negotiated on all incoming calls to this sip domain.&quot;
+},
+&quot;SipRegistration&quot;: {
+&quot;type&quot;: &quot;boolean&quot;,
+&quot;description&quot;: &quot;Whether to allow SIP Endpoints to register with the domain to receive calls. Can be <code>true</code> or <code>false</code>. <code>true</code> allows SIP Endpoints to register with the domain to receive calls, <code>false</code> does not.&quot;
+},
+&quot;VoiceFallbackMethod&quot;: {
+&quot;enum&quot;: [
+&quot;HEAD&quot;,
+&quot;GET&quot;,
+&quot;POST&quot;,
+&quot;PATCH&quot;,
+&quot;PUT&quot;,
+&quot;DELETE&quot;
+],
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The HTTP method we should use to call <code>voice_fallback_url</code>. Can be: <code>GET</code> or <code>POST</code>.&quot;,
+&quot;format&quot;: &quot;http-method&quot;
+},
+&quot;VoiceFallbackUrl&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The URL that we should call when an error occurs while retrieving or executing the TwiML from <code>voice_url</code>.&quot;,
+&quot;format&quot;: &quot;uri&quot;
+},
+&quot;VoiceMethod&quot;: {
+&quot;enum&quot;: [
+&quot;HEAD&quot;,
+&quot;GET&quot;,
+&quot;POST&quot;,
+&quot;PATCH&quot;,
+&quot;PUT&quot;,
+&quot;DELETE&quot;
+],
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The HTTP method we should use to call <code>voice_url</code>. Can be: <code>GET</code> or <code>POST</code>.&quot;,
+&quot;format&quot;: &quot;http-method&quot;
+},
+&quot;VoiceStatusCallbackMethod&quot;: {
+&quot;enum&quot;: [
+&quot;HEAD&quot;,
+&quot;GET&quot;,
+&quot;POST&quot;,
+&quot;PATCH&quot;,
+&quot;PUT&quot;,
+&quot;DELETE&quot;
+],
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The HTTP method we should use to call <code>voice_status_callback_url</code>. Can be: <code>GET</code> or <code>POST</code>.&quot;,
+&quot;format&quot;: &quot;http-method&quot;
+},
+&quot;VoiceStatusCallbackUrl&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The URL that we should call to pass status parameters (such as call ended) to your application.&quot;,
+&quot;format&quot;: &quot;uri&quot;
+},
+&quot;VoiceUrl&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The URL we should when the domain receives a call.&quot;,
+&quot;format&quot;: &quot;uri&quot;
+}
+}
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">201</span> <span class="statusDescription">Created</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/twilio/CreateSipDomain.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>GetCreditNotesPreview | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="GetCreditNotesPreview | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/GetCreditNotesPreview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">GetCreditNotesPreview</h1><p class="requestDescription"><p>Get a preview of a credit note without creating it.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">GET</span> <span class="httpTarget">\v1\credit_notes\preview{?amount*,credit_amount*,expand*,invoice*,lines*,memo*,metadata*,out_of_band_amount*,reason*,refund*,refund_amount*,shipping_cost*}</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">&quot;23423432&quot;</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span></p>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">amount</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">The integer amount in cents (or local equivalent) representing the total amount of the credit note.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">credit_amount</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">The integer amount in cents (or local equivalent) representing the amount to credit the customer's balance, which will be automatically applied to their next invoice.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">expand</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">array</span> ]</dt><dd class="parameter"><span class="parameterDescription">Specifies which fields in the response should be expanded.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">invoice</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">ID of the invoice.</span> <span class="parameterRequired">required</span></dd><dt class="parameter"><span class="parameterName">lines</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">array</span> ]</dt><dd class="parameter"><span class="parameterDescription">Line items that make up the credit note.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">memo</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The credit note's memo appears on the credit note PDF.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">metadata</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">object</span> ]</dt><dd class="parameter"><span class="parameterDescription">Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to <code>metadata</code>.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">out_of_band_amount</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">The integer amount in cents (or local equivalent) representing the amount that is credited outside of Stripe.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">reason</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">Reason for issuing this credit note, one of <code>duplicate</code>, <code>fraudulent</code>, <code>order_change</code>, or <code>product_unsatisfactory</code></span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">refund</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">ID of an existing refund to link this credit note to.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">refund_amount</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">integer</span> ]</dt><dd class="parameter"><span class="parameterDescription">The integer amount in cents (or local equivalent) representing the amount to refund. If set, a refund will be created for the charge associated with the invoice.</span> <span class="parameterRequired">optional</span></dd><dt class="parameter"><span class="parameterName">shipping_cost</span> [ in: <span class="parameterLocation">query</span> type: <span class="parameterType">object</span> ]</dt><dd class="parameter"><span class="parameterDescription">When shipping_cost contains the shipping_rate from the invoice, the shipping_cost is included in the credit note.</span> <span class="parameterRequired">optional</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/GetCreditNotesPreview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

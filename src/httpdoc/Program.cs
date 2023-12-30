@@ -17,7 +17,8 @@ var tocBuilder = new TocBuilder(document,tocfile,
             var outFile = outFolder + "/" + fileName;
             using var outStream = File.Create(outFile);
             var contentWriter = new StreamWriter(outStream);
-            OpenApiDocBuilder.GenerateHttpDoc(contentWriter,uri, pathItem, operationType, operation);
+            var writer = new OpenApiDocWriter(contentWriter, document); 
+            writer.CreateHttpDoc(uri, pathItem, operationType, operation);
             contentWriter.Flush();
 });
 

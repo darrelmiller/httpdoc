@@ -1,0 +1,932 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PostSetupIntentsIntent | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PostSetupIntentsIntent | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostSetupIntentsIntent.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">PostSetupIntentsIntent</h1><p class="requestDescription"><p>Updates a SetupIntent object.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\v1\setup_intents\{intent}</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">&quot;23423432&quot;</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span></p>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">intent</span> [ in: <span class="parameterLocation">path</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription"></span> <span class="parameterRequired">required</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;attach_to_self&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;,
+      &quot;description&quot;: &quot;If present, the SetupIntent's payment method will be attached to the in-context Stripe Account.\n\nIt can only be used for this Stripe Account’s own money movement flows like InboundTransfer and OutboundTransfers. It cannot be set to true when setting up a PaymentMethod for a Customer, and defaults to false when attaching a PaymentMethod to a Customer.&quot;
+    },
+    &quot;customer&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;ID of the Customer this SetupIntent belongs to, if one exists.\n\nIf present, the SetupIntent's payment method will be attached to the Customer on successful setup. Payment methods attached to other Customers cannot be used with this SetupIntent.&quot;
+    },
+    &quot;description&quot;: {
+      &quot;maxLength&quot;: 1000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;An arbitrary string attached to the object. Often useful for displaying to users.&quot;
+    },
+    &quot;expand&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;maxLength&quot;: 5000,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Specifies which fields in the response should be expanded.&quot;
+    },
+    &quot;flow_directions&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;enum&quot;: [
+          &quot;inbound&quot;,
+          &quot;outbound&quot;
+        ],
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Indicates the directions of money movement for which this payment method is intended to be used.\n\nInclude <code>inbound</code> if you intend to use the payment method as the origin to pull funds from. Include <code>outbound</code> if you intend to use the payment method as the destination to send funds to. You can include both if you intend to use the payment method for both purposes.&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to <code>metadata</code>.&quot;
+    },
+    &quot;payment_method&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;ID of the payment method (a PaymentMethod, Card, or saved Source object) to attach to this SetupIntent.&quot;
+    },
+    &quot;payment_method_data&quot;: {
+      &quot;title&quot;: &quot;payment_method_data_params&quot;,
+      &quot;required&quot;: [
+        &quot;type&quot;
+      ],
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;acss_debit&quot;: {
+          &quot;title&quot;: &quot;payment_method_param&quot;,
+          &quot;required&quot;: [
+            &quot;account_number&quot;,
+            &quot;institution_number&quot;,
+            &quot;transit_number&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;account_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;institution_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;transit_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;affirm&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;afterpay_clearpay&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;alipay&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;au_becs_debit&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;required&quot;: [
+            &quot;account_number&quot;,
+            &quot;bsb_number&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;account_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;bsb_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;bacs_debit&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;account_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;sort_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;bancontact&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;billing_details&quot;: {
+          &quot;title&quot;: &quot;billing_details_inner_params&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;address&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;title&quot;: &quot;billing_details_address&quot;,
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;properties&quot;: {
+                    &quot;city&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;country&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;line1&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;line2&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;postal_code&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;state&quot;: {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  }
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            },
+            &quot;email&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            },
+            &quot;name&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;phone&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;blik&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;boleto&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;required&quot;: [
+            &quot;tax_id&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;tax_id&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;customer_balance&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;eps&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;bank&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;enum&quot;: [
+                &quot;arzte_und_apotheker_bank&quot;,
+                &quot;austrian_anadi_bank_ag&quot;,
+                &quot;bank_austria&quot;,
+                &quot;bankhaus_carl_spangler&quot;,
+                &quot;bankhaus_schelhammer_und_schattera_ag&quot;,
+                &quot;bawag_psk_ag&quot;,
+                &quot;bks_bank_ag&quot;,
+                &quot;brull_kallmus_bank_ag&quot;,
+                &quot;btv_vier_lander_bank&quot;,
+                &quot;capital_bank_grawe_gruppe_ag&quot;,
+                &quot;deutsche_bank_ag&quot;,
+                &quot;dolomitenbank&quot;,
+                &quot;easybank_ag&quot;,
+                &quot;erste_bank_und_sparkassen&quot;,
+                &quot;hypo_alpeadriabank_international_ag&quot;,
+                &quot;hypo_bank_burgenland_aktiengesellschaft&quot;,
+                &quot;hypo_noe_lb_fur_niederosterreich_u_wien&quot;,
+                &quot;hypo_oberosterreich_salzburg_steiermark&quot;,
+                &quot;hypo_tirol_bank_ag&quot;,
+                &quot;hypo_vorarlberg_bank_ag&quot;,
+                &quot;marchfelder_bank&quot;,
+                &quot;oberbank_ag&quot;,
+                &quot;raiffeisen_bankengruppe_osterreich&quot;,
+                &quot;schoellerbank_ag&quot;,
+                &quot;sparda_bank_wien&quot;,
+                &quot;volksbank_gruppe&quot;,
+                &quot;volkskreditbank_ag&quot;,
+                &quot;vr_bank_braunau&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;fpx&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;required&quot;: [
+            &quot;bank&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;bank&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;enum&quot;: [
+                &quot;affin_bank&quot;,
+                &quot;agrobank&quot;,
+                &quot;alliance_bank&quot;,
+                &quot;ambank&quot;,
+                &quot;bank_islam&quot;,
+                &quot;bank_muamalat&quot;,
+                &quot;bank_of_china&quot;,
+                &quot;bank_rakyat&quot;,
+                &quot;bsn&quot;,
+                &quot;cimb&quot;,
+                &quot;deutsche_bank&quot;,
+                &quot;hong_leong_bank&quot;,
+                &quot;hsbc&quot;,
+                &quot;kfh&quot;,
+                &quot;maybank2e&quot;,
+                &quot;maybank2u&quot;,
+                &quot;ocbc&quot;,
+                &quot;pb_enterprise&quot;,
+                &quot;public_bank&quot;,
+                &quot;rhb&quot;,
+                &quot;standard_chartered&quot;,
+                &quot;uob&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        },
+        &quot;giropay&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;grabpay&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;ideal&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;bank&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;enum&quot;: [
+                &quot;abn_amro&quot;,
+                &quot;asn_bank&quot;,
+                &quot;bunq&quot;,
+                &quot;handelsbanken&quot;,
+                &quot;ing&quot;,
+                &quot;knab&quot;,
+                &quot;moneyou&quot;,
+                &quot;rabobank&quot;,
+                &quot;regiobank&quot;,
+                &quot;revolut&quot;,
+                &quot;sns_bank&quot;,
+                &quot;triodos_bank&quot;,
+                &quot;van_lanschot&quot;,
+                &quot;yoursafe&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;interac_present&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;klarna&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;dob&quot;: {
+              &quot;title&quot;: &quot;date_of_birth&quot;,
+              &quot;required&quot;: [
+                &quot;day&quot;,
+                &quot;month&quot;,
+                &quot;year&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;day&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;month&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;year&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                }
+              }
+            }
+          }
+        },
+        &quot;konbini&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;link&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;metadata&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;oxxo&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;p24&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;bank&quot;: {
+              &quot;enum&quot;: [
+                &quot;alior_bank&quot;,
+                &quot;bank_millennium&quot;,
+                &quot;bank_nowy_bfg_sa&quot;,
+                &quot;bank_pekao_sa&quot;,
+                &quot;banki_spbdzielcze&quot;,
+                &quot;blik&quot;,
+                &quot;bnp_paribas&quot;,
+                &quot;boz&quot;,
+                &quot;citi_handlowy&quot;,
+                &quot;credit_agricole&quot;,
+                &quot;envelobank&quot;,
+                &quot;etransfer_pocztowy24&quot;,
+                &quot;getin_bank&quot;,
+                &quot;ideabank&quot;,
+                &quot;ing&quot;,
+                &quot;inteligo&quot;,
+                &quot;mbank_mtransfer&quot;,
+                &quot;nest_przelew&quot;,
+                &quot;noble_pay&quot;,
+                &quot;pbac_z_ipko&quot;,
+                &quot;plus_bank&quot;,
+                &quot;santander_przelew24&quot;,
+                &quot;tmobile_usbugi_bankowe&quot;,
+                &quot;toyota_bank&quot;,
+                &quot;volkswagen_bank&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        },
+        &quot;paynow&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;pix&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;promptpay&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        },
+        &quot;radar_options&quot;: {
+          &quot;title&quot;: &quot;radar_options&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;session&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;sepa_debit&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;required&quot;: [
+            &quot;iban&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;iban&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;sofort&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;required&quot;: [
+            &quot;country&quot;
+          ],
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;country&quot;: {
+              &quot;enum&quot;: [
+                &quot;AT&quot;,
+                &quot;BE&quot;,
+                &quot;DE&quot;,
+                &quot;ES&quot;,
+                &quot;IT&quot;,
+                &quot;NL&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;type&quot;: {
+          &quot;enum&quot;: [
+            &quot;acss_debit&quot;,
+            &quot;affirm&quot;,
+            &quot;afterpay_clearpay&quot;,
+            &quot;alipay&quot;,
+            &quot;au_becs_debit&quot;,
+            &quot;bacs_debit&quot;,
+            &quot;bancontact&quot;,
+            &quot;blik&quot;,
+            &quot;boleto&quot;,
+            &quot;customer_balance&quot;,
+            &quot;eps&quot;,
+            &quot;fpx&quot;,
+            &quot;giropay&quot;,
+            &quot;grabpay&quot;,
+            &quot;ideal&quot;,
+            &quot;klarna&quot;,
+            &quot;konbini&quot;,
+            &quot;link&quot;,
+            &quot;oxxo&quot;,
+            &quot;p24&quot;,
+            &quot;paynow&quot;,
+            &quot;pix&quot;,
+            &quot;promptpay&quot;,
+            &quot;sepa_debit&quot;,
+            &quot;sofort&quot;,
+            &quot;us_bank_account&quot;,
+            &quot;wechat_pay&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;x-stripeBypassValidation&quot;: true
+        },
+        &quot;us_bank_account&quot;: {
+          &quot;title&quot;: &quot;payment_method_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;account_holder_type&quot;: {
+              &quot;enum&quot;: [
+                &quot;company&quot;,
+                &quot;individual&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;account_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;account_type&quot;: {
+              &quot;enum&quot;: [
+                &quot;checking&quot;,
+                &quot;savings&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;financial_connections_account&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;routing_number&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;wechat_pay&quot;: {
+          &quot;title&quot;: &quot;param&quot;,
+          &quot;type&quot;: &quot;object&quot;
+        }
+      },
+      &quot;description&quot;: &quot;When included, this hash creates a PaymentMethod that is set as the <a href="https://stripe.com/docs/api/setup_intents/object#setup_intent_object-payment_method"><code>payment_method</code></a>\nvalue in the SetupIntent.&quot;
+    },
+    &quot;payment_method_options&quot;: {
+      &quot;title&quot;: &quot;payment_method_options_param&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;acss_debit&quot;: {
+          &quot;title&quot;: &quot;setup_intent_payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;currency&quot;: {
+              &quot;enum&quot;: [
+                &quot;cad&quot;,
+                &quot;usd&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;mandate_options&quot;: {
+              &quot;title&quot;: &quot;setup_intent_payment_method_options_mandate_options_param&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;custom_mandate_url&quot;: {
+                  &quot;anyOf&quot;: [
+                    {
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                      &quot;enum&quot;: [
+                        &quot;&quot;
+                      ],
+                      &quot;type&quot;: &quot;string&quot;
+                    }
+                  ]
+                },
+                &quot;default_for&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;invoice&quot;,
+                      &quot;subscription&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                },
+                &quot;interval_description&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;payment_schedule&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;combined&quot;,
+                    &quot;interval&quot;,
+                    &quot;sporadic&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;transaction_type&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;business&quot;,
+                    &quot;personal&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            &quot;verification_method&quot;: {
+              &quot;enum&quot;: [
+                &quot;automatic&quot;,
+                &quot;instant&quot;,
+                &quot;microdeposits&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        },
+        &quot;blik&quot;: {
+          &quot;title&quot;: &quot;setup_intent_payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;card&quot;: {
+          &quot;title&quot;: &quot;setup_intent_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;mandate_options&quot;: {
+              &quot;title&quot;: &quot;setup_intent_mandate_options_param&quot;,
+              &quot;required&quot;: [
+                &quot;amount&quot;,
+                &quot;amount_type&quot;,
+                &quot;currency&quot;,
+                &quot;interval&quot;,
+                &quot;reference&quot;,
+                &quot;start_date&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;amount&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;amount_type&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;fixed&quot;,
+                    &quot;maximum&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;currency&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;description&quot;: {
+                  &quot;maxLength&quot;: 200,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;end_date&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;,
+                  &quot;format&quot;: &quot;unix-time&quot;
+                },
+                &quot;interval&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;day&quot;,
+                    &quot;month&quot;,
+                    &quot;sporadic&quot;,
+                    &quot;week&quot;,
+                    &quot;year&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;interval_count&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;reference&quot;: {
+                  &quot;maxLength&quot;: 80,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;start_date&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;,
+                  &quot;format&quot;: &quot;unix-time&quot;
+                },
+                &quot;supported_types&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;india&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                }
+              }
+            },
+            &quot;network&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;enum&quot;: [
+                &quot;amex&quot;,
+                &quot;cartes_bancaires&quot;,
+                &quot;diners&quot;,
+                &quot;discover&quot;,
+                &quot;interac&quot;,
+                &quot;jcb&quot;,
+                &quot;mastercard&quot;,
+                &quot;unionpay&quot;,
+                &quot;unknown&quot;,
+                &quot;visa&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            },
+            &quot;request_three_d_secure&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;enum&quot;: [
+                &quot;any&quot;,
+                &quot;automatic&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        },
+        &quot;link&quot;: {
+          &quot;title&quot;: &quot;setup_intent_payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;persistent_token&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;sepa_debit&quot;: {
+          &quot;title&quot;: &quot;setup_intent_payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;mandate_options&quot;: {
+              &quot;title&quot;: &quot;payment_method_options_mandate_options_param&quot;,
+              &quot;type&quot;: &quot;object&quot;
+            }
+          }
+        },
+        &quot;us_bank_account&quot;: {
+          &quot;title&quot;: &quot;setup_intent_payment_method_options_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;financial_connections&quot;: {
+              &quot;title&quot;: &quot;linked_account_options_param&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;permissions&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;maxLength&quot;: 5000,
+                    &quot;enum&quot;: [
+                      &quot;balances&quot;,
+                      &quot;ownership&quot;,
+                      &quot;payment_method&quot;,
+                      &quot;transactions&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;x-stripeBypassValidation&quot;: true
+                  }
+                },
+                &quot;return_url&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            &quot;networks&quot;: {
+              &quot;title&quot;: &quot;networks_options_param&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;requested&quot;: {
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;items&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;ach&quot;,
+                      &quot;us_domestic_wire&quot;
+                    ],
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                }
+              }
+            },
+            &quot;verification_method&quot;: {
+              &quot;enum&quot;: [
+                &quot;automatic&quot;,
+                &quot;instant&quot;,
+                &quot;microdeposits&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;x-stripeBypassValidation&quot;: true
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Payment-method-specific configuration for this SetupIntent.&quot;
+    },
+    &quot;payment_method_types&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;maxLength&quot;: 5000,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;The list of payment method types (e.g. card) that this SetupIntent is allowed to set up. If this is not provided, defaults to [&amp;quot;card&amp;quot;].&quot;
+    }
+  },
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostSetupIntentsIntent.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

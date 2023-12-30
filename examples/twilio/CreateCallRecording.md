@@ -1,4 +1,47 @@
-<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><article><section  class="requestOverview"><h1  class="requestSummary">CreateCallRecording</h1><p  class="requestDescription">Create a recording for the call</p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">+{baseUrl}\2010-04-01\Accounts\{AccountSid}\Calls\{CallSid}\Recordings.json</span> <span  class="httpVersion">HTTP/1.1</span>
-<span  class="headerLine">host</span>: <span  class="headerValue">example.org:443</span>
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><article><section  class="requestOverview"><h1  class="requestSummary">CreateCallRecording</h1><p  class="requestDescription">Create a recording for the call</p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">\2010-04-01\Accounts\{AccountSid}\Calls\{CallSid}\Recordings.json</span> <span  class="httpVersion">HTTP/1.1</span>
+<span  class="headerLine">host</span>: <span  class="headerValue">api.twilio.com:443</span>
 <span  class="headerLine">accept</span>: <span  class="headerValue">application/json</span>
-</pre></section><dl  class="parameters"><h3>Parameters</h3><dt  class="parameter"><span  class="parameterName">AccountSid</span> [ in: <span  class="parameterLocation">Path</span> type: <span  class="parameterType">string</span> ]</dt><dd  class="parameter"><span  class="parameterDescription">The SID of the [Account](https://www.twilio.com/docs/iam/api/account) that will create the resource.</span> <span  class="parameterRequired">required</span></dd><dt  class="parameter"><span  class="parameterName">CallSid</span> [ in: <span  class="parameterLocation">Path</span> type: <span  class="parameterType">string</span> ]</dt><dd  class="parameter"><span  class="parameterDescription">The SID of the [Call](https://www.twilio.com/docs/voice/api/call-resource) to associate the resource with.</span> <span  class="parameterRequired">required</span></dd></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema"></pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">201</span> <span  class="statusDescription">Created</span></li></ul></section></article></body></html>
+<span  class="headerLine">content-type</span>: <span  class="headerValue">application/x-www-form-urlencoded</span>
+</pre></section><dl  class="parameters"><h3>Parameters</h3><dt  class="parameter"><span  class="parameterName">AccountSid</span> [ in: <span  class="parameterLocation">path</span> type: <span  class="parameterType">string</span> ]</dt><dd  class="parameter"><span  class="parameterDescription">The SID of the [Account](https://www.twilio.com/docs/iam/api/account) that will create the resource.</span> <span  class="parameterRequired">required</span></dd><dt  class="parameter"><span  class="parameterName">CallSid</span> [ in: <span  class="parameterLocation">path</span> type: <span  class="parameterType">string</span> ]</dt><dd  class="parameter"><span  class="parameterDescription">The SID of the [Call](https://www.twilio.com/docs/voice/api/call-resource) to associate the resource with.</span> <span  class="parameterRequired">required</span></dd></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema">{
+  "title": "CreateCallRecordingRequest",
+  "type": "object",
+  "properties": {
+    "RecordingChannels": {
+      "type": "string",
+      "description": "The number of channels used in the recording. Can be: `mono` or `dual` and the default is `mono`. `mono` records all parties of the call into one channel. `dual` records each party of a 2-party call into separate channels."
+    },
+    "RecordingStatusCallback": {
+      "type": "string",
+      "description": "The URL we should call using the `recording_status_callback_method` on each recording event specified in  `recording_status_callback_event`. For more information, see [RecordingStatusCallback parameters](https://www.twilio.com/docs/voice/api/recording#recordingstatuscallback).",
+      "format": "uri"
+    },
+    "RecordingStatusCallbackEvent": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The recording status events on which we should call the `recording_status_callback` URL. Can be: `in-progress`, `completed` and `absent` and the default is `completed`. Separate multiple event values with a space."
+    },
+    "RecordingStatusCallbackMethod": {
+      "enum": [
+        "HEAD",
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "type": "string",
+      "description": "The HTTP method we should use to call `recording_status_callback`. Can be: `GET` or `POST` and the default is `POST`.",
+      "format": "http-method"
+    },
+    "RecordingTrack": {
+      "type": "string",
+      "description": "The audio track to record for the call. Can be: `inbound`, `outbound` or `both`. The default is `both`. `inbound` records the audio that is received by Twilio. `outbound` records the audio that is generated from Twilio. `both` records the audio that is received and generated by Twilio."
+    },
+    "Trim": {
+      "type": "string",
+      "description": "Whether to trim any leading and trailing silence in the recording. Can be: `trim-silence` or `do-not-trim` and the default is `do-not-trim`. `trim-silence` trims the silence from the beginning and end of the recording and `do-not-trim` does not."
+    }
+  }
+}</pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">201</span> <span  class="statusDescription">Created</span></li></ul></section></article></body></html>

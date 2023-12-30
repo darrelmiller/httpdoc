@@ -1,4 +1,207 @@
-<!DOCTYPE html><html><head><title>Creates a completion for the provided prompt and parameters.</title><link rel="stylesheet" href="../OpenApi.css"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><article><section  class="requestOverview"><h1  class="requestSummary">Creates a completion for the provided prompt and parameters.</h1><p  class="requestDescription"></p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">+{baseUrl}\completions</span> <span  class="httpVersion">HTTP/1.1</span>
-<span  class="headerLine">host</span>: <span  class="headerValue">example.org:443</span>
+<!DOCTYPE html><html><head><title>Creates a completion for the provided prompt and parameters.</title><link rel="stylesheet" href="../OpenApi.css"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/></head><body><article><section  class="requestOverview"><h1  class="requestSummary">Creates a completion for the provided prompt and parameters.</h1><p  class="requestDescription"></p></section><section  class="http"><h3>HTTP Request</h3><pre  class="httpExample"><span  class="requestLine">POST</span> <span  class="httpTarget">\completions</span> <span  class="httpVersion">HTTP/1.1</span>
+<span  class="headerLine">host</span>: <span  class="headerValue">api.openai.com:443</span>
 <span  class="headerLine">accept</span>: <span  class="headerValue">application/json</span>
-</pre></section><dl  class="parameters"><h3>Parameters</h3></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema"></pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">200</span> <span  class="statusDescription">OK</span></li></ul></section></article></body></html>
+<span  class="headerLine">content-type</span>: <span  class="headerValue">application/json</span>
+</pre></section><dl  class="parameters"><h3>Parameters</h3></dl><section  class="requestContent"><h3>Request Body Schema</h3><pre  class="schema">{
+  "required": [
+    "model",
+    "prompt"
+  ],
+  "type": "object",
+  "properties": {
+    "model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
+            "babbage-002",
+            "davinci-002",
+            "gpt-3.5-turbo-instruct",
+            "text-davinci-003",
+            "text-davinci-002",
+            "text-davinci-001",
+            "code-davinci-002",
+            "text-curie-001",
+            "text-babbage-001",
+            "text-ada-001"
+          ],
+          "type": "string"
+        }
+      ],
+      "description": "ID of the model to use. You can use the [List models](/docs/api-reference/models/list) API to see all of your available models, or see our [Model overview](/docs/models/overview) for descriptions of them.\n",
+      "x-oaiTypeLabel": "string"
+    },
+    "prompt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "default": "",
+          "example": "This is a test."
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "default": "",
+            "example": "This is a test."
+          }
+        },
+        {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "example": "[1212, 318, 257, 1332, 13]"
+        },
+        {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "example": "[[1212, 318, 257, 1332, 13]]"
+        }
+      ],
+      "description": "The prompt(s) to generate completions for, encoded as a string, array of strings, array of tokens, or array of token arrays.\n\nNote that <|endoftext|> is the document separator that the model sees during training, so if a prompt is not specified the model will generate as if from the beginning of a new document.\n",
+      "default": "<|endoftext|>",
+      "nullable": true
+    },
+    "best_of": {
+      "maximum": 20,
+      "minimum": 0,
+      "type": "integer",
+      "description": "Generates `best_of` completions server-side and returns the \"best\" (the one with the highest log probability per token). Results cannot be streamed.\n\nWhen used with `n`, `best_of` controls the number of candidate completions and `n` specifies how many to return – `best_of` must be greater than `n`.\n\n**Note:** Because this parameter generates many completions, it can quickly consume your token quota. Use carefully and ensure that you have reasonable settings for `max_tokens` and `stop`.\n",
+      "default": 1,
+      "nullable": true
+    },
+    "echo": {
+      "type": "boolean",
+      "description": "Echo back the prompt in addition to the completion\n",
+      "default": false,
+      "nullable": true
+    },
+    "frequency_penalty": {
+      "maximum": 2,
+      "minimum": -2,
+      "type": "number",
+      "description": "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.\n\n[See more information about frequency and presence penalties.](/docs/guides/text-generation/parameter-details)\n",
+      "default": 0,
+      "nullable": true
+    },
+    "logit_bias": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "description": "Modify the likelihood of specified tokens appearing in the completion.\n\nAccepts a JSON object that maps tokens (specified by their token ID in the GPT tokenizer) to an associated bias value from -100 to 100. You can use this [tokenizer tool](/tokenizer?view=bpe) (which works for both GPT-2 and GPT-3) to convert text to token IDs. Mathematically, the bias is added to the logits generated by the model prior to sampling. The exact effect will vary per model, but values between -1 and 1 should decrease or increase likelihood of selection; values like -100 or 100 should result in a ban or exclusive selection of the relevant token.\n\nAs an example, you can pass `{\"50256\": -100}` to prevent the <|endoftext|> token from being generated.\n",
+      "default": null,
+      "nullable": true,
+      "x-oaiTypeLabel": "map"
+    },
+    "logprobs": {
+      "maximum": 5,
+      "minimum": 0,
+      "type": "integer",
+      "description": "Include the log probabilities on the `logprobs` most likely output tokens, as well the chosen tokens. For example, if `logprobs` is 5, the API will return a list of the 5 most likely tokens. The API will always return the `logprob` of the sampled token, so there may be up to `logprobs+1` elements in the response.\n\nThe maximum value for `logprobs` is 5.\n",
+      "default": null,
+      "nullable": true
+    },
+    "max_tokens": {
+      "minimum": 0,
+      "type": "integer",
+      "description": "The maximum number of [tokens](/tokenizer) that can be generated in the completion.\n\nThe token count of your prompt plus `max_tokens` cannot exceed the model's context length. [Example Python code](https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken) for counting tokens.\n",
+      "default": 16,
+      "nullable": true,
+      "example": 16
+    },
+    "n": {
+      "maximum": 128,
+      "minimum": 1,
+      "type": "integer",
+      "description": "How many completions to generate for each prompt.\n\n**Note:** Because this parameter generates many completions, it can quickly consume your token quota. Use carefully and ensure that you have reasonable settings for `max_tokens` and `stop`.\n",
+      "default": 1,
+      "nullable": true,
+      "example": 1
+    },
+    "presence_penalty": {
+      "maximum": 2,
+      "minimum": -2,
+      "type": "number",
+      "description": "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.\n\n[See more information about frequency and presence penalties.](/docs/guides/text-generation/parameter-details)\n",
+      "default": 0,
+      "nullable": true
+    },
+    "seed": {
+      "maximum": 9223372036854775807,
+      "minimum": -9223372036854775808,
+      "type": "integer",
+      "description": "If specified, our system will make a best effort to sample deterministically, such that repeated requests with the same `seed` and parameters should return the same result.\n\nDeterminism is not guaranteed, and you should refer to the `system_fingerprint` response parameter to monitor changes in the backend.\n",
+      "nullable": true
+    },
+    "stop": {
+      "oneOf": [
+        {
+          "type": "string",
+          "default": "<|endoftext|>",
+          "nullable": true,
+          "example": "\n"
+        },
+        {
+          "maxItems": 4,
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "[\"\\n\"]"
+          }
+        }
+      ],
+      "description": "Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.\n",
+      "default": null,
+      "nullable": true
+    },
+    "stream": {
+      "type": "boolean",
+      "description": "Whether to stream back partial progress. If set, tokens will be sent as data-only [server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#Event_stream_format) as they become available, with the stream terminated by a `data: [DONE]` message. [Example Python code](https://cookbook.openai.com/examples/how_to_stream_completions).\n",
+      "default": false,
+      "nullable": true
+    },
+    "suffix": {
+      "type": "string",
+      "description": "The suffix that comes after a completion of inserted text.",
+      "default": null,
+      "nullable": true,
+      "example": "test."
+    },
+    "temperature": {
+      "maximum": 2,
+      "minimum": 0,
+      "type": "number",
+      "description": "What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.\n\nWe generally recommend altering this or `top_p` but not both.\n",
+      "default": 1,
+      "nullable": true,
+      "example": 1
+    },
+    "top_p": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number",
+      "description": "An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.\n\nWe generally recommend altering this or `temperature` but not both.\n",
+      "default": 1,
+      "nullable": true,
+      "example": 1
+    },
+    "user": {
+      "type": "string",
+      "description": "A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. [Learn more](/docs/guides/safety-best-practices/end-user-ids).\n",
+      "example": "user-1234"
+    }
+  }
+}</pre></section><section  class="responses"><h2>Responses</h2><ul  class="responses"><li  class="response"><span  class="statusLine">200</span> <span  class="statusDescription">OK</span></li></ul></section></article></body></html>

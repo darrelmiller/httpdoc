@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CreateUsageTrigger | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CreateUsageTrigger | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/twilio/CreateUsageTrigger.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">CreateUsageTrigger</h1><p class="requestDescription">Create a new UsageTrigger</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\2010-04-01\Accounts\{AccountSid}\Usage\Triggers.json</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.twilio.com:443</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span>
+</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">AccountSid</span> [ in: <span class="parameterLocation">path</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription">The SID of the <a href="https://www.twilio.com/docs/iam/api/account">Account</a> that will create the resource.</span> <span class="parameterRequired">required</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+&quot;title&quot;: &quot;CreateUsageTriggerRequest&quot;,
+&quot;required&quot;: [
+&quot;CallbackUrl&quot;,
+&quot;TriggerValue&quot;,
+&quot;UsageCategory&quot;
+],
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;CallbackMethod&quot;: {
+&quot;enum&quot;: [
+&quot;HEAD&quot;,
+&quot;GET&quot;,
+&quot;POST&quot;,
+&quot;PATCH&quot;,
+&quot;PUT&quot;,
+&quot;DELETE&quot;
+],
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The HTTP method we should use to call <code>callback_url</code>. Can be: <code>GET</code> or <code>POST</code> and the default is <code>POST</code>.&quot;,
+&quot;format&quot;: &quot;http-method&quot;
+},
+&quot;CallbackUrl&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The URL we should call using <code>callback_method</code> when the trigger fires.&quot;,
+&quot;format&quot;: &quot;uri&quot;
+},
+&quot;FriendlyName&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;A descriptive string that you create to describe the resource. It can be up to 64 characters long.&quot;
+},
+&quot;Recurring&quot;: {
+&quot;enum&quot;: [
+&quot;daily&quot;,
+&quot;monthly&quot;,
+&quot;yearly&quot;,
+&quot;alltime&quot;
+],
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;TriggerBy&quot;: {
+&quot;enum&quot;: [
+&quot;count&quot;,
+&quot;usage&quot;,
+&quot;price&quot;
+],
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;TriggerValue&quot;: {
+&quot;type&quot;: &quot;string&quot;,
+&quot;description&quot;: &quot;The usage value at which the trigger should fire.  For convenience, you can use an offset value such as <code>+30</code> to specify a trigger_value that is 30 units more than the current usage value. Be sure to urlencode a <code>+</code> as <code>%2B</code>.&quot;
+},
+&quot;UsageCategory&quot;: {
+&quot;enum&quot;: [
+&quot;a2p-registration-fees&quot;,
+&quot;agent-conference&quot;,
+&quot;amazon-polly&quot;,
+&quot;answering-machine-detection&quot;,
+&quot;authy-authentications&quot;,
+&quot;authy-calls-outbound&quot;,
+&quot;authy-monthly-fees&quot;,
+&quot;authy-phone-intelligence&quot;,
+&quot;authy-phone-verifications&quot;,
+&quot;authy-sms-outbound&quot;,
+&quot;call-progess-events&quot;,
+&quot;calleridlookups&quot;,
+&quot;calls&quot;,
+&quot;calls-client&quot;,
+&quot;calls-globalconference&quot;,
+&quot;calls-inbound&quot;,
+&quot;calls-inbound-local&quot;,
+&quot;calls-inbound-mobile&quot;,
+&quot;calls-inbound-tollfree&quot;,
+&quot;calls-outbound&quot;,
+&quot;calls-pay-verb-transactions&quot;,
+&quot;calls-recordings&quot;,
+&quot;calls-sip&quot;,
+&quot;calls-sip-inbound&quot;,
+&quot;calls-sip-outbound&quot;,
+&quot;calls-transfers&quot;,
+&quot;carrier-lookups&quot;,
+&quot;conversations&quot;,
+&quot;conversations-api-requests&quot;,
+&quot;conversations-conversation-events&quot;,
+&quot;conversations-endpoint-connectivity&quot;,
+&quot;conversations-events&quot;,
+&quot;conversations-participant-events&quot;,
+&quot;conversations-participants&quot;,
+&quot;cps&quot;,
+&quot;flex-usage&quot;,
+&quot;fraud-lookups&quot;,
+&quot;group-rooms&quot;,
+&quot;group-rooms-data-track&quot;,
+&quot;group-rooms-encrypted-media-recorded&quot;,
+&quot;group-rooms-media-downloaded&quot;,
+&quot;group-rooms-media-recorded&quot;,
+&quot;group-rooms-media-routed&quot;,
+&quot;group-rooms-media-stored&quot;,
+&quot;group-rooms-participant-minutes&quot;,
+&quot;group-rooms-recorded-minutes&quot;,
+&quot;imp-v1-usage&quot;,
+&quot;lookups&quot;,
+&quot;marketplace&quot;,
+&quot;marketplace-algorithmia-named-entity-recognition&quot;,
+&quot;marketplace-cadence-transcription&quot;,
+&quot;marketplace-cadence-translation&quot;,
+&quot;marketplace-capio-speech-to-text&quot;,
+&quot;marketplace-convriza-ababa&quot;,
+&quot;marketplace-deepgram-phrase-detector&quot;,
+&quot;marketplace-digital-segment-business-info&quot;,
+&quot;marketplace-facebook-offline-conversions&quot;,
+&quot;marketplace-google-speech-to-text&quot;,
+&quot;marketplace-ibm-watson-message-insights&quot;,
+&quot;marketplace-ibm-watson-message-sentiment&quot;,
+&quot;marketplace-ibm-watson-recording-analysis&quot;,
+&quot;marketplace-ibm-watson-tone-analyzer&quot;,
+&quot;marketplace-icehook-systems-scout&quot;,
+&quot;marketplace-infogroup-dataaxle-bizinfo&quot;,
+&quot;marketplace-keen-io-contact-center-analytics&quot;,
+&quot;marketplace-marchex-cleancall&quot;,
+&quot;marketplace-marchex-sentiment-analysis-for-sms&quot;,
+&quot;marketplace-marketplace-nextcaller-social-id&quot;,
+&quot;marketplace-mobile-commons-opt-out-classifier&quot;,
+&quot;marketplace-nexiwave-voicemail-to-text&quot;,
+&quot;marketplace-nextcaller-advanced-caller-identification&quot;,
+&quot;marketplace-nomorobo-spam-score&quot;,
+&quot;marketplace-payfone-tcpa-compliance&quot;,
+&quot;marketplace-remeeting-automatic-speech-recognition&quot;,
+&quot;marketplace-tcpa-defense-solutions-blacklist-feed&quot;,
+&quot;marketplace-telo-opencnam&quot;,
+&quot;marketplace-truecnam-true-spam&quot;,
+&quot;marketplace-twilio-caller-name-lookup-us&quot;,
+&quot;marketplace-twilio-carrier-information-lookup&quot;,
+&quot;marketplace-voicebase-pci&quot;,
+&quot;marketplace-voicebase-transcription&quot;,
+&quot;marketplace-voicebase-transcription-custom-vocabulary&quot;,
+&quot;marketplace-whitepages-pro-caller-identification&quot;,
+&quot;marketplace-whitepages-pro-phone-intelligence&quot;,
+&quot;marketplace-whitepages-pro-phone-reputation&quot;,
+&quot;marketplace-wolfarm-spoken-results&quot;,
+&quot;marketplace-wolfram-short-answer&quot;,
+&quot;marketplace-ytica-contact-center-reporting-analytics&quot;,
+&quot;mediastorage&quot;,
+&quot;mms&quot;,
+&quot;mms-inbound&quot;,
+&quot;mms-inbound-longcode&quot;,
+&quot;mms-inbound-shortcode&quot;,
+&quot;mms-messages-carrierfees&quot;,
+&quot;mms-outbound&quot;,
+&quot;mms-outbound-longcode&quot;,
+&quot;mms-outbound-shortcode&quot;,
+&quot;monitor-reads&quot;,
+&quot;monitor-storage&quot;,
+&quot;monitor-writes&quot;,
+&quot;notify&quot;,
+&quot;notify-actions-attempts&quot;,
+&quot;notify-channels&quot;,
+&quot;number-format-lookups&quot;,
+&quot;pchat&quot;,
+&quot;pchat-users&quot;,
+&quot;peer-to-peer-rooms-participant-minutes&quot;,
+&quot;pfax&quot;,
+&quot;pfax-minutes&quot;,
+&quot;pfax-minutes-inbound&quot;,
+&quot;pfax-minutes-outbound&quot;,
+&quot;pfax-pages&quot;,
+&quot;phonenumbers&quot;,
+&quot;phonenumbers-cps&quot;,
+&quot;phonenumbers-emergency&quot;,
+&quot;phonenumbers-local&quot;,
+&quot;phonenumbers-mobile&quot;,
+&quot;phonenumbers-setups&quot;,
+&quot;phonenumbers-tollfree&quot;,
+&quot;premiumsupport&quot;,
+&quot;proxy&quot;,
+&quot;proxy-active-sessions&quot;,
+&quot;pstnconnectivity&quot;,
+&quot;pv&quot;,
+&quot;pv-composition-media-downloaded&quot;,
+&quot;pv-composition-media-encrypted&quot;,
+&quot;pv-composition-media-stored&quot;,
+&quot;pv-composition-minutes&quot;,
+&quot;pv-recording-compositions&quot;,
+&quot;pv-room-participants&quot;,
+&quot;pv-room-participants-au1&quot;,
+&quot;pv-room-participants-br1&quot;,
+&quot;pv-room-participants-ie1&quot;,
+&quot;pv-room-participants-jp1&quot;,
+&quot;pv-room-participants-sg1&quot;,
+&quot;pv-room-participants-us1&quot;,
+&quot;pv-room-participants-us2&quot;,
+&quot;pv-rooms&quot;,
+&quot;pv-sip-endpoint-registrations&quot;,
+&quot;recordings&quot;,
+&quot;recordingstorage&quot;,
+&quot;rooms-group-bandwidth&quot;,
+&quot;rooms-group-minutes&quot;,
+&quot;rooms-peer-to-peer-minutes&quot;,
+&quot;shortcodes&quot;,
+&quot;shortcodes-customerowned&quot;,
+&quot;shortcodes-mms-enablement&quot;,
+&quot;shortcodes-mps&quot;,
+&quot;shortcodes-random&quot;,
+&quot;shortcodes-uk&quot;,
+&quot;shortcodes-vanity&quot;,
+&quot;small-group-rooms&quot;,
+&quot;small-group-rooms-data-track&quot;,
+&quot;small-group-rooms-participant-minutes&quot;,
+&quot;sms&quot;,
+&quot;sms-inbound&quot;,
+&quot;sms-inbound-longcode&quot;,
+&quot;sms-inbound-shortcode&quot;,
+&quot;sms-messages-carrierfees&quot;,
+&quot;sms-messages-features&quot;,
+&quot;sms-messages-features-senderid&quot;,
+&quot;sms-outbound&quot;,
+&quot;sms-outbound-content-inspection&quot;,
+&quot;sms-outbound-longcode&quot;,
+&quot;sms-outbound-shortcode&quot;,
+&quot;speech-recognition&quot;,
+&quot;studio-engagements&quot;,
+&quot;sync&quot;,
+&quot;sync-actions&quot;,
+&quot;sync-endpoint-hours&quot;,
+&quot;sync-endpoint-hours-above-daily-cap&quot;,
+&quot;taskrouter-tasks&quot;,
+&quot;totalprice&quot;,
+&quot;transcriptions&quot;,
+&quot;trunking-cps&quot;,
+&quot;trunking-emergency-calls&quot;,
+&quot;trunking-origination&quot;,
+&quot;trunking-origination-local&quot;,
+&quot;trunking-origination-mobile&quot;,
+&quot;trunking-origination-tollfree&quot;,
+&quot;trunking-recordings&quot;,
+&quot;trunking-secure&quot;,
+&quot;trunking-termination&quot;,
+&quot;turnmegabytes&quot;,
+&quot;turnmegabytes-australia&quot;,
+&quot;turnmegabytes-brasil&quot;,
+&quot;turnmegabytes-germany&quot;,
+&quot;turnmegabytes-india&quot;,
+&quot;turnmegabytes-ireland&quot;,
+&quot;turnmegabytes-japan&quot;,
+&quot;turnmegabytes-singapore&quot;,
+&quot;turnmegabytes-useast&quot;,
+&quot;turnmegabytes-uswest&quot;,
+&quot;twilio-interconnect&quot;,
+&quot;verify-push&quot;,
+&quot;verify-totp&quot;,
+&quot;verify-whatsapp-conversations-business-initiated&quot;,
+&quot;video-recordings&quot;,
+&quot;virtual-agent&quot;,
+&quot;voice-insights&quot;,
+&quot;voice-insights-client-insights-on-demand-minute&quot;,
+&quot;voice-insights-ptsn-insights-on-demand-minute&quot;,
+&quot;voice-insights-sip-interface-insights-on-demand-minute&quot;,
+&quot;voice-insights-sip-trunking-insights-on-demand-minute&quot;,
+&quot;wireless&quot;,
+&quot;wireless-orders&quot;,
+&quot;wireless-orders-artwork&quot;,
+&quot;wireless-orders-bulk&quot;,
+&quot;wireless-orders-esim&quot;,
+&quot;wireless-orders-starter&quot;,
+&quot;wireless-usage&quot;,
+&quot;wireless-usage-commands&quot;,
+&quot;wireless-usage-commands-africa&quot;,
+&quot;wireless-usage-commands-asia&quot;,
+&quot;wireless-usage-commands-centralandsouthamerica&quot;,
+&quot;wireless-usage-commands-europe&quot;,
+&quot;wireless-usage-commands-home&quot;,
+&quot;wireless-usage-commands-northamerica&quot;,
+&quot;wireless-usage-commands-oceania&quot;,
+&quot;wireless-usage-commands-roaming&quot;,
+&quot;wireless-usage-data&quot;,
+&quot;wireless-usage-data-africa&quot;,
+&quot;wireless-usage-data-asia&quot;,
+&quot;wireless-usage-data-centralandsouthamerica&quot;,
+&quot;wireless-usage-data-custom-additionalmb&quot;,
+&quot;wireless-usage-data-custom-first5mb&quot;,
+&quot;wireless-usage-data-domestic-roaming&quot;,
+&quot;wireless-usage-data-europe&quot;,
+&quot;wireless-usage-data-individual-additionalgb&quot;,
+&quot;wireless-usage-data-individual-firstgb&quot;,
+&quot;wireless-usage-data-international-roaming-canada&quot;,
+&quot;wireless-usage-data-international-roaming-india&quot;,
+&quot;wireless-usage-data-international-roaming-mexico&quot;,
+&quot;wireless-usage-data-northamerica&quot;,
+&quot;wireless-usage-data-oceania&quot;,
+&quot;wireless-usage-data-pooled&quot;,
+&quot;wireless-usage-data-pooled-downlink&quot;,
+&quot;wireless-usage-data-pooled-uplink&quot;,
+&quot;wireless-usage-mrc&quot;,
+&quot;wireless-usage-mrc-custom&quot;,
+&quot;wireless-usage-mrc-individual&quot;,
+&quot;wireless-usage-mrc-pooled&quot;,
+&quot;wireless-usage-mrc-suspended&quot;,
+&quot;wireless-usage-sms&quot;,
+&quot;wireless-usage-voice&quot;
+],
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">201</span> <span class="statusDescription">Created</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/twilio/CreateUsageTrigger.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

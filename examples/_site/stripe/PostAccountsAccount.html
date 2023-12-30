@@ -1,0 +1,1389 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PostAccountsAccount | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PostAccountsAccount | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostAccountsAccount.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">PostAccountsAccount</h1><p class="requestDescription"><p>Updates a <a href="/docs/connect/accounts">connected account</a> by setting the values of the parameters passed. Any parameters not provided are
+<p>left unchanged.</p>
+<p>For Custom accounts, you can update any information on the account. For other accounts, you can update all information until that
+account has started to go through Connect Onboarding. Once you create an <a href="/docs/api/account_links">Account Link</a>
+for a Standard or Express account, some parameters can no longer be changed. These are marked as <strong>Custom Only</strong> or <strong>Custom and Express</strong>
+below.</p>
+<p>To update your own account, use the <a href="https://dashboard.stripe.com/account">Dashboard</a>. Refer to our
+<a href="/docs/connect/updating-accounts">Connect</a> documentation to learn more about updating accounts.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\v1\accounts\{account}</span> <span class="httpVersion">HTTP/1.1</span>
+<span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">"23423432"</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">account</span> [ in: <span class="parameterLocation">path</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription"></span> <span class="parameterRequired">required</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;account_token&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;An <a href="https://stripe.com/docs/api#create_account_token">account token</a>, used to securely provide details to the account.&quot;
+    },
+    &quot;business_profile&quot;: {
+      &quot;title&quot;: &quot;business_profile_specs&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;mcc&quot;: {
+          &quot;maxLength&quot;: 4,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;name&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;product_description&quot;: {
+          &quot;maxLength&quot;: 40000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;support_address&quot;: {
+          &quot;title&quot;: &quot;address_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 100,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;support_email&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;support_phone&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;support_url&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        },
+        &quot;url&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Business information about the account.&quot;
+    },
+    &quot;business_type&quot;: {
+      &quot;enum&quot;: [
+        &quot;company&quot;,
+        &quot;government_entity&quot;,
+        &quot;individual&quot;,
+        &quot;non_profit&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The business type.&quot;,
+      &quot;x-stripeBypassValidation&quot;: true
+    },
+    &quot;capabilities&quot;: {
+      &quot;title&quot;: &quot;capabilities_param&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;acss_debit_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;affirm_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;afterpay_clearpay_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;au_becs_debit_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;bacs_debit_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;bancontact_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;bank_transfer_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;blik_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;boleto_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;card_issuing&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;card_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;cartes_bancaires_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;eps_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;fpx_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;giropay_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;grabpay_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;ideal_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;india_international_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;jcb_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;klarna_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;konbini_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;legacy_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;link_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;oxxo_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;p24_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;paynow_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;promptpay_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;sepa_debit_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;sofort_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;tax_reporting_us_1099_k&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;tax_reporting_us_1099_misc&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;transfers&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;treasury&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        },
+        &quot;us_bank_account_ach_payments&quot;: {
+          &quot;title&quot;: &quot;capability_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;requested&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Each key of the dictionary represents a capability, and each capability maps to its settings (e.g. whether it has been requested or not). Each capability will be inactive until you have provided its specific requirements and Stripe has verified them. An account may have some of its requested capabilities be active and some be inactive.&quot;
+    },
+    &quot;company&quot;: {
+      &quot;title&quot;: &quot;company_specs&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;address&quot;: {
+          &quot;title&quot;: &quot;address_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 100,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;address_kana&quot;: {
+          &quot;title&quot;: &quot;japan_address_kana_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;town&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;address_kanji&quot;: {
+          &quot;title&quot;: &quot;japan_address_kanji_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;town&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;directors_provided&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;executives_provided&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;name&quot;: {
+          &quot;maxLength&quot;: 100,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;name_kana&quot;: {
+          &quot;maxLength&quot;: 100,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;name_kanji&quot;: {
+          &quot;maxLength&quot;: 100,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;owners_provided&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;ownership_declaration&quot;: {
+          &quot;title&quot;: &quot;company_ownership_declaration&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;date&quot;: {
+              &quot;type&quot;: &quot;integer&quot;,
+              &quot;format&quot;: &quot;unix-time&quot;
+            },
+            &quot;ip&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;user_agent&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;phone&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;registration_number&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;structure&quot;: {
+          &quot;enum&quot;: [
+            &quot;&quot;,
+            &quot;free_zone_establishment&quot;,
+            &quot;free_zone_llc&quot;,
+            &quot;government_instrumentality&quot;,
+            &quot;governmental_unit&quot;,
+            &quot;incorporated_non_profit&quot;,
+            &quot;limited_liability_partnership&quot;,
+            &quot;llc&quot;,
+            &quot;multi_member_llc&quot;,
+            &quot;private_company&quot;,
+            &quot;private_corporation&quot;,
+            &quot;private_partnership&quot;,
+            &quot;public_company&quot;,
+            &quot;public_corporation&quot;,
+            &quot;public_partnership&quot;,
+            &quot;single_member_llc&quot;,
+            &quot;sole_establishment&quot;,
+            &quot;sole_proprietorship&quot;,
+            &quot;tax_exempt_government_instrumentality&quot;,
+            &quot;unincorporated_association&quot;,
+            &quot;unincorporated_non_profit&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;x-stripeBypassValidation&quot;: true
+        },
+        &quot;tax_id&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;tax_id_registrar&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;vat_id&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;verification&quot;: {
+          &quot;title&quot;: &quot;verification_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;document&quot;: {
+              &quot;title&quot;: &quot;verification_document_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;back&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;front&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Information about the company or business. This field is available for any <code>business_type</code>.&quot;
+    },
+    &quot;default_currency&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Three-letter ISO currency code representing the default currency for the account. This must be a currency that <a href="https://stripe.com/docs/payouts">Stripe supports in the account's country</a>.&quot;
+    },
+    &quot;documents&quot;: {
+      &quot;title&quot;: &quot;documents_specs&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;bank_account_ownership_verification&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        &quot;company_license&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        &quot;company_memorandum_of_association&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        &quot;company_ministerial_decree&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        &quot;company_registration_verification&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        &quot;company_tax_id_verification&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        },
+        &quot;proof_of_registration&quot;: {
+          &quot;title&quot;: &quot;documents_param&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;files&quot;: {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 500,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Documents that may be submitted to satisfy various informational requests.&quot;
+    },
+    &quot;email&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The email address of the account holder. This is only to make the account easier to identify to you. Stripe only emails Custom accounts with your consent.&quot;
+    },
+    &quot;expand&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;maxLength&quot;: 5000,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Specifies which fields in the response should be expanded.&quot;
+    },
+    &quot;external_account&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;A card or bank account to attach to the account for receiving <a href="https://stripe.com/docs/connect/bank-debit-card-payouts">payouts</a> (you won’t be able to use it for top-ups). You can provide either a token, like the ones returned by <a href="https://stripe.com/docs/js">Stripe.js</a>, or a dictionary, as documented in the <code>external_account</code> parameter for <a href="https://stripe.com/docs/api#account_create_bank_account">bank account</a> creation. &lt;br&gt;&lt;br&gt;By default, providing an external account sets it as the new default external account for its currency, and deletes the old default if one exists. To add additional external accounts without replacing the existing default for the currency, use the <a href="https://stripe.com/docs/api#account_create_bank_account">bank account</a> or <a href="https://stripe.com/docs/api#account_create_card">card creation</a> APIs.&quot;,
+      &quot;x-stripeBypassValidation&quot;: true
+    },
+    &quot;individual&quot;: {
+      &quot;title&quot;: &quot;individual_specs&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;address&quot;: {
+          &quot;title&quot;: &quot;address_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 100,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;address_kana&quot;: {
+          &quot;title&quot;: &quot;japan_address_kana_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;town&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;address_kanji&quot;: {
+          &quot;title&quot;: &quot;japan_address_kanji_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;town&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;dob&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;title&quot;: &quot;date_of_birth_specs&quot;,
+              &quot;required&quot;: [
+                &quot;day&quot;,
+                &quot;month&quot;,
+                &quot;year&quot;
+              ],
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;day&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;month&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;year&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                }
+              }
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        },
+        &quot;email&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;first_name&quot;: {
+          &quot;maxLength&quot;: 100,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;first_name_kana&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;first_name_kanji&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;full_name_aliases&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;type&quot;: &quot;array&quot;,
+              &quot;items&quot;: {
+                &quot;maxLength&quot;: 300,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        },
+        &quot;gender&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;id_number&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;id_number_secondary&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;last_name&quot;: {
+          &quot;maxLength&quot;: 100,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;last_name_kana&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;last_name_kanji&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;maiden_name&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;metadata&quot;: {
+          &quot;anyOf&quot;: [
+            {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;additionalProperties&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+              }
+            },
+            {
+              &quot;enum&quot;: [
+                &quot;&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          ]
+        },
+        &quot;phone&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;political_exposure&quot;: {
+          &quot;enum&quot;: [
+            &quot;existing&quot;,
+            &quot;none&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;registered_address&quot;: {
+          &quot;title&quot;: &quot;address_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;city&quot;: {
+              &quot;maxLength&quot;: 100,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line1&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;line2&quot;: {
+              &quot;maxLength&quot;: 200,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;state&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;ssn_last_4&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;verification&quot;: {
+          &quot;title&quot;: &quot;person_verification_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;additional_document&quot;: {
+              &quot;title&quot;: &quot;person_verification_document_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;back&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;front&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            &quot;document&quot;: {
+              &quot;title&quot;: &quot;person_verification_document_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;back&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;front&quot;: {
+                  &quot;maxLength&quot;: 500,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Information about the person represented by the account. This field is null unless <code>business_type</code> is set to <code>individual</code>.&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to <code>metadata</code>.&quot;
+    },
+    &quot;settings&quot;: {
+      &quot;title&quot;: &quot;settings_specs_update&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;branding&quot;: {
+          &quot;title&quot;: &quot;branding_settings_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;icon&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;logo&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;primary_color&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;secondary_color&quot;: {
+              &quot;maxLength&quot;: 5000,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;card_issuing&quot;: {
+          &quot;title&quot;: &quot;card_issuing_settings_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;tos_acceptance&quot;: {
+              &quot;title&quot;: &quot;settings_terms_of_service_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;date&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;,
+                  &quot;format&quot;: &quot;unix-time&quot;
+                },
+                &quot;ip&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;user_agent&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            }
+          }
+        },
+        &quot;card_payments&quot;: {
+          &quot;title&quot;: &quot;card_payments_settings_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;decline_on&quot;: {
+              &quot;title&quot;: &quot;decline_charge_on_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;avs_failure&quot;: {
+                  &quot;type&quot;: &quot;boolean&quot;
+                },
+                &quot;cvc_failure&quot;: {
+                  &quot;type&quot;: &quot;boolean&quot;
+                }
+              }
+            },
+            &quot;statement_descriptor_prefix&quot;: {
+              &quot;maxLength&quot;: 10,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;statement_descriptor_prefix_kana&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;maxLength&quot;: 10,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            },
+            &quot;statement_descriptor_prefix_kanji&quot;: {
+              &quot;anyOf&quot;: [
+                {
+                  &quot;maxLength&quot;: 10,
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                {
+                  &quot;enum&quot;: [
+                    &quot;&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              ]
+            }
+          }
+        },
+        &quot;payments&quot;: {
+          &quot;title&quot;: &quot;payments_settings_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;statement_descriptor&quot;: {
+              &quot;maxLength&quot;: 22,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;statement_descriptor_kana&quot;: {
+              &quot;maxLength&quot;: 22,
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;statement_descriptor_kanji&quot;: {
+              &quot;maxLength&quot;: 22,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;payouts&quot;: {
+          &quot;title&quot;: &quot;payout_settings_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;debit_negative_balances&quot;: {
+              &quot;type&quot;: &quot;boolean&quot;
+            },
+            &quot;schedule&quot;: {
+              &quot;title&quot;: &quot;transfer_schedule_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;delay_days&quot;: {
+                  &quot;anyOf&quot;: [
+                    {
+                      &quot;maxLength&quot;: 5000,
+                      &quot;enum&quot;: [
+                        &quot;minimum&quot;
+                      ],
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                      &quot;type&quot;: &quot;integer&quot;
+                    }
+                  ]
+                },
+                &quot;interval&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;enum&quot;: [
+                    &quot;daily&quot;,
+                    &quot;manual&quot;,
+                    &quot;monthly&quot;,
+                    &quot;weekly&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;x-stripeBypassValidation&quot;: true
+                },
+                &quot;monthly_anchor&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;
+                },
+                &quot;weekly_anchor&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;enum&quot;: [
+                    &quot;friday&quot;,
+                    &quot;monday&quot;,
+                    &quot;saturday&quot;,
+                    &quot;sunday&quot;,
+                    &quot;thursday&quot;,
+                    &quot;tuesday&quot;,
+                    &quot;wednesday&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            },
+            &quot;statement_descriptor&quot;: {
+              &quot;maxLength&quot;: 22,
+              &quot;type&quot;: &quot;string&quot;
+            }
+          }
+        },
+        &quot;treasury&quot;: {
+          &quot;title&quot;: &quot;treasury_settings_specs&quot;,
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;tos_acceptance&quot;: {
+              &quot;title&quot;: &quot;settings_terms_of_service_specs&quot;,
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;date&quot;: {
+                  &quot;type&quot;: &quot;integer&quot;,
+                  &quot;format&quot;: &quot;unix-time&quot;
+                },
+                &quot;ip&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;user_agent&quot;: {
+                  &quot;maxLength&quot;: 5000,
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            }
+          }
+        }
+      },
+      &quot;description&quot;: &quot;Options for customizing how the account functions within Stripe.&quot;
+    },
+    &quot;tos_acceptance&quot;: {
+      &quot;title&quot;: &quot;tos_acceptance_specs&quot;,
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;date&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;format&quot;: &quot;unix-time&quot;
+        },
+        &quot;ip&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;service_agreement&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;user_agent&quot;: {
+          &quot;maxLength&quot;: 5000,
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;description&quot;: &quot;Details on the account's acceptance of the <a href="https://stripe.com/docs/connect/updating-accounts#tos-acceptance">Stripe Services Agreement</a>.&quot;
+    }
+  },
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostAccountsAccount.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

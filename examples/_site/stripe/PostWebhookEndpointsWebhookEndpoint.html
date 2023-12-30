@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PostWebhookEndpointsWebhookEndpoint | httpdocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PostWebhookEndpointsWebhookEndpoint | httpdocs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostWebhookEndpointsWebhookEndpoint.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="httpdocs">
+            httpdocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="../OpenApi.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><article><section class="requestOverview"><h1 class="requestSummary">PostWebhookEndpointsWebhookEndpoint</h1><p class="requestDescription"><p>Updates the webhook endpoint. You may edit the <code>url</code>, the list of <code>enabled_events</code>, and the status of your endpoint.</p></section><section class="http"><h3>HTTP Request</h3><pre class="httpExample"><span class="requestLine">POST</span> <span class="httpTarget">\v1\webhook_endpoints\{webhook_endpoint}</span> <span class="httpVersion">HTTP/1.1</span>
+<p><span class="headerLine">host</span>: <span class="headerValue">api.stripe.com:443</span>
+<span class="headerLine">eTag</span>: <span class="headerValue">&quot;23423432&quot;</span>
+<span class="headerLine">accept</span>: <span class="headerValue">application/json</span>
+<span class="headerLine">content-type</span>: <span class="headerValue">application/x-www-form-urlencoded</span></p>
+<p>{ &quot;example&quot;: &quot;Example goes here&quot; }</p></pre></section><dl class="parameters"><h3>Parameters</h3><dt class="parameter"><span class="parameterName">webhook_endpoint</span> [ in: <span class="parameterLocation">path</span> type: <span class="parameterType">string</span> ]</dt><dd class="parameter"><span class="parameterDescription"></span> <span class="parameterRequired">required</span></dd></dl><section class="requestContent"><h3>Request Body Schema</h3><pre class="schema">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;description&quot;: {
+      &quot;maxLength&quot;: 5000,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;An optional description of what the webhook is used for.&quot;
+    },
+    &quot;disabled&quot;: {
+      &quot;type&quot;: &quot;boolean&quot;,
+      &quot;description&quot;: &quot;Disable the webhook endpoint if set to true.&quot;
+    },
+    &quot;enabled_events&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;enum&quot;: [
+          &quot;*&quot;,
+          &quot;account.application.authorized&quot;,
+          &quot;account.application.deauthorized&quot;,
+          &quot;account.external_account.created&quot;,
+          &quot;account.external_account.deleted&quot;,
+          &quot;account.external_account.updated&quot;,
+          &quot;account.updated&quot;,
+          &quot;application_fee.created&quot;,
+          &quot;application_fee.refund.updated&quot;,
+          &quot;application_fee.refunded&quot;,
+          &quot;balance.available&quot;,
+          &quot;billing_portal.configuration.created&quot;,
+          &quot;billing_portal.configuration.updated&quot;,
+          &quot;billing_portal.session.created&quot;,
+          &quot;capability.updated&quot;,
+          &quot;cash_balance.funds_available&quot;,
+          &quot;charge.captured&quot;,
+          &quot;charge.dispute.closed&quot;,
+          &quot;charge.dispute.created&quot;,
+          &quot;charge.dispute.funds_reinstated&quot;,
+          &quot;charge.dispute.funds_withdrawn&quot;,
+          &quot;charge.dispute.updated&quot;,
+          &quot;charge.expired&quot;,
+          &quot;charge.failed&quot;,
+          &quot;charge.pending&quot;,
+          &quot;charge.refund.updated&quot;,
+          &quot;charge.refunded&quot;,
+          &quot;charge.succeeded&quot;,
+          &quot;charge.updated&quot;,
+          &quot;checkout.session.async_payment_failed&quot;,
+          &quot;checkout.session.async_payment_succeeded&quot;,
+          &quot;checkout.session.completed&quot;,
+          &quot;checkout.session.expired&quot;,
+          &quot;coupon.created&quot;,
+          &quot;coupon.deleted&quot;,
+          &quot;coupon.updated&quot;,
+          &quot;credit_note.created&quot;,
+          &quot;credit_note.updated&quot;,
+          &quot;credit_note.voided&quot;,
+          &quot;customer.created&quot;,
+          &quot;customer.deleted&quot;,
+          &quot;customer.discount.created&quot;,
+          &quot;customer.discount.deleted&quot;,
+          &quot;customer.discount.updated&quot;,
+          &quot;customer.source.created&quot;,
+          &quot;customer.source.deleted&quot;,
+          &quot;customer.source.expiring&quot;,
+          &quot;customer.source.updated&quot;,
+          &quot;customer.subscription.created&quot;,
+          &quot;customer.subscription.deleted&quot;,
+          &quot;customer.subscription.paused&quot;,
+          &quot;customer.subscription.pending_update_applied&quot;,
+          &quot;customer.subscription.pending_update_expired&quot;,
+          &quot;customer.subscription.resumed&quot;,
+          &quot;customer.subscription.trial_will_end&quot;,
+          &quot;customer.subscription.updated&quot;,
+          &quot;customer.tax_id.created&quot;,
+          &quot;customer.tax_id.deleted&quot;,
+          &quot;customer.tax_id.updated&quot;,
+          &quot;customer.updated&quot;,
+          &quot;customer_cash_balance_transaction.created&quot;,
+          &quot;file.created&quot;,
+          &quot;financial_connections.account.created&quot;,
+          &quot;financial_connections.account.deactivated&quot;,
+          &quot;financial_connections.account.disconnected&quot;,
+          &quot;financial_connections.account.reactivated&quot;,
+          &quot;financial_connections.account.refreshed_balance&quot;,
+          &quot;identity.verification_session.canceled&quot;,
+          &quot;identity.verification_session.created&quot;,
+          &quot;identity.verification_session.processing&quot;,
+          &quot;identity.verification_session.redacted&quot;,
+          &quot;identity.verification_session.requires_input&quot;,
+          &quot;identity.verification_session.verified&quot;,
+          &quot;invoice.created&quot;,
+          &quot;invoice.deleted&quot;,
+          &quot;invoice.finalization_failed&quot;,
+          &quot;invoice.finalized&quot;,
+          &quot;invoice.marked_uncollectible&quot;,
+          &quot;invoice.paid&quot;,
+          &quot;invoice.payment_action_required&quot;,
+          &quot;invoice.payment_failed&quot;,
+          &quot;invoice.payment_succeeded&quot;,
+          &quot;invoice.sent&quot;,
+          &quot;invoice.upcoming&quot;,
+          &quot;invoice.updated&quot;,
+          &quot;invoice.voided&quot;,
+          &quot;invoiceitem.created&quot;,
+          &quot;invoiceitem.deleted&quot;,
+          &quot;invoiceitem.updated&quot;,
+          &quot;issuing_authorization.created&quot;,
+          &quot;issuing_authorization.request&quot;,
+          &quot;issuing_authorization.updated&quot;,
+          &quot;issuing_card.created&quot;,
+          &quot;issuing_card.updated&quot;,
+          &quot;issuing_cardholder.created&quot;,
+          &quot;issuing_cardholder.updated&quot;,
+          &quot;issuing_dispute.closed&quot;,
+          &quot;issuing_dispute.created&quot;,
+          &quot;issuing_dispute.funds_reinstated&quot;,
+          &quot;issuing_dispute.submitted&quot;,
+          &quot;issuing_dispute.updated&quot;,
+          &quot;issuing_transaction.created&quot;,
+          &quot;issuing_transaction.updated&quot;,
+          &quot;mandate.updated&quot;,
+          &quot;order.created&quot;,
+          &quot;payment_intent.amount_capturable_updated&quot;,
+          &quot;payment_intent.canceled&quot;,
+          &quot;payment_intent.created&quot;,
+          &quot;payment_intent.partially_funded&quot;,
+          &quot;payment_intent.payment_failed&quot;,
+          &quot;payment_intent.processing&quot;,
+          &quot;payment_intent.requires_action&quot;,
+          &quot;payment_intent.succeeded&quot;,
+          &quot;payment_link.created&quot;,
+          &quot;payment_link.updated&quot;,
+          &quot;payment_method.attached&quot;,
+          &quot;payment_method.automatically_updated&quot;,
+          &quot;payment_method.detached&quot;,
+          &quot;payment_method.updated&quot;,
+          &quot;payout.canceled&quot;,
+          &quot;payout.created&quot;,
+          &quot;payout.failed&quot;,
+          &quot;payout.paid&quot;,
+          &quot;payout.updated&quot;,
+          &quot;person.created&quot;,
+          &quot;person.deleted&quot;,
+          &quot;person.updated&quot;,
+          &quot;plan.created&quot;,
+          &quot;plan.deleted&quot;,
+          &quot;plan.updated&quot;,
+          &quot;price.created&quot;,
+          &quot;price.deleted&quot;,
+          &quot;price.updated&quot;,
+          &quot;product.created&quot;,
+          &quot;product.deleted&quot;,
+          &quot;product.updated&quot;,
+          &quot;promotion_code.created&quot;,
+          &quot;promotion_code.updated&quot;,
+          &quot;quote.accepted&quot;,
+          &quot;quote.canceled&quot;,
+          &quot;quote.created&quot;,
+          &quot;quote.finalized&quot;,
+          &quot;radar.early_fraud_warning.created&quot;,
+          &quot;radar.early_fraud_warning.updated&quot;,
+          &quot;recipient.created&quot;,
+          &quot;recipient.deleted&quot;,
+          &quot;recipient.updated&quot;,
+          &quot;refund.created&quot;,
+          &quot;refund.updated&quot;,
+          &quot;reporting.report_run.failed&quot;,
+          &quot;reporting.report_run.succeeded&quot;,
+          &quot;reporting.report_type.updated&quot;,
+          &quot;review.closed&quot;,
+          &quot;review.opened&quot;,
+          &quot;setup_intent.canceled&quot;,
+          &quot;setup_intent.created&quot;,
+          &quot;setup_intent.requires_action&quot;,
+          &quot;setup_intent.setup_failed&quot;,
+          &quot;setup_intent.succeeded&quot;,
+          &quot;sigma.scheduled_query_run.created&quot;,
+          &quot;sku.created&quot;,
+          &quot;sku.deleted&quot;,
+          &quot;sku.updated&quot;,
+          &quot;source.canceled&quot;,
+          &quot;source.chargeable&quot;,
+          &quot;source.failed&quot;,
+          &quot;source.mandate_notification&quot;,
+          &quot;source.refund_attributes_required&quot;,
+          &quot;source.transaction.created&quot;,
+          &quot;source.transaction.updated&quot;,
+          &quot;subscription_schedule.aborted&quot;,
+          &quot;subscription_schedule.canceled&quot;,
+          &quot;subscription_schedule.completed&quot;,
+          &quot;subscription_schedule.created&quot;,
+          &quot;subscription_schedule.expiring&quot;,
+          &quot;subscription_schedule.released&quot;,
+          &quot;subscription_schedule.updated&quot;,
+          &quot;tax_rate.created&quot;,
+          &quot;tax_rate.updated&quot;,
+          &quot;terminal.reader.action_failed&quot;,
+          &quot;terminal.reader.action_succeeded&quot;,
+          &quot;test_helpers.test_clock.advancing&quot;,
+          &quot;test_helpers.test_clock.created&quot;,
+          &quot;test_helpers.test_clock.deleted&quot;,
+          &quot;test_helpers.test_clock.internal_failure&quot;,
+          &quot;test_helpers.test_clock.ready&quot;,
+          &quot;topup.canceled&quot;,
+          &quot;topup.created&quot;,
+          &quot;topup.failed&quot;,
+          &quot;topup.reversed&quot;,
+          &quot;topup.succeeded&quot;,
+          &quot;transfer.created&quot;,
+          &quot;transfer.reversed&quot;,
+          &quot;transfer.updated&quot;,
+          &quot;treasury.credit_reversal.created&quot;,
+          &quot;treasury.credit_reversal.posted&quot;,
+          &quot;treasury.debit_reversal.completed&quot;,
+          &quot;treasury.debit_reversal.created&quot;,
+          &quot;treasury.debit_reversal.initial_credit_granted&quot;,
+          &quot;treasury.financial_account.closed&quot;,
+          &quot;treasury.financial_account.created&quot;,
+          &quot;treasury.financial_account.features_status_updated&quot;,
+          &quot;treasury.inbound_transfer.canceled&quot;,
+          &quot;treasury.inbound_transfer.created&quot;,
+          &quot;treasury.inbound_transfer.failed&quot;,
+          &quot;treasury.inbound_transfer.succeeded&quot;,
+          &quot;treasury.outbound_payment.canceled&quot;,
+          &quot;treasury.outbound_payment.created&quot;,
+          &quot;treasury.outbound_payment.expected_arrival_date_updated&quot;,
+          &quot;treasury.outbound_payment.failed&quot;,
+          &quot;treasury.outbound_payment.posted&quot;,
+          &quot;treasury.outbound_payment.returned&quot;,
+          &quot;treasury.outbound_transfer.canceled&quot;,
+          &quot;treasury.outbound_transfer.created&quot;,
+          &quot;treasury.outbound_transfer.expected_arrival_date_updated&quot;,
+          &quot;treasury.outbound_transfer.failed&quot;,
+          &quot;treasury.outbound_transfer.posted&quot;,
+          &quot;treasury.outbound_transfer.returned&quot;,
+          &quot;treasury.received_credit.created&quot;,
+          &quot;treasury.received_credit.failed&quot;,
+          &quot;treasury.received_credit.succeeded&quot;,
+          &quot;treasury.received_debit.created&quot;
+        ],
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;x-stripeBypassValidation&quot;: true
+      },
+      &quot;description&quot;: &quot;The list of events to enable for this endpoint. You may specify <code>[&amp;#x27;*&amp;#x27;]</code> to enable all events, except those that require explicit selection.&quot;
+    },
+    &quot;expand&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;maxLength&quot;: 5000,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;description&quot;: &quot;Specifies which fields in the response should be expanded.&quot;
+    },
+    &quot;metadata&quot;: {
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        {
+          &quot;enum&quot;: [
+            &quot;&quot;
+          ],
+          &quot;type&quot;: &quot;string&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to <code>metadata</code>.&quot;
+    },
+    &quot;url&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The URL of the webhook endpoint.&quot;
+    }
+  },
+  &quot;additionalProperties&quot;: false
+}</pre></section><section class="responses"><h2>Responses</h2><ul class="responses"><li class="response"><span class="statusLine">200</span> <span class="statusDescription">Successful response.</span></li><li class="response"><span class="statusLine">default</span> <span class="statusDescription">Error response.</span></li></ul></section></article></body></html>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/darrelmiller/httpdoc/blob/main/examples/stripe/PostWebhookEndpointsWebhookEndpoint.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

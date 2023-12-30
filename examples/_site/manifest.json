@@ -1,0 +1,7252 @@
+{
+  "source_base_path": "C:/Users/darrmi/src/github/darrelmiller/httpdoc/examples",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "OpenApi.css",
+      "output": {
+        "resource": {
+          "relative_path": "OpenApi.css"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "apis-io-maintainers/deleteMaintainer.md",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/deleteMaintainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "apis-io-maintainers/getMaintainer.md",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/getMaintainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "apis-io-maintainers/getMaintainers.md",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/getMaintainers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "apis-io-maintainers/submitMaintainer.md",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/submitMaintainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "apis-io-maintainers/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/toc.html"
+        },
+        ".json": {
+          "relative_path": "apis-io-maintainers/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "apis-io-maintainers/updateAPIMaintainers.md",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/updateAPIMaintainers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "apis-io-maintainers/updateMaintainer.md",
+      "output": {
+        ".html": {
+          "relative_path": "apis-io-maintainers/updateMaintainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/cancelFineTune.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/cancelFineTune.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/cancelFineTuningJob.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/cancelFineTuningJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/cancelRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/cancelRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createAssistant.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createAssistant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createAssistantFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createAssistantFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createChatCompletion.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createChatCompletion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createCompletion.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createCompletion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createEdit.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createEmbedding.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createEmbedding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createFineTune.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createFineTune.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createFineTuningJob.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createFineTuningJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createImageEdit.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createImageEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createImageVariation.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createImageVariation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createModeration.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createModeration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createSpeech.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createSpeech.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createThread.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createThread.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createThreadAndRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createThreadAndRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/createTranslation.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/createTranslation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/deleteAssistant.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/deleteAssistant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/deleteAssistantFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/deleteAssistantFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/deleteFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/deleteFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/deleteModel.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/deleteModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/deleteThread.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/deleteThread.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/downloadFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/downloadFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getAssistant.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getAssistant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getAssistantFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getAssistantFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getMessageFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getMessageFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getRunStep.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getRunStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/getThread.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/getThread.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listAssistantFiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listAssistantFiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listAssistants.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listAssistants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listFiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listFiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listFineTuneEvents.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listFineTuneEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listFineTunes.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listFineTunes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listFineTuningEvents.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listFineTuningEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listMessageFiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listMessageFiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listMessages.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listMessages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listModels.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listPaginatedFineTuningJobs.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listPaginatedFineTuningJobs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listRunSteps.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listRunSteps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/listRuns.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/listRuns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/modifyAssistant.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/modifyAssistant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/modifyMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/modifyMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/modifyRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/modifyRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/modifyThread.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/modifyThread.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/retrieveFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/retrieveFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/retrieveFineTune.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/retrieveFineTune.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/retrieveFineTuningJob.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/retrieveFineTuningJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/retrieveModel.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/retrieveModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "openai/submitToolOuputsToRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "openai/submitToolOuputsToRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "openai/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "openai/toc.html"
+        },
+        ".json": {
+          "relative_path": "openai/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sample/createSpeaker.md",
+      "output": {
+        ".html": {
+          "relative_path": "sample/createSpeaker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sample/listSpeakers.md",
+      "output": {
+        ".html": {
+          "relative_path": "sample/listSpeakers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sample/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sample/toc.html"
+        },
+        ".json": {
+          "relative_path": "sample/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteAccountsAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteAccountsAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteAccountsAccountBankAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteAccountsAccountBankAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteAccountsAccountExternalAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteAccountsAccountExternalAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteAccountsAccountPeoplePerson.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteAccountsAccountPeoplePerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteAccountsAccountPersonsPerson.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteAccountsAccountPersonsPerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteApplePayDomainsDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteApplePayDomainsDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCouponsCoupon.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCouponsCoupon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomer.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerBankAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerBankAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerCardsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerCardsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerDiscount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerDiscount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerSourcesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerSourcesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerSubscriptionsSubscriptionExposedId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerSubscriptionsSubscriptionExposedId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteCustomersCustomerTaxIdsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteCustomersCustomerTaxIdsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteEphemeralKeysKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteEphemeralKeysKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteInvoiceitemsInvoiceitem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteInvoiceitemsInvoiceitem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteInvoicesInvoice.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteInvoicesInvoice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeletePlansPlan.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeletePlansPlan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteProductsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteProductsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteRadarValueListItemsItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteRadarValueListItemsItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteRadarValueListsValueList.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteRadarValueListsValueList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteSubscriptionItemsItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteSubscriptionItemsItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteSubscriptionsSubscriptionExposedId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteSubscriptionsSubscriptionExposedId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteSubscriptionsSubscriptionExposedIdDiscount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteSubscriptionsSubscriptionExposedIdDiscount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteTerminalConfigurationsConfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteTerminalConfigurationsConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteTerminalLocationsLocation.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteTerminalLocationsLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteTerminalReadersReader.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteTerminalReadersReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteTestHelpersTestClocksTestClock.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteTestHelpersTestClocksTestClock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/DeleteWebhookEndpointsWebhookEndpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/DeleteWebhookEndpointsWebhookEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountBankAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountBankAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountCapabilities.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountCapabilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountCapabilitiesCapability.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountCapabilitiesCapability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountExternalAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountExternalAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountExternalAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountExternalAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountPeople.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountPeople.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountPeoplePerson.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountPeoplePerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountPersons.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountPersons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAccountsAccountPersonsPerson.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAccountsAccountPersonsPerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetApplePayDomains.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetApplePayDomains.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetApplePayDomainsDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetApplePayDomainsDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetApplicationFees.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetApplicationFees.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetApplicationFeesFeeRefundsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetApplicationFeesFeeRefundsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetApplicationFeesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetApplicationFeesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetApplicationFeesIdRefunds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetApplicationFeesIdRefunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAppsSecrets.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAppsSecrets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetAppsSecretsFind.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetAppsSecretsFind.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBalance.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBalance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBalanceHistory.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBalanceHistory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBalanceHistoryId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBalanceHistoryId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBalanceTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBalanceTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBalanceTransactionsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBalanceTransactionsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBillingPortalConfigurations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBillingPortalConfigurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetBillingPortalConfigurationsConfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetBillingPortalConfigurationsConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCharges.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCharges.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetChargesCharge.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetChargesCharge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetChargesChargeDispute.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetChargesChargeDispute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetChargesChargeRefunds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetChargesChargeRefunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetChargesChargeRefundsRefund.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetChargesChargeRefundsRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetChargesSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetChargesSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCheckoutSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCheckoutSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCheckoutSessionsSession.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCheckoutSessionsSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCheckoutSessionsSessionLineItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCheckoutSessionsSessionLineItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCountrySpecs.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCountrySpecs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCountrySpecsCountry.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCountrySpecsCountry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCoupons.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCoupons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCouponsCoupon.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCouponsCoupon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCreditNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCreditNotes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCreditNotesCreditNoteLines.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCreditNotesCreditNoteLines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCreditNotesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCreditNotesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCreditNotesPreview.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCreditNotesPreview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCreditNotesPreviewLines.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCreditNotesPreviewLines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomer.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerBalanceTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerBalanceTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerBalanceTransactionsTransaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerBalanceTransactionsTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerBankAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerBankAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerBankAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerBankAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerCards.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerCards.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerCardsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerCardsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerCashBalance.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerCashBalance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerCashBalanceTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerCashBalanceTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerCashBalanceTransactionsTransaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerCashBalanceTransactionsTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerDiscount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerDiscount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerPaymentMethods.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerPaymentMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerPaymentMethodsPaymentMethod.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerPaymentMethodsPaymentMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerSources.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerSources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerSourcesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerSourcesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerSubscriptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerSubscriptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerSubscriptionsSubscriptionExposedId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerSubscriptionsSubscriptionExposedId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerTaxIds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerTaxIds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersCustomerTaxIdsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersCustomerTaxIdsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetCustomersSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetCustomersSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetDisputes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetDisputes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetDisputesDispute.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetDisputesDispute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetEvents.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetEventsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetEventsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetExchangeRates.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetExchangeRates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetExchangeRatesRateId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetExchangeRatesRateId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFileLinks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFileLinks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFileLinksLink.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFileLinksLink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFilesFile.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFilesFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFinancialConnectionsAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFinancialConnectionsAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFinancialConnectionsAccountsAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFinancialConnectionsAccountsAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFinancialConnectionsAccountsAccountOwners.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFinancialConnectionsAccountsAccountOwners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetFinancialConnectionsSessionsSession.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetFinancialConnectionsSessionsSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIdentityVerificationReports.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIdentityVerificationReports.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIdentityVerificationReportsReport.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIdentityVerificationReportsReport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIdentityVerificationSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIdentityVerificationSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIdentityVerificationSessionsSession.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIdentityVerificationSessionsSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoiceitems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoiceitems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoiceitemsInvoiceitem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoiceitemsInvoiceitem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoices.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoicesInvoice.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoicesInvoice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoicesInvoiceLines.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoicesInvoiceLines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoicesSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoicesSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoicesUpcoming.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoicesUpcoming.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetInvoicesUpcomingLines.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetInvoicesUpcomingLines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingAuthorizations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingAuthorizations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingAuthorizationsAuthorization.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingAuthorizationsAuthorization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingCardholders.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingCardholders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingCardholdersCardholder.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingCardholdersCardholder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingCards.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingCards.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingCardsCard.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingCardsCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingDisputes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingDisputes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingDisputesDispute.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingDisputesDispute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingSettlements.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingSettlements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingSettlementsSettlement.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingSettlementsSettlement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetIssuingTransactionsTransaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetIssuingTransactionsTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetLinkAccountSessionsSession.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetLinkAccountSessionsSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetLinkedAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetLinkedAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetLinkedAccountsAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetLinkedAccountsAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetLinkedAccountsAccountOwners.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetLinkedAccountsAccountOwners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetMandatesMandate.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetMandatesMandate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentIntents.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentIntents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentIntentsIntent.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentIntentsIntent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentIntentsSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentIntentsSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentLinks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentLinks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentLinksPaymentLink.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentLinksPaymentLink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentLinksPaymentLinkLineItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentLinksPaymentLinkLineItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentMethods.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPaymentMethodsPaymentMethod.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPaymentMethodsPaymentMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPayouts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPayouts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPayoutsPayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPayoutsPayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPlans.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPlans.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPlansPlan.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPlansPlan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPrices.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPrices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPricesPrice.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPricesPrice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPricesSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPricesSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetProducts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetProducts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetProductsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetProductsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetProductsSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetProductsSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPromotionCodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPromotionCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetPromotionCodesPromotionCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetPromotionCodesPromotionCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetQuotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetQuotes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetQuotesQuote.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetQuotesQuote.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetQuotesQuoteComputedUpfrontLineItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetQuotesQuoteComputedUpfrontLineItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetQuotesQuoteLineItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetQuotesQuoteLineItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetQuotesQuotePdf.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetQuotesQuotePdf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRadarEarlyFraudWarnings.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRadarEarlyFraudWarnings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRadarEarlyFraudWarningsEarlyFraudWarning.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRadarEarlyFraudWarningsEarlyFraudWarning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRadarValueListItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRadarValueListItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRadarValueListItemsItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRadarValueListItemsItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRadarValueLists.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRadarValueLists.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRadarValueListsValueList.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRadarValueListsValueList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRefunds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRefunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetRefundsRefund.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetRefundsRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetReportingReportRuns.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetReportingReportRuns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetReportingReportRunsReportRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetReportingReportRunsReportRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetReportingReportTypes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetReportingReportTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetReportingReportTypesReportType.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetReportingReportTypesReportType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetReviews.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetReviews.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetReviewsReview.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetReviewsReview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSetupAttempts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSetupAttempts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSetupIntents.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSetupIntents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSetupIntentsIntent.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSetupIntentsIntent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetShippingRates.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetShippingRates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetShippingRatesShippingRateToken.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetShippingRatesShippingRateToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSigmaScheduledQueryRuns.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSigmaScheduledQueryRuns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSigmaScheduledQueryRunsScheduledQueryRun.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSigmaScheduledQueryRunsScheduledQueryRun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSourcesSource.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSourcesSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSourcesSourceMandateNotificationsMandateNotification.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSourcesSourceMandateNotificationsMandateNotification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSourcesSourceSourceTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSourcesSourceSourceTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSourcesSourceSourceTransactionsSourceTransaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSourcesSourceSourceTransactionsSourceTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionItemsItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionItemsItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionItemsSubscriptionItemUsageRecordSummaries.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionItemsSubscriptionItemUsageRecordSummaries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionSchedules.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionSchedules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionSchedulesSchedule.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionSchedulesSchedule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionsSearch.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionsSearch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetSubscriptionsSubscriptionExposedId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetSubscriptionsSubscriptionExposedId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTaxCodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTaxCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTaxCodesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTaxCodesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTaxRates.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTaxRates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTaxRatesTaxRate.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTaxRatesTaxRate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTerminalConfigurations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTerminalConfigurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTerminalConfigurationsConfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTerminalConfigurationsConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTerminalLocations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTerminalLocations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTerminalLocationsLocation.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTerminalLocationsLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTerminalReaders.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTerminalReaders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTerminalReadersReader.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTerminalReadersReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTestHelpersTestClocks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTestHelpersTestClocks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTestHelpersTestClocksTestClock.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTestHelpersTestClocksTestClock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTokensToken.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTokensToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTopups.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTopups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTopupsTopup.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTopupsTopup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTransfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTransfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTransfersIdReversals.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTransfersIdReversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTransfersTransfer.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTransfersTransfer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTransfersTransferReversalsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTransfersTransferReversalsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryCreditReversals.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryCreditReversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryCreditReversalsCreditReversal.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryCreditReversalsCreditReversal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryDebitReversals.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryDebitReversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryDebitReversalsDebitReversal.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryDebitReversalsDebitReversal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryFinancialAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryFinancialAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryFinancialAccountsFinancialAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryFinancialAccountsFinancialAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryFinancialAccountsFinancialAccountFeatures.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryFinancialAccountsFinancialAccountFeatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryInboundTransfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryInboundTransfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryInboundTransfersId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryInboundTransfersId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryOutboundPayments.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryOutboundPayments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryOutboundPaymentsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryOutboundPaymentsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryOutboundTransfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryOutboundTransfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryOutboundTransfersOutboundTransfer.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryOutboundTransfersOutboundTransfer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryReceivedCredits.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryReceivedCredits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryReceivedCreditsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryReceivedCreditsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryReceivedDebits.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryReceivedDebits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryReceivedDebitsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryReceivedDebitsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryTransactionEntries.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryTransactionEntries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryTransactionEntriesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryTransactionEntriesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetTreasuryTransactionsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetTreasuryTransactionsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetWebhookEndpoints.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetWebhookEndpoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/GetWebhookEndpointsWebhookEndpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/GetWebhookEndpointsWebhookEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountLinks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountLinks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountBankAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountBankAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountBankAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountBankAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountCapabilitiesCapability.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountCapabilitiesCapability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountExternalAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountExternalAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountExternalAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountExternalAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountLoginLinks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountLoginLinks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountPeople.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountPeople.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountPeoplePerson.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountPeoplePerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountPersons.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountPersons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountPersonsPerson.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountPersonsPerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAccountsAccountReject.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAccountsAccountReject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostApplePayDomains.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostApplePayDomains.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostApplicationFeesFeeRefundsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostApplicationFeesFeeRefundsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostApplicationFeesIdRefund.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostApplicationFeesIdRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostApplicationFeesIdRefunds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostApplicationFeesIdRefunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAppsSecrets.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAppsSecrets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostAppsSecretsDelete.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostAppsSecretsDelete.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostBillingPortalConfigurations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostBillingPortalConfigurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostBillingPortalConfigurationsConfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostBillingPortalConfigurationsConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostBillingPortalSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostBillingPortalSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCharges.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCharges.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesCharge.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesCharge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesChargeCapture.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesChargeCapture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesChargeDispute.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesChargeDispute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesChargeDisputeClose.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesChargeDisputeClose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesChargeRefund.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesChargeRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesChargeRefunds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesChargeRefunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostChargesChargeRefundsRefund.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostChargesChargeRefundsRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCheckoutSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCheckoutSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCheckoutSessionsSessionExpire.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCheckoutSessionsSessionExpire.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCoupons.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCoupons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCouponsCoupon.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCouponsCoupon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCreditNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCreditNotes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCreditNotesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCreditNotesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCreditNotesIdVoid.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCreditNotesIdVoid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomer.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerBalanceTransactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerBalanceTransactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerBalanceTransactionsTransaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerBalanceTransactionsTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerBankAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerBankAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerBankAccountsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerBankAccountsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerBankAccountsIdVerify.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerBankAccountsIdVerify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerCards.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerCards.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerCardsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerCardsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerCashBalance.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerCashBalance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerFundingInstructions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerFundingInstructions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerSources.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerSources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerSourcesId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerSourcesId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerSourcesIdVerify.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerSourcesIdVerify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerSubscriptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerSubscriptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerSubscriptionsSubscriptionExposedId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerSubscriptionsSubscriptionExposedId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostCustomersCustomerTaxIds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostCustomersCustomerTaxIds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostDisputesDispute.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostDisputesDispute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostDisputesDisputeClose.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostDisputesDisputeClose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostEphemeralKeys.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostEphemeralKeys.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostFileLinks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostFileLinks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostFileLinksLink.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostFileLinksLink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostFiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostFiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostFinancialConnectionsAccountsAccountDisconnect.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostFinancialConnectionsAccountsAccountDisconnect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostFinancialConnectionsAccountsAccountRefresh.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostFinancialConnectionsAccountsAccountRefresh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostFinancialConnectionsSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostFinancialConnectionsSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIdentityVerificationSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIdentityVerificationSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIdentityVerificationSessionsSession.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIdentityVerificationSessionsSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIdentityVerificationSessionsSessionCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIdentityVerificationSessionsSessionCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIdentityVerificationSessionsSessionRedact.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIdentityVerificationSessionsSessionRedact.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoiceitems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoiceitems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoiceitemsInvoiceitem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoiceitemsInvoiceitem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoices.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoicesInvoice.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoicesInvoice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoicesInvoiceFinalize.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoicesInvoiceFinalize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoicesInvoiceMarkUncollectible.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoicesInvoiceMarkUncollectible.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoicesInvoicePay.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoicesInvoicePay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoicesInvoiceSend.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoicesInvoiceSend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostInvoicesInvoiceVoid.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostInvoicesInvoiceVoid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingAuthorizationsAuthorization.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingAuthorizationsAuthorization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingAuthorizationsAuthorizationApprove.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingAuthorizationsAuthorizationApprove.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingAuthorizationsAuthorizationDecline.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingAuthorizationsAuthorizationDecline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingCardholders.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingCardholders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingCardholdersCardholder.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingCardholdersCardholder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingCards.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingCards.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingCardsCard.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingCardsCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingDisputes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingDisputes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingDisputesDispute.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingDisputesDispute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingDisputesDisputeSubmit.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingDisputesDisputeSubmit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingSettlementsSettlement.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingSettlementsSettlement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostIssuingTransactionsTransaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostIssuingTransactionsTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostLinkAccountSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostLinkAccountSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostLinkedAccountsAccountDisconnect.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostLinkedAccountsAccountDisconnect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostLinkedAccountsAccountRefresh.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostLinkedAccountsAccountRefresh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntents.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntent.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntentApplyCustomerBalance.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntentApplyCustomerBalance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntentCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntentCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntentCapture.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntentCapture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntentConfirm.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntentConfirm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntentIncrementAuthorization.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntentIncrementAuthorization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentIntentsIntentVerifyMicrodeposits.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentIntentsIntentVerifyMicrodeposits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentLinks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentLinks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentLinksPaymentLink.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentLinksPaymentLink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentMethods.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentMethodsPaymentMethod.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentMethodsPaymentMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentMethodsPaymentMethodAttach.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentMethodsPaymentMethodAttach.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPaymentMethodsPaymentMethodDetach.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPaymentMethodsPaymentMethodDetach.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPayouts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPayouts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPayoutsPayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPayoutsPayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPayoutsPayoutCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPayoutsPayoutCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPayoutsPayoutReverse.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPayoutsPayoutReverse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPlans.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPlans.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPlansPlan.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPlansPlan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPrices.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPrices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPricesPrice.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPricesPrice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostProducts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostProducts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostProductsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostProductsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPromotionCodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPromotionCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostPromotionCodesPromotionCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostPromotionCodesPromotionCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostQuotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostQuotes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostQuotesQuote.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostQuotesQuote.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostQuotesQuoteAccept.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostQuotesQuoteAccept.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostQuotesQuoteCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostQuotesQuoteCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostQuotesQuoteFinalize.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostQuotesQuoteFinalize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostRadarValueListItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostRadarValueListItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostRadarValueLists.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostRadarValueLists.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostRadarValueListsValueList.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostRadarValueListsValueList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostRefunds.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostRefunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostRefundsRefund.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostRefundsRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostRefundsRefundCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostRefundsRefundCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostReportingReportRuns.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostReportingReportRuns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostReviewsReviewApprove.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostReviewsReviewApprove.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSetupIntents.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSetupIntents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSetupIntentsIntent.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSetupIntentsIntent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSetupIntentsIntentCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSetupIntentsIntentCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSetupIntentsIntentConfirm.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSetupIntentsIntentConfirm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSetupIntentsIntentVerifyMicrodeposits.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSetupIntentsIntentVerifyMicrodeposits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostShippingRates.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostShippingRates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostShippingRatesShippingRateToken.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostShippingRatesShippingRateToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSources.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSourcesSource.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSourcesSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSourcesSourceVerify.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSourcesSourceVerify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionItems.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionItemsItem.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionItemsItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionItemsSubscriptionItemUsageRecords.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionItemsSubscriptionItemUsageRecords.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionSchedules.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionSchedules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionSchedulesSchedule.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionSchedulesSchedule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionSchedulesScheduleCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionSchedulesScheduleCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionSchedulesScheduleRelease.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionSchedulesScheduleRelease.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionsSubscriptionExposedId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionsSubscriptionExposedId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostSubscriptionsSubscriptionResume.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostSubscriptionsSubscriptionResume.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTaxRates.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTaxRates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTaxRatesTaxRate.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTaxRatesTaxRate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalConfigurations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalConfigurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalConfigurationsConfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalConfigurationsConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalConnectionTokens.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalConnectionTokens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalLocations.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalLocations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalLocationsLocation.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalLocationsLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReaders.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReaders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReadersReader.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReadersReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReadersReaderCancelAction.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReadersReaderCancelAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReadersReaderProcessPaymentIntent.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReadersReaderProcessPaymentIntent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReadersReaderProcessSetupIntent.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReadersReaderProcessSetupIntent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReadersReaderRefundPayment.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReadersReaderRefundPayment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTerminalReadersReaderSetReaderDisplay.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTerminalReadersReaderSetReaderDisplay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersCustomersCustomerFundCashBalance.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersCustomersCustomerFundCashBalance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingDeliver.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingDeliver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingFail.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingFail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingReturn.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingReturn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingShip.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersIssuingCardsCardShippingShip.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersRefundsRefundExpire.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersRefundsRefundExpire.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTerminalReadersReaderPresentPaymentMethod.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTerminalReadersReaderPresentPaymentMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTestClocks.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTestClocks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTestClocksTestClockAdvance.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTestClocksTestClockAdvance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryInboundTransfersIdFail.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryInboundTransfersIdFail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryInboundTransfersIdReturn.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryInboundTransfersIdReturn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryInboundTransfersIdSucceed.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryInboundTransfersIdSucceed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryOutboundPaymentsIdFail.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryOutboundPaymentsIdFail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryOutboundPaymentsIdPost.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryOutboundPaymentsIdPost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryOutboundPaymentsIdReturn.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryOutboundPaymentsIdReturn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryOutboundTransfersOutboundTransferFail.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryOutboundTransfersOutboundTransferFail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryOutboundTransfersOutboundTransferPost.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryOutboundTransfersOutboundTransferPost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryOutboundTransfersOutboundTransferReturn.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryOutboundTransfersOutboundTransferReturn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryReceivedCredits.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryReceivedCredits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTestHelpersTreasuryReceivedDebits.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTestHelpersTreasuryReceivedDebits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTokens.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTokens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTopups.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTopups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTopupsTopup.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTopupsTopup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTopupsTopupCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTopupsTopupCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTransfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTransfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTransfersIdReversals.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTransfersIdReversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTransfersTransfer.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTransfersTransfer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTransfersTransferReversalsId.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTransfersTransferReversalsId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryCreditReversals.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryCreditReversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryDebitReversals.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryDebitReversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryFinancialAccounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryFinancialAccounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryFinancialAccountsFinancialAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryFinancialAccountsFinancialAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryFinancialAccountsFinancialAccountFeatures.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryFinancialAccountsFinancialAccountFeatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryInboundTransfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryInboundTransfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryInboundTransfersInboundTransferCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryInboundTransfersInboundTransferCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryOutboundPayments.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryOutboundPayments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryOutboundPaymentsIdCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryOutboundPaymentsIdCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryOutboundTransfers.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryOutboundTransfers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostTreasuryOutboundTransfersOutboundTransferCancel.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostTreasuryOutboundTransfersOutboundTransferCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostWebhookEndpoints.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostWebhookEndpoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/PostWebhookEndpointsWebhookEndpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/PostWebhookEndpointsWebhookEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "stripe/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "stripe/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "stripe/toc.html"
+        },
+        ".json": {
+          "relative_path": "stripe/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateApplication.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateCall.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateCall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateCallFeedbackSummary.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateCallFeedbackSummary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateCallRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateCallRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateIncomingPhoneNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateIncomingPhoneNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateIncomingPhoneNumberAssignedAddOn.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateIncomingPhoneNumberAssignedAddOn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateIncomingPhoneNumberLocal.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateIncomingPhoneNumberLocal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateIncomingPhoneNumberMobile.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateIncomingPhoneNumberMobile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateIncomingPhoneNumberTollFree.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateIncomingPhoneNumberTollFree.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateMessageFeedback.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateMessageFeedback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateNewKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateNewKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateNewSigningKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateNewSigningKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateParticipant.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateParticipant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreatePayments.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreatePayments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateQueue.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipAuthCallsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipAuthCallsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipAuthCallsIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipAuthCallsIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipAuthRegistrationsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipAuthRegistrationsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipCredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipCredential.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipCredentialList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipCredentialList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipIpAccessControlList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipIpAccessControlList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSipIpAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSipIpAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateSiprec.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateSiprec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateStream.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateStream.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateToken.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateUsageTrigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateUsageTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateUserDefinedMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateUserDefinedMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateUserDefinedMessageSubscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateUserDefinedMessageSubscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/CreateValidationRequest.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/CreateValidationRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteApplication.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteCall.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteCall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteCallFeedbackSummary.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteCallFeedbackSummary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteCallRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteCallRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteConferenceRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteConferenceRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteConnectApp.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteConnectApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteIncomingPhoneNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteIncomingPhoneNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteIncomingPhoneNumberAssignedAddOn.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteIncomingPhoneNumberAssignedAddOn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteMedia.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteMedia.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteOutgoingCallerId.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteOutgoingCallerId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteParticipant.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteParticipant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteQueue.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteRecordingAddOnResult.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteRecordingAddOnResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteRecordingAddOnResultPayload.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteRecordingAddOnResultPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteRecordingTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteRecordingTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSigningKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSigningKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipAuthCallsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipAuthCallsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipAuthCallsIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipAuthCallsIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipAuthRegistrationsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipAuthRegistrationsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipCredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipCredential.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipCredentialList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipCredentialList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipIpAccessControlList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipIpAccessControlList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteSipIpAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteSipIpAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteUsageTrigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteUsageTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/DeleteUserDefinedMessageSubscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/DeleteUserDefinedMessageSubscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchApplication.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchAuthorizedConnectApp.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchAuthorizedConnectApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchAvailablePhoneNumberCountry.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchAvailablePhoneNumberCountry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchBalance.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchBalance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchCall.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchCall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchCallFeedback.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchCallFeedback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchCallFeedbackSummary.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchCallFeedbackSummary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchCallNotification.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchCallNotification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchCallRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchCallRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchConference.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchConference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchConferenceRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchConferenceRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchConnectApp.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchConnectApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchIncomingPhoneNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchIncomingPhoneNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchIncomingPhoneNumberAssignedAddOn.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchIncomingPhoneNumberAssignedAddOn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchIncomingPhoneNumberAssignedAddOnExtension.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchIncomingPhoneNumberAssignedAddOnExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchMedia.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchMedia.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchMember.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchMember.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchNotification.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchNotification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchOutgoingCallerId.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchOutgoingCallerId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchParticipant.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchParticipant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchQueue.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchRecordingAddOnResult.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchRecordingAddOnResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchRecordingAddOnResultPayload.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchRecordingAddOnResultPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchRecordingTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchRecordingTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchShortCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchShortCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSigningKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSigningKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipAuthCallsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipAuthCallsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipAuthCallsIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipAuthCallsIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipAuthRegistrationsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipAuthRegistrationsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipCredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipCredential.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipCredentialList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipCredentialList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipIpAccessControlList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipIpAccessControlList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchSipIpAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchSipIpAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/FetchUsageTrigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/FetchUsageTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListApplication.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAuthorizedConnectApp.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAuthorizedConnectApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberCountry.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberCountry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberLocal.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberLocal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberMachineToMachine.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberMachineToMachine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberMobile.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberMobile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberNational.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberNational.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberSharedCost.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberSharedCost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberTollFree.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberTollFree.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListAvailablePhoneNumberVoip.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListAvailablePhoneNumberVoip.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListCall.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListCall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListCallEvent.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListCallEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListCallNotification.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListCallNotification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListCallRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListCallRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListConference.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListConference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListConferenceRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListConferenceRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListConnectApp.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListConnectApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListDependentPhoneNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListDependentPhoneNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListIncomingPhoneNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListIncomingPhoneNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListIncomingPhoneNumberAssignedAddOn.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListIncomingPhoneNumberAssignedAddOn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListIncomingPhoneNumberAssignedAddOnExtension.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListIncomingPhoneNumberAssignedAddOnExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListIncomingPhoneNumberLocal.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListIncomingPhoneNumberLocal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListIncomingPhoneNumberMobile.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListIncomingPhoneNumberMobile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListIncomingPhoneNumberTollFree.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListIncomingPhoneNumberTollFree.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListMedia.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListMedia.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListMember.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListMember.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListNotification.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListNotification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListOutgoingCallerId.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListOutgoingCallerId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListParticipant.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListParticipant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListQueue.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListRecordingAddOnResult.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListRecordingAddOnResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListRecordingAddOnResultPayload.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListRecordingAddOnResultPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListRecordingTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListRecordingTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListShortCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListShortCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSigningKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSigningKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipAuthCallsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipAuthCallsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipAuthCallsIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipAuthCallsIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipAuthRegistrationsCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipAuthRegistrationsCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipCredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipCredential.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipCredentialList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipCredentialList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipCredentialListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipCredentialListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipIpAccessControlList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipIpAccessControlList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipIpAccessControlListMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipIpAccessControlListMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListSipIpAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListSipIpAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListTranscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecord.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordAllTime.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordAllTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordDaily.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordDaily.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordLastMonth.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordLastMonth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordMonthly.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordMonthly.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordThisMonth.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordThisMonth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordToday.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordToday.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordYearly.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordYearly.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageRecordYesterday.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageRecordYesterday.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/ListUsageTrigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/ListUsageTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateAccount.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateApplication.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateCall.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateCall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateCallFeedback.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateCallFeedback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateCallRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateCallRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateConference.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateConference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateConferenceRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateConferenceRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateConnectApp.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateConnectApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateIncomingPhoneNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateIncomingPhoneNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateMember.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateMember.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateMessage.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateOutgoingCallerId.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateOutgoingCallerId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateParticipant.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateParticipant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdatePayments.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdatePayments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateQueue.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateShortCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateShortCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSigningKey.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSigningKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSipCredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSipCredential.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSipCredentialList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSipCredentialList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSipDomain.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSipDomain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSipIpAccessControlList.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSipIpAccessControlList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSipIpAddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSipIpAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateSiprec.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateSiprec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateStream.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateStream.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "twilio/UpdateUsageTrigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/UpdateUsageTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "twilio/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "twilio/toc.html"
+        },
+        ".json": {
+          "relative_path": "twilio/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

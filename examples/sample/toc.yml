@@ -1,0 +1,6 @@
+- name: speakers
+  items:
+  - name: "GET"
+    href: listSpeakers.md
+  - name: "POST"
+    href: createSpeaker.md

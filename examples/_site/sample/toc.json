@@ -1,0 +1,2 @@
+
+{"items":[{"name":"speakers","items":[{"name":"GET","href":"listSpeakers.html","topicHref":"listSpeakers.html"},{"name":"POST","href":"createSpeaker.html","topicHref":"createSpeaker.html"}]}],"pdf":false}
